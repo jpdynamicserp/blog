@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/update-subscription-estimator/</loc>
+    
+    <lastmod>2022-06-19</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jpdynamicserp.github.io/blog/information/infomation/</loc>
     
     <lastmod>2022-06-19</lastmod>
@@ -9,7 +16,56 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/restrict-po-edit/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/notes-on-updating-d365fo/</loc>
+    
+    <lastmod>2022-06-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/peap-retire/</loc>
+    
+    <lastmod>2022-06-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/temporary-change-language-d365fo/</loc>
+    
+    <lastmod>2022-06-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/no-one-can-access-LCS-project/</loc>
+    
+    <lastmod>2022-06-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/export-to-data-lake-yammer-group/</loc>
+    
+    <lastmod>2022-06-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/fo-extend-trial/</loc>
+    
+    <lastmod>2022-06-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-check-necessary-role-and-license/</loc>
+    
+    <lastmod>2022-06-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/apply-quality-update-d365fo/</loc>
     
     <lastmod>2022-06-19</lastmod>
     
@@ -17,6 +73,13 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/restrict-so-edit/</loc>
+    
+    <lastmod>2022-06-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/restrict-po-edit/</loc>
     
     <lastmod>2022-06-19</lastmod>
     
@@ -75,6 +138,48 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/tags/Accounts-receivable-parameters/</loc>
+    <lastmod>2022-06-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/tags/tips/</loc>
+    <lastmod>2022-06-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/tags/LCS/</loc>
+    <lastmod>2022-06-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/tags/Quality-Update/</loc>
+    <lastmod>2022-06-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/tags/Export-to-Data-Lake/</loc>
+    <lastmod>2022-06-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/tags/Visual-Studio/</loc>
+    <lastmod>2022-06-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/tags/License/</loc>
     <lastmod>2022-06-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
