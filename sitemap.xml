@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jpdynamicserp.github.io/blog/information/infomation/</loc>
+    
+    <lastmod>2022-07-01</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/update-subscription-estimator/</loc>
     
     <lastmod>2022-07-01</lastmod>
@@ -9,7 +16,7 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/information/infomation/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/no-one-can-access-LCS-project/</loc>
     
     <lastmod>2022-07-01</lastmod>
     
@@ -58,13 +65,6 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/no-one-can-access-LCS-project/</loc>
-    
-    <lastmod>2022-07-01</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/apply-quality-update-d365fo/</loc>
     
     <lastmod>2022-07-01</lastmod>
@@ -79,6 +79,13 @@
   </url>
   
   <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/restrict-so-edit/</loc>
+    
+    <lastmod>2022-07-01</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/restrict-po-edit/</loc>
     
     <lastmod>2022-07-01</lastmod>
@@ -86,7 +93,7 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/restrict-so-edit/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/inventory-counting-group/</loc>
     
     <lastmod>2022-07-01</lastmod>
     
@@ -138,6 +145,20 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/tags/Fixed-assets/</loc>
+    <lastmod>2022-07-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/tags/Inventory-management/</loc>
+    <lastmod>2022-07-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/tags/Inventory-counting/</loc>
     <lastmod>2022-07-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
