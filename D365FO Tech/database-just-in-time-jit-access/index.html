@@ -4,29 +4,29 @@
   <meta charset="utf-8">
   
   
-  <title>請求後の販売注文の編集制御方法 | Japan Dynamics ERP Support Blog</title>
+  <title>Sandbox 環境のデータベースでクエリを実行する方法について | Japan Dynamics ERP Support Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="こんにちは、Dynamics ERP サポートの木村です。この記事では、請求後の販売注文の編集を制御するパラメータについてご案内いたします。">
+  <meta name="description" content="こんにちは、日本マイクロソフトの岡田です。Dynamics 365 for Finance and Operations のSandbox 環境のデータベースに対して、クエリを実行することが可能です。そのため Sandbox 環境では、さまざまな問題のトラブルシューティングのため、クエリ実行で問題を解消して頂くことが可能となっております。本記事では、Sandbox 環境のデータベースへのアクセスを">
 <meta property="og:type" content="article">
-<meta property="og:title" content="請求後の販売注文の編集制御方法">
-<meta property="og:url" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/restrict-so-edit/index.html">
+<meta property="og:title" content="Sandbox 環境のデータベースでクエリを実行する方法について">
+<meta property="og:url" content="https://jpdynamicserp.github.io/blog/D365FO%20Tech/database-just-in-time-jit-access/index.html">
 <meta property="og:site_name" content="Japan Dynamics ERP Support Blog">
-<meta property="og:description" content="こんにちは、Dynamics ERP サポートの木村です。この記事では、請求後の販売注文の編集を制御するパラメータについてご案内いたします。">
+<meta property="og:description" content="こんにちは、日本マイクロソフトの岡田です。Dynamics 365 for Finance and Operations のSandbox 環境のデータベースに対して、クエリを実行することが可能です。そのため Sandbox 環境では、さまざまな問題のトラブルシューティングのため、クエリ実行で問題を解消して頂くことが可能となっております。本記事では、Sandbox 環境のデータベースへのアクセスを">
 <meta property="og:locale" content="ja_JP">
-<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/restrict-so-edit/restrict-so-edit_1.png">
-<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/restrict-so-edit/restrict-so-edit_2.png">
-<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/restrict-so-edit/restrict-so-edit_3.png">
-<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/restrict-so-edit/restrict-so-edit_4.png">
-<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/restrict-so-edit/restrict-so-edit_5.png">
-<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/restrict-so-edit/restrict-so-edit_6.png">
-<meta property="article:published_time" content="2022-06-13T15:00:00.000Z">
-<meta property="article:modified_time" content="2022-07-29T14:27:26.831Z">
+<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20Tech/database-just-in-time-jit-access/database-just-in-time-jit-access1.png">
+<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20Tech/database-just-in-time-jit-access/database-just-in-time-jit-access2.png">
+<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20Tech/database-just-in-time-jit-access/database-just-in-time-jit-access3.png">
+<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20Tech/database-just-in-time-jit-access/database-just-in-time-jit-access4.png">
+<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20Tech/database-just-in-time-jit-access/database-just-in-time-jit-access5.png">
+<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20Tech/database-just-in-time-jit-access/database-just-in-time-jit-access6.png">
+<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20Tech/database-just-in-time-jit-access/database-just-in-time-jit-access7.png">
+<meta property="article:published_time" content="2022-07-28T15:00:00.000Z">
+<meta property="article:modified_time" content="2022-07-29T14:27:26.835Z">
 <meta property="article:author" content="Dynamics ERP Support Japan">
 <meta property="article:tag" content="D365FO">
-<meta property="article:tag" content="Sales order">
-<meta property="article:tag" content="Accounts receivable parameters">
+<meta property="article:tag" content="database">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/restrict-so-edit/restrict-so-edit_1.png">
+<meta name="twitter:image" content="https://jpdynamicserp.github.io/blog/D365FO%20Tech/database-just-in-time-jit-access/database-just-in-time-jit-access1.png">
   
     <link rel="alternate" href="../../atom.xml" title="Japan Dynamics ERP Support Blog" type="application/atom+xml">
   
@@ -88,7 +88,7 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-D365FO App SCM/restrict-so-edit" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-D365FO Tech/database-just-in-time-jit-access" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
     
@@ -97,7 +97,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      請求後の販売注文の編集制御方法
+      Sandbox 環境のデータベースでクエリを実行する方法について
     </h1>
   
 
@@ -105,38 +105,24 @@
       <div class="article-share">
         Last Update: 
         <a href="" class="article-date-single">
-  <time datetime="2022-06-13T15:00:00.000Z" itemprop="datePublished">2022-06-14</time>
+  <time datetime="2022-07-28T15:00:00.000Z" itemprop="datePublished">2022-07-29</time>
 </a>
         
         
-        <a href="https://github.com/jpdynamicserp/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+37bb662d-e81b-5c0d-a8dd-23c53d56de90%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5B%E8%AB%8B%E6%B1%82%E5%BE%8C%E3%81%AE%E8%B2%A9%E5%A3%B2%E6%B3%A8%E6%96%87%E3%81%AE%E7%B7%A8%E9%9B%86%E5%88%B6%E5%BE%A1%E6%96%B9%E6%B3%95%5D%28https%3A%2F%2Fjpdynamicserp.github.io%2Fblog%2FD365FO%2520App%2520SCM%2Frestrict-so-edit%2F%29%0A*+Content+Source%3A+%5Barticles%2FD365FO+App+SCM%2Frestrict-so-edit.md%5D%28https%3A%2F%2Fgithub.com%2Fjpdynamicserp%2Fblob%2Fmain%2Farticles%2FD365FO%2520App%2520SCM%2Frestrict-so-edit.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
+        <a href="https://github.com/jpdynamicserp/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+a155470c-8b1b-5a5e-aa3a-37effdfc6ee6%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5BSandbox+%E7%92%B0%E5%A2%83%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E3%81%A7%E3%82%AF%E3%82%A8%E3%83%AA%E3%82%92%E5%AE%9F%E8%A1%8C%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%5D%28https%3A%2F%2Fjpdynamicserp.github.io%2Fblog%2FD365FO%2520Tech%2Fdatabase-just-in-time-jit-access%2F%29%0A*+Content+Source%3A+%5Barticles%2FD365FO+Tech%2Fdatabase-just-in-time-jit-access.md%5D%28https%3A%2F%2Fgithub.com%2Fjpdynamicserp%2Fblob%2Fmain%2Farticles%2FD365FO%2520Tech%2Fdatabase-just-in-time-jit-access.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
         
-        <a data-url="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/restrict-so-edit/" data-id="cl66k6yd200030nqx2v1ygek2" class="article-share-link">共有</a>
+        <a data-url="https://jpdynamicserp.github.io/blog/D365FO%20Tech/database-just-in-time-jit-access/" data-id="cl66k6yd400050nqx2wrq42ij" class="article-share-link">共有</a>
       </div>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>こんにちは、Dynamics ERP サポートの木村です。<br>この記事では、請求後の販売注文の編集を制御するパラメータについてご案内いたします。  </p>
+        <p>こんにちは、日本マイクロソフトの岡田です。<br>Dynamics 365 for Finance and Operations のSandbox 環境のデータベースに対して、クエリを実行することが可能です。<br>そのため Sandbox 環境では、さまざまな問題のトラブルシューティングのため、クエリ実行で問題を解消して頂くことが可能となっております。<br>本記事では、Sandbox 環境のデータベースへのアクセスを有効にし、クエリを実行する手順をご案内させていただきます。</p>
 <span id="more"></span>
-<p>パラメータの適用方法、動作につきましては以下をご覧ください。  </p>
-<h2 id="請求後の販売注文の編集制御方法"><a href="#請求後の販売注文の編集制御方法" class="headerlink" title="請求後の販売注文の編集制御方法"></a>請求後の販売注文の編集制御方法</h2><h3 id="「請求済注文の安全レベル」を警告に変更した場合"><a href="#「請求済注文の安全レベル」を警告に変更した場合" class="headerlink" title="「請求済注文の安全レベル」を警告に変更した場合"></a>「請求済注文の安全レベル」を<strong>警告</strong>に変更した場合</h3><ol>
-<li>売掛金管理 &gt; 設定 &gt; 売掛金勘定パラメーターを開く</li>
-<li>配送日タブを開く</li>
-<li>「請求済注文の安全レベル」を<strong>ロック済</strong>に変更し、保存する<br><img src="/blog/D365FO%20App%20SCM/restrict-so-edit/restrict-so-edit_1.png"></li>
-<li>請求済の販売注文を開く  </br></br></li>
-</ol>
-<p><strong>-&gt; 明細行の追加などのボタンが非活性になる</strong><br><img src="/blog/D365FO%20App%20SCM/restrict-so-edit/restrict-so-edit_2.png"></p>
+
+<h2 id="Sandbox-環境のデータベースでクエリを実行する手順"><a href="#Sandbox-環境のデータベースでクエリを実行する手順" class="headerlink" title="Sandbox 環境のデータベースでクエリを実行する手順"></a>Sandbox 環境のデータベースでクエリを実行する手順</h2><p>(1) LCS にログインし、Sandbox 環境の詳細ページを開きます。<br>(2) 管理 (Maintain) &gt; アクセスの有効化 (Enable access) をクリックします。<br><img src="/blog/D365FO%20Tech/database-just-in-time-jit-access/database-just-in-time-jit-access1.png"><br>(3) 受信規則の追加により、接続を許可する IP アドレスを設定します。<br>※接続を許可する IP アドレスとして、Cloud-hosed 環境 VM の IP アドレスを指定致しますと、Cloud-hosed 環境 VM の SSMS から Sandbox 環境のデータベースへアクセスすることが可能となります。<br><img src="/blog/D365FO%20Tech/database-just-in-time-jit-access/database-just-in-time-jit-access2.png"><br>(4) データベースアカウントにて、書き込み権限を付与できる Performance tuning を選択し、Request Access をクリックし、アクセス権を申請します。<br><img src="/blog/D365FO%20Tech/database-just-in-time-jit-access/database-just-in-time-jit-access3.png"><br>(5) データベースアカウントが作成された後に、「SQL Server\Database Name」 をコピーします。<br><img src="/blog/D365FO%20Tech/database-just-in-time-jit-access/database-just-in-time-jit-access4.png"><br>(6) Windows キーをクリックし、検索バーに「SSMS」と入力し、SQL Server Management Studio を開きます。<br>※もしローカルに SSMS がインストールされていない場合、手順3 で Cloud-hosted 環境 VM の IP アドレスを指定頂ければ、 Cloud-hosted 環境 VM にインストールされている SSMS を使用頂けます。<br>(7) 接続ダイアログにて Options を開き、下記のように入力します。<br>    Server Name: 手順5 でコピーした値のうち、バックスラッシュより前の部分を貼り付け<br>    Authentication: “SQL Server Authentication”<br>    Login, Password: データベースアカウントにて作成されたアカウント<br><img src="/blog/D365FO%20Tech/database-just-in-time-jit-access/database-just-in-time-jit-access5.png"><br>(8) “Connection Properties” タブを開き、手順5 でコピーした値のうち、バックスラッシュより後の部分を張り付けます。<br><img src="/blog/D365FO%20Tech/database-just-in-time-jit-access/database-just-in-time-jit-access6.png"><br>(9) Connect をクリックし、サーバーに接続します。<br>(10) 対象のデータベース AxDB を右クリックし、「New Query」をクリックします。<br><img src="/blog/D365FO%20Tech/database-just-in-time-jit-access/database-just-in-time-jit-access7.png"><br>(11) クエリを貼り付け、Execute　をクリックします。<br>(12) SQL Server Management Studio を閉じます。<br>(13) 変更を環境に反映させるため、Sandbox 環境の サービスを再起動します。<br>     LCS の Sandbox 環境の詳細ページを開き、 管理 (Maintain) &gt; サービスのリセット (Restart service) をクリックします。<br>(14) ダイアログボックスで、再起動するサービス AX を選択してから OK をクリックします。</p>
+<p>以上の手順を実施して頂くことで、Sandbox 環境のデータベースでクエリを実行することが可能です。</p>
 <hr>
-<h3 id="「請求済注文の安全レベル」を警告に変更した場合-1"><a href="#「請求済注文の安全レベル」を警告に変更した場合-1" class="headerlink" title="「請求済注文の安全レベル」を警告に変更した場合"></a>「請求済注文の安全レベル」を<strong>警告</strong>に変更した場合</h3><p><img src="/blog/D365FO%20App%20SCM/restrict-so-edit/restrict-so-edit_3.png"></p>
-<ol>
-<li>明細行の追加などのボタンを押下する</li>
-<li>以下ダイアログが表示され、「はい」を押下する<br><img src="/blog/D365FO%20App%20SCM/restrict-so-edit/restrict-so-edit_4.png">  </br></br></li>
-</ol>
-<p><strong>-&gt; ダイアログは表示されるが、請求済の販売注文は編集可能となる</strong><br><img src="/blog/D365FO%20App%20SCM/restrict-so-edit/restrict-so-edit_5.png"></p>
-<hr>
-<h3 id="「請求済注文の安全レベル」をなしに変更した場合"><a href="#「請求済注文の安全レベル」をなしに変更した場合" class="headerlink" title="「請求済注文の安全レベル」をなしに変更した場合"></a>「請求済注文の安全レベル」を<strong>なし</strong>に変更した場合</h3><p><img src="/blog/D365FO%20App%20SCM/restrict-so-edit/restrict-so-edit_6.png"></br></br><br><strong>-&gt; 請求済の販売注文は常に編集可能</strong></p>
-<h2 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h2><hr>
-<p>以上、請求後の販売注文の編集を制御するパラメータについてご紹介いたしました。<br>請求した販売注文に対して編集を制御されたいなどの場合には、上記パラメータをご利用ください。</p>
+<h2 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h2><p>以上、 Sandbox 環境のデータベースでクエリを実行する手順をご紹介させていただきました。上記の手順でご不明な点等ございましたら、お気兼ねなく弊社までお問合せ頂ければと思います。</p>
 
       
       
@@ -150,10 +136,10 @@
     <footer class="article-footer">
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/Accounts-receivable-parameters/" rel="tag">Accounts receivable parameters</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/D365FO/" rel="tag">D365FO</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/Sales-order/" rel="tag">Sales order</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/D365FO/" rel="tag">D365FO</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/database/" rel="tag">database</a></li></ul>
 
         
-        <a href="https://github.com/jpdynamicserp/edit/main/articles/D365FO%20App%20SCM/restrict-so-edit.md" class="article-github-edit-link" target="_blank" rel="noopener noreferrer">GitHub で編集</a>
+        <a href="https://github.com/jpdynamicserp/edit/main/articles/D365FO%20Tech/database-just-in-time-jit-access.md" class="article-github-edit-link" target="_blank" rel="noopener noreferrer">GitHub で編集</a>
         
     </footer>
   </div>
@@ -161,19 +147,10 @@
     
 <nav id="article-nav">
   
-    <a href="../../D365FO%20Tech/submit-an-incident-in-lcs/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">次の記事</strong>
-      <div class="article-nav-title">
-        
-          LCSにてDynamics 365 Finance and Operationsに関するサポートリクエストを起票する方法
-        
-      </div>
-    </a>
   
-  
-    <a href="../../D365FO%20App%20FIN/show-depreciationprofile/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="../how-to-post-ideas/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">前の記事</strong>
-      <div class="article-nav-title">固定資産の帳簿に減価償却プロファイルを表示する方法</div>
+      <div class="article-nav-title">Dynamics 365 製品のフィードバックサイト Ideas について</div>
     </a>
   
 </nav>
@@ -192,23 +169,23 @@
       <ul>
         
           <li>
-            <a href="../../D365FO%20Tech/database-just-in-time-jit-access/">Sandbox 環境のデータベースでクエリを実行する方法について</a>
+            <a href="">Sandbox 環境のデータベースでクエリを実行する方法について</a>
           </li>
         
           <li>
-            <a href="../../D365FO%20Tech/how-to-post-ideas/">Dynamics 365 製品のフィードバックサイト Ideas について</a>
+            <a href="../how-to-post-ideas/">Dynamics 365 製品のフィードバックサイト Ideas について</a>
           </li>
         
           <li>
-            <a href="../../D365FO%20Tech/powerbi-feature-difference/">Power BI.com integraion と Power BI Embedded の違いについて</a>
+            <a href="../powerbi-feature-difference/">Power BI.com integraion と Power BI Embedded の違いについて</a>
           </li>
         
           <li>
-            <a href="../../D365FO%20Tech/how-to-update-WinRM/">クラウドホスト環境でWinRM 証明書をアップデートする方法</a>
+            <a href="../how-to-update-WinRM/">クラウドホスト環境でWinRM 証明書をアップデートする方法</a>
           </li>
         
           <li>
-            <a href="../inventory-counting-group/">棚卸グループを使用した棚卸の実施方法</a>
+            <a href="../../D365FO%20App%20SCM/inventory-counting-group/">棚卸グループを使用した棚卸の実施方法</a>
           </li>
         
       </ul>
