@@ -16,20 +16,6 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/temporary-change-language-d365fo/</loc>
-    
-    <lastmod>2022-08-25</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-update-WinRM/</loc>
-    
-    <lastmod>2022-08-25</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/no-one-can-access-LCS-project/</loc>
     
     <lastmod>2022-08-25</lastmod>
@@ -65,7 +51,21 @@
   </url>
   
   <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/temporary-change-language-d365fo/</loc>
+    
+    <lastmod>2022-08-25</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-post-ideas/</loc>
+    
+    <lastmod>2022-08-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-update-WinRM/</loc>
     
     <lastmod>2022-08-25</lastmod>
     
@@ -100,13 +100,6 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/restrict-so-edit/</loc>
-    
-    <lastmod>2022-08-25</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/apply-quality-update-d365fo/</loc>
     
     <lastmod>2022-08-25</lastmod>
@@ -121,7 +114,7 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/show-depreciationprofile/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/restrict-so-edit/</loc>
     
     <lastmod>2022-08-25</lastmod>
     
@@ -129,6 +122,20 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/inventory-counting-group/</loc>
+    
+    <lastmod>2022-08-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/create-form26-report/</loc>
+    
+    <lastmod>2022-08-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/show-depreciationprofile/</loc>
     
     <lastmod>2022-08-25</lastmod>
     
@@ -166,6 +173,20 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/tags/Japan/</loc>
+    <lastmod>2022-08-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/tags/Fixed-Assets/</loc>
+    <lastmod>2022-08-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/tags/Form-26/</loc>
     <lastmod>2022-08-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
