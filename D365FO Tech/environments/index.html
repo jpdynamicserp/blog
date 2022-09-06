@@ -4,32 +4,21 @@
   <meta charset="utf-8">
   
   
-  <title>LCSにてDynamics 365 Finance and Operationsに関するサポートリクエストを起票する方法 | Japan Dynamics ERP Support Blog</title>
+  <title>Dynamics 365 for Finance and Operations の環境ごとの違い | Japan Dynamics ERP Support Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="こんにちは、日本マイクロソフトの永吉です。 この記事では、LCSにてDynamics 365 Finance and Operationsに関するサポートリクエストを起票する方法を紹介します。">
+  <meta name="description" content="こんにちは、日本マイクロソフトの福原です。この記事では、 Dynamics 365 for Finance and Operations (D365FO) の環境ごとの違いについてご案内します。クラウドホスト環境、サンドボックス環境、Tier2環境、本番環境等、様々な呼び方の環境があり、また、それぞれの環境で使える機能も異なるので、分かりづらいというお声をいただくことがありますので、そのような場合">
 <meta property="og:type" content="article">
-<meta property="og:title" content="LCSにてDynamics 365 Finance and Operationsに関するサポートリクエストを起票する方法">
-<meta property="og:url" content="https://jpdynamicserp.github.io/blog/D365FO%20Tech/submit-an-incident-in-lcs/index.html">
+<meta property="og:title" content="Dynamics 365 for Finance and Operations の環境ごとの違い">
+<meta property="og:url" content="https://jpdynamicserp.github.io/blog/D365FO%20Tech/environments/index.html">
 <meta property="og:site_name" content="Japan Dynamics ERP Support Blog">
-<meta property="og:description" content="こんにちは、日本マイクロソフトの永吉です。 この記事では、LCSにてDynamics 365 Finance and Operationsに関するサポートリクエストを起票する方法を紹介します。">
+<meta property="og:description" content="こんにちは、日本マイクロソフトの福原です。この記事では、 Dynamics 365 for Finance and Operations (D365FO) の環境ごとの違いについてご案内します。クラウドホスト環境、サンドボックス環境、Tier2環境、本番環境等、様々な呼び方の環境があり、また、それぞれの環境で使える機能も異なるので、分かりづらいというお声をいただくことがありますので、そのような場合">
 <meta property="og:locale" content="ja_JP">
-<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20Tech/submit-an-incident-in-lcs/step2.png">
-<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20Tech/submit-an-incident-in-lcs/step3.png">
-<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20Tech/submit-an-incident-in-lcs/step4.png">
-<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20Tech/submit-an-incident-in-lcs/step5.png">
-<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20Tech/submit-an-incident-in-lcs/step6.png">
-<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20Tech/submit-an-incident-in-lcs/step7.png">
-<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20Tech/submit-an-incident-in-lcs/step8.png">
-<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20Tech/submit-an-incident-in-lcs/step9.png">
-<meta property="article:published_time" content="2022-06-22T15:00:00.000Z">
-<meta property="article:modified_time" content="2022-09-06T03:04:15.181Z">
+<meta property="article:published_time" content="2022-09-05T15:00:00.000Z">
+<meta property="article:modified_time" content="2022-09-06T03:04:15.165Z">
 <meta property="article:author" content="Dynamics ERP Support Japan">
 <meta property="article:tag" content="D365FO">
 <meta property="article:tag" content="tips">
-<meta property="article:tag" content="LCS">
-<meta property="article:tag" content="Support Request">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://jpdynamicserp.github.io/blog/D365FO%20Tech/submit-an-incident-in-lcs/step2.png">
   
     <link rel="alternate" href="../../atom.xml" title="Japan Dynamics ERP Support Blog" type="application/atom+xml">
   
@@ -91,7 +80,7 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-D365FO Tech/submit-an-incident-in-lcs" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-D365FO Tech/environments" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
     
@@ -100,7 +89,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      LCSにてDynamics 365 Finance and Operationsに関するサポートリクエストを起票する方法
+      Dynamics 365 for Finance and Operations の環境ごとの違い
     </h1>
   
 
@@ -108,45 +97,80 @@
       <div class="article-share">
         Last Update: 
         <a href="" class="article-date-single">
-  <time datetime="2022-06-22T15:00:00.000Z" itemprop="datePublished">2022-06-23</time>
+  <time datetime="2022-09-05T15:00:00.000Z" itemprop="datePublished">2022-09-06</time>
 </a>
         
         
-        <a href="https://github.com/jpdynamicserp/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+a85b48ce-1073-5472-b372-f922a94d8097%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5BLCS%E3%81%AB%E3%81%A6Dynamics+365+Finance+and+Operations%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%82%92%E8%B5%B7%E7%A5%A8%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95%5D%28https%3A%2F%2Fjpdynamicserp.github.io%2Fblog%2FD365FO%2520Tech%2Fsubmit-an-incident-in-lcs%2F%29%0A*+Content+Source%3A+%5Barticles%2FD365FO+Tech%2Fsubmit-an-incident-in-lcs.md%5D%28https%3A%2F%2Fgithub.com%2Fjpdynamicserp%2Fblob%2Fmain%2Farticles%2FD365FO%2520Tech%2Fsubmit-an-incident-in-lcs.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
+        <a href="https://github.com/jpdynamicserp/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+8131a535-7411-5694-9b85-3e289096ffba%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5BDynamics+365+for+Finance+and+Operations+%E3%81%AE%E7%92%B0%E5%A2%83%E3%81%94%E3%81%A8%E3%81%AE%E9%81%95%E3%81%84%5D%28https%3A%2F%2Fjpdynamicserp.github.io%2Fblog%2FD365FO%2520Tech%2Fenvironments%2F%29%0A*+Content+Source%3A+%5Barticles%2FD365FO+Tech%2Fenvironments.md%5D%28https%3A%2F%2Fgithub.com%2Fjpdynamicserp%2Fblob%2Fmain%2Farticles%2FD365FO%2520Tech%2Fenvironments.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
         
-        <a data-url="https://jpdynamicserp.github.io/blog/D365FO%20Tech/submit-an-incident-in-lcs/" data-id="cl7plyjtf000w0mrx5pcvcyxc" class="article-share-link">共有</a>
+        <a data-url="https://jpdynamicserp.github.io/blog/D365FO%20Tech/environments/" data-id="cl7plyjt0000b0mrxb0ui9j8e" class="article-share-link">共有</a>
       </div>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>こんにちは、日本マイクロソフトの永吉です。</p>
-<p>この記事では、LCSにてDynamics 365 Finance and Operationsに関するサポートリクエストを起票する方法を紹介します。</p>
+        <p>こんにちは、日本マイクロソフトの福原です。<br>この記事では、 Dynamics 365 for Finance and Operations (D365FO) の環境ごとの違いについてご案内します。<br>クラウドホスト環境、サンドボックス環境、Tier2環境、本番環境等、様々な呼び方の環境があり、また、それぞれの環境で使える機能も異なるので、分かりづらいというお声をいただくことがありますので、そのような場合には本記事をご参考ください。</p>
 <span id="more"></span>
 
 
-<h2 id="手順"><a href="#手順" class="headerlink" title="手順"></a>手順</h2><ol>
-<li><p> LCSにログインする</p>
-</li>
-<li><p>サポートリクエストを起票したい環境の含まれているプロジェクトを選択する<br> <img src="/blog/D365FO%20Tech/submit-an-incident-in-lcs/step2.png"></p>
-</li>
-<li><p>画面上部の三本線より、「サポート」を選択する<br> <img src="/blog/D365FO%20Tech/submit-an-incident-in-lcs/step3.png"></p>
-</li>
-<li><p>画面左部より、「サポート案件」 &gt; 「Microsoftに送信済み」 &gt; 「インシデントの送信」を選択する<br> <img src="/blog/D365FO%20Tech/submit-an-incident-in-lcs/step4.png"></p>
-</li>
-<li><p>画面右部に「新しいサポート要求」画面が表示されるので、各項目を入力・選択し、「ソリューションを見る」を選択する<br> <img src="/blog/D365FO%20Tech/submit-an-incident-in-lcs/step5.png"></p>
-</li>
-<li><p>表示された詳細情報にて解決できない場合、「次へ」を選択する<br> <img src="/blog/D365FO%20Tech/submit-an-incident-in-lcs/step6.png"></p>
-</li>
-<li><p>「サポートプラン情報」画面が表示されるので、サポートプランを選択する<br>※ 主要アクセスIDおよび契約IDを持っていない場合、サポートプランにて ”Dynamics AX - Subscription” を選択いただくことで、サポートサービスを受けることができます。<br>※ ”Dynamics AX - Subscription” を選択した場合、貴社サポート契約に紐づかない形でのサポートリクエストとなり、貴社にて有償サポート契約を持っていた場合でも、その契約に応じたサポートサービスを適切に受けられない可能性がございます。予めご了承ください。<br> <img src="/blog/D365FO%20Tech/submit-an-incident-in-lcs/step7.png"></p>
-</li>
-<li><p>サポートプランを選択後、追加情報を入力し、「次へ」を選択する<br>※ 20 MB以上のファイルを添付したい場合、サポートリクエストでのやり取りにて、弊社よりファイルアップロードリンクを提供いたします。<br> <img src="/blog/D365FO%20Tech/submit-an-incident-in-lcs/step8.png"></p>
-</li>
-<li><p>「この要求に関する連絡先の情報」画面が表示されるので、国/地域、メールアドレス(TO, CC)、電話番号、希望の連絡方法を選択し、「送信」を選択する<br> <img src="/blog/D365FO%20Tech/submit-an-incident-in-lcs/step9.png"></p>
-</li>
-</ol>
-<p>（関連情報）<br><a target="_blank" rel="noopener" href="https://docs.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/cloud-powered-support-lcs#open-a-new-incident">https://docs.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/cloud-powered-support-lcs#open-a-new-incident</a>  </p>
+
+
+<table>
+<thead>
+<tr>
+<th align="left">環境名</th>
+<th align="left">本番環境</th>
+<th align="left">サンドボックス環境</th>
+<th align="left">クラウドホスト環境</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">配置可能なLCSプロジェクト</td>
+<td align="left">実装プロジェクト</td>
+<td align="left">実装プロジェクト</td>
+<td align="left">実装プロジェクト<br>  or パートナー試用版プロジェクト</td>
+</tr>
+<tr>
+<td align="left">呼ばれ方例</td>
+<td align="left">Production 環境、<br> 運用環境、 <br> Microsoft-managed 環境</td>
+<td align="left">Sandbox環境、<br> Tier2~Tier5環境、非運用環境、 <br> Microsoft-managed 環境</td>
+<td align="left">Cloud-hosted環境、<br> 開発環境、Tier1環境</td>
+</tr>
+<tr>
+<td align="left">配置場所</td>
+<td align="left">Azure</td>
+<td align="left">Azure</td>
+<td align="left">Azure</td>
+</tr>
+<tr>
+<td align="left">Azure Subscription (*1)</td>
+<td align="left">Microsoft</td>
+<td align="left">Microsoft</td>
+<td align="left">顧客</td>
+</tr>
+<tr>
+<td align="left">データベース</td>
+<td align="left">Azure SQL</td>
+<td align="left">Azure SQL</td>
+<td align="left">Azure VM 内のオンプレミスSQL Server</td>
+</tr>
+<tr>
+<td align="left">SSMSによる<br> データベースへの接続</td>
+<td align="left">不可</td>
+<td align="left">可 (*2)</td>
+<td align="left">可</td>
+</tr>
+<tr>
+<td align="left">RDP接続</td>
+<td align="left">不可</td>
+<td align="left">不可</td>
+<td align="left">可</td>
+</tr>
+</tbody></table>
+<p>(*1): 本番環境、サンドボックス環境は、Microsoft内のAzure Subscriptionに紐づいて管理されているので、顧客はAzure portalにて環境の情報を見ることができません。クラウドホスト環境は顧客のAzure Subscirption内で構築されますので、Azure portalにて環境や請求の情報を見ることができます。<br>(*2): <a href="https://jpdynamicserp.github.io/blog/D365FO%20Tech/database-just-in-time-jit-access/">https://jpdynamicserp.github.io/blog/D365FO%20Tech/database-just-in-time-jit-access/</a> の手順となります。</p>
+<p>(*): 本記事は2022年9月6日時点での情報です。</p>
 <hr>
-<h2 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h2>
+<h2 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h2><p>以上、 Dynamics 365 for Finance and Operations (D365FO) の環境ごとの違いについてご紹介しました。<br>もし、お困りのこと等がございましたら、弊社までお問い合わせ頂きますようお願いいたします。</p>
+
       
       
         <div class="article-disclaimer">
@@ -159,10 +183,10 @@
     <footer class="article-footer">
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/D365FO/" rel="tag">D365FO</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/LCS/" rel="tag">LCS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/Support-Request/" rel="tag">Support Request</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/tips/" rel="tag">tips</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/D365FO/" rel="tag">D365FO</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/tips/" rel="tag">tips</a></li></ul>
 
         
-        <a href="https://github.com/jpdynamicserp/edit/main/articles/D365FO%20Tech/submit-an-incident-in-lcs.md" class="article-github-edit-link" target="_blank" rel="noopener noreferrer">GitHub で編集</a>
+        <a href="https://github.com/jpdynamicserp/edit/main/articles/D365FO%20Tech/environments.md" class="article-github-edit-link" target="_blank" rel="noopener noreferrer">GitHub で編集</a>
         
     </footer>
   </div>
@@ -170,19 +194,10 @@
     
 <nav id="article-nav">
   
-    <a href="../../D365FO%20App%20SCM/inventory-counting-group/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">次の記事</strong>
-      <div class="article-nav-title">
-        
-          棚卸グループを使用した棚卸の実施方法
-        
-      </div>
-    </a>
   
-  
-    <a href="../../D365FO%20App%20FIN/show-depreciationprofile/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="../how-to-run-custom-script-d365fo/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">前の記事</strong>
-      <div class="article-nav-title">固定資産の帳簿に減価償却プロファイルを表示する方法</div>
+      <div class="article-nav-title">D365FOでダウンタイムなしでカスタム X++ スクリプトを実行する方法</div>
     </a>
   
 </nav>
@@ -201,7 +216,7 @@
       <ul>
         
           <li>
-            <a href="../environments/">Dynamics 365 for Finance and Operations の環境ごとの違い</a>
+            <a href="">Dynamics 365 for Finance and Operations の環境ごとの違い</a>
           </li>
         
           <li>
