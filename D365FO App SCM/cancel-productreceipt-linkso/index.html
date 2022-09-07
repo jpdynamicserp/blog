@@ -4,29 +4,28 @@
   <meta charset="utf-8">
   
   
-  <title>請求後の販売注文の編集制御方法 | Japan Dynamics ERP Support Blog</title>
+  <title>販売注文に紐づく発注書の製品受領書のキャンセル方法 | Japan Dynamics ERP Support Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="こんにちは、Dynamics ERP サポートの木村です。この記事では、請求後の販売注文の編集を制御するパラメータについてご案内いたします。">
+  <meta name="description" content="こんにちは、Dynamics ERP サポートの木村です。この記事では、販売注文に紐づく発注書の製品受領書のキャンセル方法についてご案内いたします。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="請求後の販売注文の編集制御方法">
-<meta property="og:url" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/restrict-so-edit/index.html">
+<meta property="og:title" content="販売注文に紐づく発注書の製品受領書のキャンセル方法">
+<meta property="og:url" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/cancel-productreceipt-linkso/index.html">
 <meta property="og:site_name" content="Japan Dynamics ERP Support Blog">
-<meta property="og:description" content="こんにちは、Dynamics ERP サポートの木村です。この記事では、請求後の販売注文の編集を制御するパラメータについてご案内いたします。">
+<meta property="og:description" content="こんにちは、Dynamics ERP サポートの木村です。この記事では、販売注文に紐づく発注書の製品受領書のキャンセル方法についてご案内いたします。">
 <meta property="og:locale" content="ja_JP">
-<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/restrict-so-edit/restrict-so-edit_1.png">
-<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/restrict-so-edit/restrict-so-edit_2.png">
-<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/restrict-so-edit/restrict-so-edit_3.png">
-<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/restrict-so-edit/restrict-so-edit_4.png">
-<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/restrict-so-edit/restrict-so-edit_5.png">
-<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/restrict-so-edit/restrict-so-edit_6.png">
-<meta property="article:published_time" content="2022-06-13T15:00:00.000Z">
-<meta property="article:modified_time" content="2022-09-07T09:15:04.962Z">
+<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/cancel-productreceipt-linkso/cancel-productreceipt-linkso_1.png">
+<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/cancel-productreceipt-linkso/cancel-productreceipt-linkso_2.png">
+<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/cancel-productreceipt-linkso/cancel-productreceipt-linkso_3.png">
+<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/cancel-productreceipt-linkso/cancel-productreceipt-linkso_4.png">
+<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/cancel-productreceipt-linkso/cancel-productreceipt-linkso_5.png">
+<meta property="article:published_time" content="2022-09-06T15:00:00.000Z">
+<meta property="article:modified_time" content="2022-09-07T09:15:04.958Z">
 <meta property="article:author" content="Dynamics ERP Support Japan">
 <meta property="article:tag" content="D365FO">
 <meta property="article:tag" content="Sales order">
-<meta property="article:tag" content="Accounts receivable parameters">
+<meta property="article:tag" content="Purchase order">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/restrict-so-edit/restrict-so-edit_1.png">
+<meta name="twitter:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/cancel-productreceipt-linkso/cancel-productreceipt-linkso_1.png">
   
     <link rel="alternate" href="../../atom.xml" title="Japan Dynamics ERP Support Blog" type="application/atom+xml">
   
@@ -88,7 +87,7 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-D365FO App SCM/restrict-so-edit" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-D365FO App SCM/cancel-productreceipt-linkso" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
     
@@ -97,7 +96,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      請求後の販売注文の編集制御方法
+      販売注文に紐づく発注書の製品受領書のキャンセル方法
     </h1>
   
 
@@ -105,38 +104,40 @@
       <div class="article-share">
         Last Update: 
         <a href="" class="article-date-single">
-  <time datetime="2022-06-13T15:00:00.000Z" itemprop="datePublished">2022-06-14</time>
+  <time datetime="2022-09-06T15:00:00.000Z" itemprop="datePublished">2022-09-07</time>
 </a>
         
         
-        <a href="https://github.com/jpdynamicserp/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+37bb662d-e81b-5c0d-a8dd-23c53d56de90%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5B%E8%AB%8B%E6%B1%82%E5%BE%8C%E3%81%AE%E8%B2%A9%E5%A3%B2%E6%B3%A8%E6%96%87%E3%81%AE%E7%B7%A8%E9%9B%86%E5%88%B6%E5%BE%A1%E6%96%B9%E6%B3%95%5D%28https%3A%2F%2Fjpdynamicserp.github.io%2Fblog%2FD365FO%2520App%2520SCM%2Frestrict-so-edit%2F%29%0A*+Content+Source%3A+%5Barticles%2FD365FO+App+SCM%2Frestrict-so-edit.md%5D%28https%3A%2F%2Fgithub.com%2Fjpdynamicserp%2Fblob%2Fmain%2Farticles%2FD365FO%2520App%2520SCM%2Frestrict-so-edit.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
+        <a href="https://github.com/jpdynamicserp/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+807187ba-ce53-56f3-ba7e-0ad89f711251%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5B%E8%B2%A9%E5%A3%B2%E6%B3%A8%E6%96%87%E3%81%AB%E7%B4%90%E3%81%A5%E3%81%8F%E7%99%BA%E6%B3%A8%E6%9B%B8%E3%81%AE%E8%A3%BD%E5%93%81%E5%8F%97%E9%A0%98%E6%9B%B8%E3%81%AE%E3%82%AD%E3%83%A3%E3%83%B3%E3%82%BB%E3%83%AB%E6%96%B9%E6%B3%95%5D%28https%3A%2F%2Fjpdynamicserp.github.io%2Fblog%2FD365FO%2520App%2520SCM%2Fcancel-productreceipt-linkso%2F%29%0A*+Content+Source%3A+%5Barticles%2FD365FO+App+SCM%2Fcancel-productreceipt-linkso.md%5D%28https%3A%2F%2Fgithub.com%2Fjpdynamicserp%2Fblob%2Fmain%2Farticles%2FD365FO%2520App%2520SCM%2Fcancel-productreceipt-linkso.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
         
-        <a data-url="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/restrict-so-edit/" data-id="cl7renaus00080oqe0qqjffqq" class="article-share-link">共有</a>
+        <a data-url="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/cancel-productreceipt-linkso/" data-id="cl7renauo00040oqe89ni3gx9" class="article-share-link">共有</a>
       </div>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>こんにちは、Dynamics ERP サポートの木村です。<br>この記事では、請求後の販売注文の編集を制御するパラメータについてご案内いたします。  </p>
+        <p>こんにちは、Dynamics ERP サポートの木村です。<br>この記事では、販売注文に紐づく発注書の製品受領書のキャンセル方法についてご案内いたします。  </p>
 <span id="more"></span>
-<p>パラメータの適用方法、動作につきましては以下をご覧ください。  </p>
-<h2 id="請求後の販売注文の編集制御方法"><a href="#請求後の販売注文の編集制御方法" class="headerlink" title="請求後の販売注文の編集制御方法"></a>請求後の販売注文の編集制御方法</h2><h3 id="「請求済注文の安全レベル」を警告に変更した場合"><a href="#「請求済注文の安全レベル」を警告に変更した場合" class="headerlink" title="「請求済注文の安全レベル」を警告に変更した場合"></a>「請求済注文の安全レベル」を<strong>警告</strong>に変更した場合</h3><ol>
-<li>売掛金管理 &gt; 設定 &gt; 売掛金勘定パラメーターを開く</li>
-<li>配送日タブを開く</li>
-<li>「請求済注文の安全レベル」を<strong>ロック済</strong>に変更し、保存する<br><img src="/blog/D365FO%20App%20SCM/restrict-so-edit/restrict-so-edit_1.png"></li>
-<li>請求済の販売注文を開く  </br></br></li>
-</ol>
-<p><strong>-&gt; 明細行の追加などのボタンが非活性になる</strong><br><img src="/blog/D365FO%20App%20SCM/restrict-so-edit/restrict-so-edit_2.png"></p>
-<hr>
-<h3 id="「請求済注文の安全レベル」を警告に変更した場合-1"><a href="#「請求済注文の安全レベル」を警告に変更した場合-1" class="headerlink" title="「請求済注文の安全レベル」を警告に変更した場合"></a>「請求済注文の安全レベル」を<strong>警告</strong>に変更した場合</h3><p><img src="/blog/D365FO%20App%20SCM/restrict-so-edit/restrict-so-edit_3.png"></p>
+<h2 id="検証に用いた製品・バージョン"><a href="#検証に用いた製品・バージョン" class="headerlink" title="検証に用いた製品・バージョン:"></a>検証に用いた製品・バージョン:</h2><p>Dynamics 365 Finance and Operations<br>Application version: 10.0.25<br>Platform version: PU49 </p>
+<p>販売注文に紐づく発注書の製品受領書のキャンセル方法につきましては以下をご覧ください。  </p>
+<h2 id="販売注文に紐づく発注書の製品受領書のキャンセル方法"><a href="#販売注文に紐づく発注書の製品受領書のキャンセル方法" class="headerlink" title="販売注文に紐づく発注書の製品受領書のキャンセル方法"></a>販売注文に紐づく発注書の製品受領書のキャンセル方法</h2><p>下記エラーメッセージが表示された際のキャンセル方法についてご案内いたします。</p>
+<blockquote>
+<p>1.00 cannot be picked because only 0.00 is/are available from the inventory for item: 1000.</p>
+<p>日本語：品目1000の在庫から0.00しか利用できないため、1.00をピッキングできません。<br><img src="/blog/D365FO%20App%20SCM/cancel-productreceipt-linkso/cancel-productreceipt-linkso_1.png"></p>
+</blockquote>
 <ol>
-<li>明細行の追加などのボタンを押下する</li>
-<li>以下ダイアログが表示され、「はい」を押下する<br><img src="/blog/D365FO%20App%20SCM/restrict-so-edit/restrict-so-edit_4.png">  </br></br></li>
+<li><p>紐づく販売注文画面の Inventory &gt; Maintain &gt; Resrvation を押下する<br><img src="/blog/D365FO%20App%20SCM/cancel-productreceipt-linkso/cancel-productreceipt-linkso_2.png"></p>
+</li>
+<li><p>Reservation field を 1 から 0 に変更（引当数量をなくす）<br><img src="/blog/D365FO%20App%20SCM/cancel-productreceipt-linkso/cancel-productreceipt-linkso_3.png"><br>※変更後<br><img src="/blog/D365FO%20App%20SCM/cancel-productreceipt-linkso/cancel-productreceipt-linkso_4.png"></p>
+</li>
+<li><p>再度、発注書を開く</p>
+</li>
+<li><p>Receive &gt; Journals &gt; Product receipt を開く</p>
+</li>
+<li><p>製品受領書のキャンセルを実施<br><img src="/blog/D365FO%20App%20SCM/cancel-productreceipt-linkso/cancel-productreceipt-linkso_5.png"> </p>
+</li>
 </ol>
-<p><strong>-&gt; ダイアログは表示されるが、請求済の販売注文は編集可能となる</strong><br><img src="/blog/D365FO%20App%20SCM/restrict-so-edit/restrict-so-edit_5.png"></p>
-<hr>
-<h3 id="「請求済注文の安全レベル」をなしに変更した場合"><a href="#「請求済注文の安全レベル」をなしに変更した場合" class="headerlink" title="「請求済注文の安全レベル」をなしに変更した場合"></a>「請求済注文の安全レベル」を<strong>なし</strong>に変更した場合</h3><p><img src="/blog/D365FO%20App%20SCM/restrict-so-edit/restrict-so-edit_6.png"></br></br><br><strong>-&gt; 請求済の販売注文は常に編集可能</strong></p>
 <h2 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h2><hr>
-<p>以上、請求後の販売注文の編集を制御するパラメータについてご紹介いたしました。<br>請求した販売注文に対して編集を制御されたいなどの場合には、上記パラメータをご利用ください。</p>
+<p>以上、販売注文に紐づく発注書の製品受領書のキャンセル方法についてご案内いたしました。<br>また、設定内容や利用方法により上記の手順が適用できない可能性があることを予めご了承ください。</p>
 
       
       
@@ -150,10 +151,10 @@
     <footer class="article-footer">
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/Accounts-receivable-parameters/" rel="tag">Accounts receivable parameters</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/D365FO/" rel="tag">D365FO</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/Sales-order/" rel="tag">Sales order</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/D365FO/" rel="tag">D365FO</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/Purchase-order/" rel="tag">Purchase order</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/Sales-order/" rel="tag">Sales order</a></li></ul>
 
         
-        <a href="https://github.com/jpdynamicserp/edit/main/articles/D365FO%20App%20SCM/restrict-so-edit.md" class="article-github-edit-link" target="_blank" rel="noopener noreferrer">GitHub で編集</a>
+        <a href="https://github.com/jpdynamicserp/edit/main/articles/D365FO%20App%20SCM/cancel-productreceipt-linkso.md" class="article-github-edit-link" target="_blank" rel="noopener noreferrer">GitHub で編集</a>
         
     </footer>
   </div>
@@ -161,19 +162,10 @@
     
 <nav id="article-nav">
   
-    <a href="../../D365FO%20App%20FIN/show-depreciationprofile/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">次の記事</strong>
-      <div class="article-nav-title">
-        
-          固定資産の帳簿に減価償却プロファイルを表示する方法
-        
-      </div>
-    </a>
   
-  
-    <a href="../../D365FO%20Tech/how-to-check-necessary-role-and-license/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="../../D365FO%20Tech/environments/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">前の記事</strong>
-      <div class="article-nav-title">特定操作における必要なロールとライセンスをVisual Studioにて確認する方法</div>
+      <div class="article-nav-title">Dynamics 365 for Finance and Operations の環境ごとの違い</div>
     </a>
   
 </nav>
@@ -192,7 +184,7 @@
       <ul>
         
           <li>
-            <a href="../cancel-productreceipt-linkso/">販売注文に紐づく発注書の製品受領書のキャンセル方法</a>
+            <a href="">販売注文に紐づく発注書の製品受領書のキャンセル方法</a>
           </li>
         
           <li>
