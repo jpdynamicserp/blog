@@ -4,29 +4,27 @@
   <meta charset="utf-8">
   
   
-  <title>棚卸グループを使用した棚卸の実施方法 | Japan Dynamics ERP Support Blog</title>
+  <title>固定資産別表16シリーズの作成手順 | Japan Dynamics ERP Support Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="こんにちは、Dynamics ERP サポートの細野です。この記事では、棚卸グループを使用した棚卸の実施方法についてご案内いたします。">
+  <meta name="description" content="こんにちは、Dynamics ERP サポートチームの尾崎です。この記事では、Dynamics 365 Finance and Operations (D365FO) の日本向けローカライゼーション機能である固定資産別表 16 シリーズの作成に必要な設定手順を紹介します。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="棚卸グループを使用した棚卸の実施方法">
-<meta property="og:url" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/inventory-counting-group/index.html">
+<meta property="og:title" content="固定資産別表16シリーズの作成手順">
+<meta property="og:url" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/create-appended-table16-report/index.html">
 <meta property="og:site_name" content="Japan Dynamics ERP Support Blog">
-<meta property="og:description" content="こんにちは、Dynamics ERP サポートの細野です。この記事では、棚卸グループを使用した棚卸の実施方法についてご案内いたします。">
+<meta property="og:description" content="こんにちは、Dynamics ERP サポートチームの尾崎です。この記事では、Dynamics 365 Finance and Operations (D365FO) の日本向けローカライゼーション機能である固定資産別表 16 シリーズの作成に必要な設定手順を紹介します。">
 <meta property="og:locale" content="ja_JP">
-<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/inventory-counting-group/inventory-counting-group_1.png">
-<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/inventory-counting-group/inventory-counting-group_2.png">
-<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/inventory-counting-group/inventory-counting-group_3.png">
-<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/inventory-counting-group/inventory-counting-group_4.png">
-<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/inventory-counting-group/inventory-counting-group_5.png">
-<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/inventory-counting-group/inventory-counting-group_6.png">
-<meta property="article:published_time" content="2022-06-30T15:00:00.000Z">
-<meta property="article:modified_time" content="2022-09-09T00:44:05.369Z">
+<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/create-appended-table16-report/CreateAppendedTable16Report1.png">
+<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/create-appended-table16-report/CreateAppendedTable16Report2.png">
+<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/create-appended-table16-report/CreateAppendedTable16Report3.png">
+<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/create-appended-table16-report/CreateAppendedTable16Report4.png">
+<meta property="article:published_time" content="2022-09-08T15:00:00.000Z">
+<meta property="article:modified_time" content="2022-09-09T00:44:05.361Z">
 <meta property="article:author" content="Dynamics ERP Support Japan">
 <meta property="article:tag" content="D365FO">
-<meta property="article:tag" content="Inventory management">
-<meta property="article:tag" content="Inventory counting">
+<meta property="article:tag" content="Japan">
+<meta property="article:tag" content="Appended table 16 series">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/inventory-counting-group/inventory-counting-group_1.png">
+<meta name="twitter:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/create-appended-table16-report/CreateAppendedTable16Report1.png">
   
     <link rel="alternate" href="../../atom.xml" title="Japan Dynamics ERP Support Blog" type="application/atom+xml">
   
@@ -88,7 +86,7 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-D365FO App SCM/inventory-counting-group" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-D365FO App FIN/create-appended-table16-report" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
     
@@ -97,7 +95,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      棚卸グループを使用した棚卸の実施方法
+      固定資産別表16シリーズの作成手順
     </h1>
   
 
@@ -105,61 +103,58 @@
       <div class="article-share">
         Last Update: 
         <a href="" class="article-date-single">
-  <time datetime="2022-06-30T15:00:00.000Z" itemprop="datePublished">2022-07-01</time>
+  <time datetime="2022-09-08T15:00:00.000Z" itemprop="datePublished">2022-09-09</time>
 </a>
         
         
-        <a href="https://github.com/jpdynamicserp/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+2242ee09-0313-5d17-80a7-4f2db4ed73b4%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5B%E6%A3%9A%E5%8D%B8%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%9F%E6%A3%9A%E5%8D%B8%E3%81%AE%E5%AE%9F%E6%96%BD%E6%96%B9%E6%B3%95%5D%28https%3A%2F%2Fjpdynamicserp.github.io%2Fblog%2FD365FO%2520App%2520SCM%2Finventory-counting-group%2F%29%0A*+Content+Source%3A+%5Barticles%2FD365FO+App+SCM%2Finventory-counting-group.md%5D%28https%3A%2F%2Fgithub.com%2Fjpdynamicserp%2Fblob%2Fmain%2Farticles%2FD365FO%2520App%2520SCM%2Finventory-counting-group.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
+        <a href="https://github.com/jpdynamicserp/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+3e936044-3067-5bcd-ad08-59c461169884%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5B%E5%9B%BA%E5%AE%9A%E8%B3%87%E7%94%A3%E5%88%A5%E8%A1%A816%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA%E3%81%AE%E4%BD%9C%E6%88%90%E6%89%8B%E9%A0%86%5D%28https%3A%2F%2Fjpdynamicserp.github.io%2Fblog%2FD365FO%2520App%2520FIN%2Fcreate-appended-table16-report%2F%29%0A*+Content+Source%3A+%5Barticles%2FD365FO+App+FIN%2Fcreate-appended-table16-report.md%5D%28https%3A%2F%2Fgithub.com%2Fjpdynamicserp%2Fblob%2Fmain%2Farticles%2FD365FO%2520App%2520FIN%2Fcreate-appended-table16-report.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
         
-        <a data-url="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/inventory-counting-group/" data-id="cl7tr9u1600080omr30lyf3e7" class="article-share-link">共有</a>
+        <a data-url="https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/create-appended-table16-report/" data-id="cl7tr9u0y00010omr2kvqd0qw" class="article-share-link">共有</a>
       </div>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>こんにちは、Dynamics ERP サポートの細野です。<br>この記事では、棚卸グループを使用した棚卸の実施方法についてご案内いたします。  </p>
+        <p>こんにちは、Dynamics ERP サポートチームの尾崎です。<br>この記事では、Dynamics 365 Finance and Operations (D365FO) の日本向けローカライゼーション機能である固定資産別表 16 シリーズの作成に必要な設定手順を紹介します。  </p>
 <span id="more"></span>
-<p>棚卸グループを活用することにより、在庫棚卸仕訳帳において複数の品目に対する明細を簡単に作成することができます。<br>具体的な操作手順は以下の通りです。  </p>
-<h2 id="操作手順"><a href="#操作手順" class="headerlink" title="操作手順"></a>操作手順</h2><h3 id="棚卸グループの登録方法"><a href="#棚卸グループの登録方法" class="headerlink" title="棚卸グループの登録方法"></a>棚卸グループの登録方法</h3><ol>
-<li>在庫管理 &gt; 設定 &gt; 在庫 &gt; 棚卸グループ と遷移する</li>
-<li>「新規」を選択する</li>
-<li>「棚卸グループ」「名前」を指定する</li>
-<li>「棚卸コード」を選択する</li>
-<li>「保存」を選択する<br><img src="/blog/D365FO%20App%20SCM/inventory-counting-group/inventory-counting-group_1.png"></li>
+<h2 id="検証に用いた製品・バージョン"><a href="#検証に用いた製品・バージョン" class="headerlink" title="検証に用いた製品・バージョン:"></a>検証に用いた製品・バージョン:</h2><p>Dynamics 365 Finance and Operations<br>Application version: 10.0.25<br>Platform version: PU49 </p>
+<p>会計帳簿と税務上想定される金額の間で減価償却額に差額が発生した場合の取り扱いを規定します。手順は以下のようになります。</p>
+<ol>
+<li>固定資産＞設定＞減価償却決済ルールを開く</li>
+<li>初回起動時には”既定のルールをインポートしますか？”というメッセージが表示されるので OK を選択</li>
+<li>インポートに成功すると設定画面に表示</li>
 </ol>
-<hr>
-<h3 id="棚卸グループの割当"><a href="#棚卸グループの割当" class="headerlink" title="棚卸グループの割当"></a>棚卸グループの割当</h3><ol>
-<li><p>製品情報管理 &gt; 製品 &gt; リリース済製品 と遷移する</p>
-</li>
-<li><p>一覧で、棚卸ポリシーを設定する製品の品目を選択する</p>
-<p> 追跡される在庫から品目を選択する必要があります。 非在庫製品はカウントできません。<br><img src="/blog/D365FO%20App%20SCM/inventory-counting-group/inventory-counting-group_2.png"></p>
-</li>
-<li><p>編集 を選択する</p>
-</li>
-<li><p>在庫の管理 セクション を展開する</p>
-</li>
-<li><p>棚卸グループ フィールドのドロップダウン メニューで、以前に作成した棚卸グループを選択する<br><img src="/blog/D365FO%20App%20SCM/inventory-counting-group/inventory-counting-group_3.png"></p>
-</li>
-<li><p>保存 を選択する</p>
-</li>
+<p><img src="/blog/D365FO%20App%20FIN/create-appended-table16-report/CreateAppendedTable16Report1.png"></p>
+<h1 id="帳簿の設定"><a href="#帳簿の設定" class="headerlink" title="帳簿の設定"></a>帳簿の設定</h1><p>固定資産帳簿にて会計帳簿と税務帳簿の設定を行います。手順は以下のようになります。</p>
+<ol>
+<li>固定資産＞設定＞帳簿を開く</li>
+<li>転記階層＝税申告の帳簿を選択し、参照される帳簿に税務帳簿と紐づけたい転記階層＝現行の会計帳簿を選択</li>
 </ol>
-<hr>
-<h3 id="在庫棚卸仕訳帳での操作手順"><a href="#在庫棚卸仕訳帳での操作手順" class="headerlink" title="在庫棚卸仕訳帳での操作手順"></a>在庫棚卸仕訳帳での操作手順</h3><ol>
-<li><p>在庫管理 &gt; 仕訳入力 &gt; 品目棚卸 &gt; 棚卸 と遷移する</p>
-</li>
-<li><p>「新規」を選択し、新規に在庫棚卸仕訳帳を作成する</p>
-</li>
-<li><p>   在庫棚卸仕訳帳にて「行の作成」を選択し、「手持在庫/品目/期限切れのバッチ」のいずれかを選択する<br><img src="/blog/D365FO%20App%20SCM/inventory-counting-group/inventory-counting-group_4.png"></p>
-</li>
-<li><p>「手持在庫」を選択した場合、下記画像のダイアログが表示される</p>
-</li>
-<li><p>ダイアログにて棚卸グループを指定し、OKを選択する<br><img src="/blog/D365FO%20App%20SCM/inventory-counting-group/inventory-counting-group_5.png"></p>
-</li>
-<li><p>下記画像のように棚卸グループに設定されている品目など、上記ダイアログの条件に該当する品目に対して明細行が追加される<br><img src="/blog/D365FO%20App%20SCM/inventory-counting-group/inventory-counting-group_6.png"></p>
-</li>
+<p><img src="/blog/D365FO%20App%20FIN/create-appended-table16-report/CreateAppendedTable16Report2.png"></p>
+<h1 id="派生帳簿の設定"><a href="#派生帳簿の設定" class="headerlink" title="派生帳簿の設定"></a>派生帳簿の設定</h1><p>固定資産帳簿にて派生帳簿を設定し、会計帳簿を転記した際に自動で税務帳簿も転記されるように設定を行います。この設定は任意です。手順は以下のようになります。</p>
+<ol>
+<li>固定資産＞設定＞帳簿を開く</li>
+<li>派生帳簿を開き、税務帳簿の設定を追加</li>
 </ol>
-<h2 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h2><hr>
-<p>以上、棚卸グループを使用した棚卸の実施方法についてご紹介いたしました。  </p>
-<p>参考：<br><a target="_blank" rel="noopener" href="https://docs.microsoft.com/ja-jp/dynamics365/supply-chain/inventory/tasks/define-inventory-counting-processes#create-a-counting-group">https://docs.microsoft.com/ja-jp/dynamics365/supply-chain/inventory/tasks/define-inventory-counting-processes#create-a-counting-group</a></p>
+<p><img src="/blog/D365FO%20App%20FIN/create-appended-table16-report/CreateAppendedTable16Report3.png"></p>
+<h1 id="固定資産の作成、取得、減価償却の転記"><a href="#固定資産の作成、取得、減価償却の転記" class="headerlink" title="固定資産の作成、取得、減価償却の転記"></a>固定資産の作成、取得、減価償却の転記</h1><p>固定資産の作成と取得、減価償却費の転記を行います。派生帳簿の設定を行っている場合には会計帳簿を転記することで税務帳簿まで転記することが可能です。</p>
+<h1 id="償却超過-償却不足額の決済"><a href="#償却超過-償却不足額の決済" class="headerlink" title="償却超過/償却不足額の決済"></a>償却超過/償却不足額の決済</h1><p>帳簿間の取得金額・償却金額の差異を計算します。</p>
+<ol>
+<li>固定資産＞定期処理のタスク＞償却超過/償却不足額の決済を開く</li>
+<li>+新規ボタンを押下し、パラメーターとレコードを選択して実行<ol>
+<li>パラメーターの終了日は会計年度の終了日を選択</li>
+</ol>
+</li>
+<li>データの取得に成功すると一覧に表示されるので、決済結果の表示から結果を確認</li>
+<li>決済結果に問題がなければそのまま転記を実行</li>
+</ol>
+<p><img src="/blog/D365FO%20App%20FIN/create-appended-table16-report/CreateAppendedTable16Report4.png"></p>
+<h1 id="別表-16-の出力"><a href="#別表-16-の出力" class="headerlink" title="別表 16 の出力"></a>別表 16 の出力</h1><p>決済完了後、別表16を出力します。別表16-1レポートの出力例は以下のようになります。</p>
+<ol>
+<li>固定資産＞照会およびレポート＞法人税別表 16 シリーズ＞別表 1 レポートを起動</li>
+<li>パラメーターとレコードを選択して実行</li>
+</ol>
+<p>(参考URL)<br><a target="_blank" rel="noopener" href="https://docs.microsoft.com/ja-jp/dynamics365/finance/fixed-assets/derived-books">派生帳簿</a><br><a target="_blank" rel="noopener" href="https://docs.microsoft.com/ja-jp/dynamics365/finance/fixed-assets/post-derived-value-models">派生帳簿を転記する</a><br><a target="_blank" rel="noopener" href="https://docs.microsoft.com/ja-jp/dynamics365/finance/localizations/tasks/periodic-settlement-over-under-depreciation">償却超過額/償却不足額の定期決済</a><br><a target="_blank" rel="noopener" href="https://docs.microsoft.com/ja-jp/dynamicsax-2012/appuser-itpro/jpn-generate-fixed-assets-reports">(JPN) 固定資産レポートの生成</a></p>
+<h1 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h1><p>以上、固定資産別表 16 シリーズの事前設定と出力の手順についてご紹介しました。<br>より詳細な情報が必要な場合、弊社テクニカルサポート、Customer Success Account Manager (CSAM), Customer Engineer (CE) までお問い合わせください。</p>
 
       
       
@@ -173,10 +168,10 @@
     <footer class="article-footer">
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/D365FO/" rel="tag">D365FO</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/Inventory-counting/" rel="tag">Inventory counting</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/Inventory-management/" rel="tag">Inventory management</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/Appended-table-16-series/" rel="tag">Appended table 16 series</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/D365FO/" rel="tag">D365FO</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/Japan/" rel="tag">Japan</a></li></ul>
 
         
-        <a href="https://github.com/jpdynamicserp/edit/main/articles/D365FO%20App%20SCM/inventory-counting-group.md" class="article-github-edit-link" target="_blank" rel="noopener noreferrer">GitHub で編集</a>
+        <a href="https://github.com/jpdynamicserp/edit/main/articles/D365FO%20App%20FIN/create-appended-table16-report.md" class="article-github-edit-link" target="_blank" rel="noopener noreferrer">GitHub で編集</a>
         
     </footer>
   </div>
@@ -184,19 +179,10 @@
     
 <nav id="article-nav">
   
-    <a href="../../D365FO%20App%20FIN/create-consolidated-invoice/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">次の記事</strong>
-      <div class="article-nav-title">
-        
-          月次締め請求書の作成手順
-        
-      </div>
-    </a>
   
-  
-    <a href="../../D365FO%20Tech/submit-an-incident-in-lcs/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="../../D365BC%20Tech/how-to-check-table-data-d365bc/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">前の記事</strong>
-      <div class="article-nav-title">LCSにてDynamics 365 Finance and Operationsに関するサポートリクエストを起票する方法</div>
+      <div class="article-nav-title">D365BCの画面上でテーブルデータを確認する方法</div>
     </a>
   
 </nav>
@@ -215,7 +201,7 @@
       <ul>
         
           <li>
-            <a href="../../D365FO%20App%20FIN/create-appended-table16-report/">固定資産別表16シリーズの作成手順</a>
+            <a href="">固定資産別表16シリーズの作成手順</a>
           </li>
         
           <li>
@@ -223,7 +209,7 @@
           </li>
         
           <li>
-            <a href="../cancel-productreceipt-linkso/">販売注文に紐づく発注書の製品受領書のキャンセル方法</a>
+            <a href="../../D365FO%20App%20SCM/cancel-productreceipt-linkso/">販売注文に紐づく発注書の製品受領書のキャンセル方法</a>
           </li>
         
           <li>
