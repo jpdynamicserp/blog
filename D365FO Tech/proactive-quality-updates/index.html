@@ -4,19 +4,20 @@
   <meta charset="utf-8">
   
   
-  <title>D365FOのアップデートに関する注意事項 | Japan Dynamics ERP Support Blog</title>
+  <title>Dynamics 365 for Finance and Operations のプロアクティブな品質更新プログラムの適用について | Japan Dynamics ERP Support Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="こんにちは、Dynamics ERP サポートチームの今岡です。この記事では、Dynamics 365 Finance and Operations (D365FO) のアップデートに関する注意事項を紹介します。">
+  <meta name="description" content="こんにちは、日本マイクロソフトのDynamics サポートチームです。この記事では、 Dynamics 365 for Finance and Operations のプロアクティブな品質更新プログラムの適用についてご案内します。 品質更新プログラム (Quality update program) は修正プログラム (Hotfix) の累積的なものとなり、今まではお客様が手動でサンドボックス環境">
 <meta property="og:type" content="article">
-<meta property="og:title" content="D365FOのアップデートに関する注意事項">
-<meta property="og:url" content="https://jpdynamicserp.github.io/blog/D365FO%20Tech/notes-on-updating-d365fo/index.html">
+<meta property="og:title" content="Dynamics 365 for Finance and Operations のプロアクティブな品質更新プログラムの適用について">
+<meta property="og:url" content="https://jpdynamicserp.github.io/blog/D365FO%20Tech/proactive-quality-updates/index.html">
 <meta property="og:site_name" content="Japan Dynamics ERP Support Blog">
-<meta property="og:description" content="こんにちは、Dynamics ERP サポートチームの今岡です。この記事では、Dynamics 365 Finance and Operations (D365FO) のアップデートに関する注意事項を紹介します。">
+<meta property="og:description" content="こんにちは、日本マイクロソフトのDynamics サポートチームです。この記事では、 Dynamics 365 for Finance and Operations のプロアクティブな品質更新プログラムの適用についてご案内します。 品質更新プログラム (Quality update program) は修正プログラム (Hotfix) の累積的なものとなり、今まではお客様が手動でサンドボックス環境">
 <meta property="og:locale" content="ja_JP">
-<meta property="article:published_time" content="2022-03-03T15:00:00.000Z">
+<meta property="article:published_time" content="2022-09-14T15:00:00.000Z">
 <meta property="article:modified_time" content="2022-09-15T06:32:37.982Z">
 <meta property="article:author" content="Dynamics ERP Support Japan">
-<meta property="article:tag" content="Information">
+<meta property="article:tag" content="tips">
+<meta property="article:tag" content="D365FO">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="../../atom.xml" title="Japan Dynamics ERP Support Blog" type="application/atom+xml">
@@ -79,7 +80,7 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-D365FO Tech/notes-on-updating-d365fo" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-D365FO Tech/proactive-quality-updates" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
     
@@ -88,7 +89,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      D365FOのアップデートに関する注意事項
+      Dynamics 365 for Finance and Operations のプロアクティブな品質更新プログラムの適用について
     </h1>
   
 
@@ -96,47 +97,39 @@
       <div class="article-share">
         Last Update: 
         <a href="" class="article-date-single">
-  <time datetime="2022-03-03T15:00:00.000Z" itemprop="datePublished">2022-03-04</time>
+  <time datetime="2022-09-14T15:00:00.000Z" itemprop="datePublished">2022-09-15</time>
 </a>
         
         
-        <a href="https://github.com/jpdynamicserp/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+e957fd08-4b7d-5be1-a0ae-64ea890c6904%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5BD365FO%E3%81%AE%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A0%85%5D%28https%3A%2F%2Fjpdynamicserp.github.io%2Fblog%2FD365FO%2520Tech%2Fnotes-on-updating-d365fo%2F%29%0A*+Content+Source%3A+%5Barticles%2FD365FO+Tech%2Fnotes-on-updating-d365fo.md%5D%28https%3A%2F%2Fgithub.com%2Fjpdynamicserp%2Fblob%2Fmain%2Farticles%2FD365FO%2520Tech%2Fnotes-on-updating-d365fo.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
+        <a href="https://github.com/jpdynamicserp/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+975ce449-fb8d-5aff-bc91-7265bb3660b5%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5BDynamics+365+for+Finance+and+Operations+%E3%81%AE%E3%83%97%E3%83%AD%E3%82%A2%E3%82%AF%E3%83%86%E3%82%A3%E3%83%96%E3%81%AA%E5%93%81%E8%B3%AA%E6%9B%B4%E6%96%B0%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E3%81%AE%E9%81%A9%E7%94%A8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%5D%28https%3A%2F%2Fjpdynamicserp.github.io%2Fblog%2FD365FO%2520Tech%2Fproactive-quality-updates%2F%29%0A*+Content+Source%3A+%5Barticles%2FD365FO+Tech%2Fproactive-quality-updates.md%5D%28https%3A%2F%2Fgithub.com%2Fjpdynamicserp%2Fblob%2Fmain%2Farticles%2FD365FO%2520Tech%2Fproactive-quality-updates.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
         
-        <a data-url="https://jpdynamicserp.github.io/blog/D365FO%20Tech/notes-on-updating-d365fo/" data-id="cl82od78000170mobcv9n67ps" class="article-share-link">共有</a>
+        <a data-url="https://jpdynamicserp.github.io/blog/D365FO%20Tech/proactive-quality-updates/" data-id="cl82od783001e0mob7v8x39d4" class="article-share-link">共有</a>
       </div>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>こんにちは、Dynamics ERP サポートチームの今岡です。<br>この記事では、Dynamics 365 Finance and Operations (D365FO) のアップデートに関する注意事項を紹介します。  </p>
+        <p>こんにちは、日本マイクロソフトのDynamics サポートチームです。<br>この記事では、 Dynamics 365 for Finance and Operations のプロアクティブな品質更新プログラムの適用についてご案内します。</p>
+<p>品質更新プログラム (Quality update program) は修正プログラム (Hotfix) の累積的なものとなり、今まではお客様が手動でサンドボックス環境、本番環境に適用して頂く必要がございましたが、今後はマイクロソフトにより自動で適用致します。<br>こちらの変更は2022 年 9 月末または 10 月より段階的にサンドボックス環境に対して開始される予定となっており、2022 年 9 月中には対象環境のスケジュールに対してメールにて通知をさせて頂きます。</p>
 <span id="more"></span>
-
-
-
-<p>D365FOのサービスアップデートにつきまして、以下のドキュメントに記載されていますように、<br>最大3つまでの更新を続けて一時停止することができます。  </p>
-<p><a target="_blank" rel="noopener" href="https://docs.microsoft.com/ja-jp/dynamics365/fin-ops-core/fin-ops/get-started/one-version#can-the-update-be-delayed-what-is-the-policy">更新を遅らせることができますか、ポリシーとは何ですか。</a></p>
-<p>４回以上の一時停止は、<strong>いかなる理由でも実施できません</strong>のでご注意ください。<br>本番環境は、サービス終了する前にアップデートして頂くことで、常にサポートされている環境を維持頂き<br>何らかの理由で、サービス終了までにアップデートできなかった場合も、3つの一時停止の範囲内で最新のサービスアップデートをご適用ください。  </p>
-<p>ただし、４回目のアップデート期日前に、本番環境に手動で最新サービスアップデートを適用した場合は、LCSから一時停止が可能となります。<br>遅くとも自動適用予定日の１週間前には手動でご適用ください。  </p>
-<h1 id="「サービス終了」の期日"><a href="#「サービス終了」の期日" class="headerlink" title="「サービス終了」の期日"></a>「サービス終了」の期日</h1><p>各サービスアップデートの「サービス終了」期日は以下のドキュメントでご確認頂けます。<br><a target="_blank" rel="noopener" href="https://docs.microsoft.com/ja-jp/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-releases">サービス更新の可用性</a></p>
-<h1 id="サービス終了前にアップデートを適用するメリット"><a href="#サービス終了前にアップデートを適用するメリット" class="headerlink" title="サービス終了前にアップデートを適用するメリット"></a>サービス終了前にアップデートを適用するメリット</h1><p>サービス終了前にアップデート頂くことで、常にサポートされている環境を維持でき、以下のようなメリットもございます。  </p>
+<hr>
+<p>下記公開情報を基にご説明いたします。各項目について公開情報内にも詳細を記載しておりますのでご参照ください。<br><a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/quality-updates?context=/dynamics365/context/finance">https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/quality-updates?context=%2Fdynamics365%2Fcontext%2Ffinance</a><br><a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/plannedmaintenance-selfservice#what-is-the-schedule-for-proactive-quality-updates">https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/plannedmaintenance-selfservice#what-is-the-schedule-for-proactive-quality-updates</a></p>
+<h2 id="今まで"><a href="#今まで" class="headerlink" title="今まで"></a>今まで</h2><p>今までは、セキュリティ、プライバシー、信頼性、可用性、パフォーマンスなどの基本的な要素に対する修正プログラム (Hotfix) の累積である品質更新プログラム (Quality update program) は、LCS にて公開されるごとに、以下のブログの手順よりお客様が手動でサンドボックス環境、本番環境に適用して頂く必要がございました。<br><a href="https://jpdynamicserp.github.io/blog/D365FO%20Tech/apply-quality-update-d365fo/">https://jpdynamicserp.github.io/blog/D365FO%20Tech/apply-quality-update-d365fo/</a><br>そのため、公開された品質更新プログラムを手動で適用していない環境では、修正プログラムにて対処されているはずの問題が発生するということが発生しておりました。</p>
+<h2 id="今後"><a href="#今後" class="headerlink" title="今後"></a>今後</h2><p>今回の変更では、品質更新プログラムを自動でマイクロソフトにより環境に適用致します。これにより常に最新の修正を含んだ状態の環境をご利用して頂くことになり、より高い品質を提供することができます。<br>また、今までは、品質更新プログラムの手動適用の実績の有無により、例えば、同じバージョン10.0.28 の環境でも異なるビルド番号 (マイナーバージョン) の環境が混在していましたが、こちらの変更により基本的には10.0.28 の環境は全て同じビルド番号 (マイナーバージョン) となり、問題の発見とソリューションの提供が早くなります。</p>
+<h2 id="重要事項"><a href="#重要事項" class="headerlink" title="重要事項"></a>重要事項</h2><p>品質更新プログラムの自動適用に関する重要事項を以下にまとめております。</p>
 <ol>
-<li>問題発生時に調査及びトラブルシューティングを依頼可能です。  </li>
-<li>Criticalな問題が発見された場合、新しいサービスアップデートを適用することなく、Quality Updateから修正を入手可能です。  </li>
-</ol>
-<h1 id="「サービス終了」した環境の制約"><a href="#「サービス終了」した環境の制約" class="headerlink" title="「サービス終了」した環境の制約"></a>「サービス終了」した環境の制約</h1><p>「サービス終了」した環境では多くの制約が発生しますのでご注意ください。  </p>
-<ol>
-<li>Microsoft は、サービスの終了に達しているバージョンに対して、修正プログラムをリリースしません。  </li>
-<li>3つのサービス更新より古いバージョンで発生した問題の調査とトラブルシューティングを行いません。  </li>
-<li>以下のLCS機能が使用不可となる可能性がございます。  <ul>
-<li>メンテナンス モードの有効化  </li>
-<li>環境または環境間でデータベースを移動するために提供されるすべての機能を使用する  </li>
-<li>SQL Server データベースへのファイアウォール アクセスの有効化  </li>
-<li>RSAT 証明書のダウンロード  </li>
-<li>RSAT 証明書を再生成する  </li>
-</ul>
+<li><p><strong>自動適用の対象の段階的な拡大</strong><br>まずは、2022 年 9 月末または 10 月より段階的にサンドボックス環境に対して開始される予定となっており、2022 年 9 月中にはスケジュールに対してメールにて通知をさせて頂きます。<br>正常に自動適用が完了していく環境の割合が増えたことを確認後、本番環境への自動適用が開始される予定です。<br>現時点では本番環境は2022 年 11 月以降に自動適用が開始される予定です。</p>
+</li>
+<li><p><strong>Near-zero downtime updating (ゼロに近いダウンタイム更新)</strong><br>以下の公開資料の最小限のダウンタイムで自動適用は実施されますので、自動適用時の影響は最小限なものとなります。<br><a target="_blank" rel="noopener" href="https://docs.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/deployment/plannedmaintenance-selfservice#what-does-near-zero-downtime-maintenance-mean">https://docs.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/deployment/plannedmaintenance-selfservice#what-does-near-zero-downtime-maintenance-mean</a><br>以下の公開資料の優先順位に基づくバッチ スケジューリングにより、自動適用の際のバッチジョブ実行を対策することができ、バッチのスケジューリングと処理は自動適用直後に復旧し、再開されます。<br><a target="_blank" rel="noopener" href="https://docs.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/sysadmin/priority-based-batch-scheduling">https://docs.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/sysadmin/priority-based-batch-scheduling</a><br><a target="_blank" rel="noopener" href="https://docs.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/deployment/plannedmaintenance-selfservice#priority-based-scheduling">https://docs.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/deployment/plannedmaintenance-selfservice#priority-based-scheduling</a></p>
+</li>
+<li><p><strong>自動適用スケジュールの公開</strong><br>以下の公開資料の通り、各リージョンごとに自動適用が実施される4 日間のウィンドウが決定され、5 営業日前にはメールにて通知いたします。そのウィンドウ内にて自動適用を実施致します。<br><a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/plannedmaintenance-selfservice#what-is-the-schedule-for-proactive-quality-updates">https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/plannedmaintenance-selfservice#what-is-the-schedule-for-proactive-quality-updates</a></p>
 </li>
 </ol>
-<p>(参考URL)<br><a target="_blank" rel="noopener" href="https://docs.microsoft.com/ja-jp/dynamics365/fin-ops-core/fin-ops/get-started/one-version#what-does-end-of-service-mean">サービスの終了にはどのような意味がありますか?</a><br><a target="_blank" rel="noopener" href="https://docs.microsoft.com/ja-jp/dynamics365/fin-ops-core/fin-ops/get-started/one-version#what-happens-to-an-environment-that-is-running-a-finance-and-operations-version-that-is-no-longer-supported">サポートされなくなった Finance and Operations バージョンを実行している環境はどうなりますか？</a>  </p>
-<h1 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h1><p>より詳細な情報が必要な場合、弊社テクニカルサポート、Customer Success Account Manager (CSAM), Customer Engineer (CE) までお問い合わせください。  </p>
+<ol start="4">
+<li><strong>Dark hours (暗い時間帯)</strong><br>以下の公開資料の通り、環境が配置されているリージョンごとに、深夜から早朝のDark hours (暗い時間帯、営業時間外)が定義されており、そのDark hours 内で自動適用が実施されますので、自動適用時の環境のご利用に対する影響は最小限となります。<br>日本リージョンは 1:00 AM ~ 7:00 AM (日本時間) となります。<br><a target="_blank" rel="noopener" href="https://docs.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/deployment/plannedmaintenance-selfservice#what-are-the-planned-maintenance-windows">https://docs.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/deployment/plannedmaintenance-selfservice#what-are-the-planned-maintenance-windows</a></li>
+</ol>
+<p>また、以下の公開資料の下部にQ&amp;Aがございますので、こちらもご確認して頂けますと幸いでございます。<br><a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/quality-updates?context=/dynamics365/context/finance">https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/quality-updates?context=%2Fdynamics365%2Fcontext%2Ffinance</a></p>
+<hr>
+<h2 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h2><p>以上、 Dynamics 365 for Finance and Operations のプロアクティブな品質更新プログラムの適用についてご紹介しました。<br>もし、お困りのこと等がございましたら、弊社までお問い合わせ頂きますようお願いいたします。</p>
 
       
       
@@ -150,10 +143,10 @@
     <footer class="article-footer">
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/Information/" rel="tag">Information</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/D365FO/" rel="tag">D365FO</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/tips/" rel="tag">tips</a></li></ul>
 
         
-        <a href="https://github.com/jpdynamicserp/edit/main/articles/D365FO%20Tech/notes-on-updating-d365fo.md" class="article-github-edit-link" target="_blank" rel="noopener noreferrer">GitHub で編集</a>
+        <a href="https://github.com/jpdynamicserp/edit/main/articles/D365FO%20Tech/proactive-quality-updates.md" class="article-github-edit-link" target="_blank" rel="noopener noreferrer">GitHub で編集</a>
         
     </footer>
   </div>
@@ -161,19 +154,10 @@
     
 <nav id="article-nav">
   
-    <a href="../temporary-change-language-d365fo/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">次の記事</strong>
-      <div class="article-nav-title">
-        
-          D365FOで使用する言語を一時的に変更する方法
-        
-      </div>
-    </a>
   
-  
-    <a href="../../information/infomation/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="../../D365FO%20App%20FIN/create-appended-table16-report/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">前の記事</strong>
-      <div class="article-nav-title">Japan Dynamics ERP Support Blog 開設のお知らせ</div>
+      <div class="article-nav-title">固定資産別表16シリーズの作成手順</div>
     </a>
   
 </nav>
@@ -192,7 +176,7 @@
       <ul>
         
           <li>
-            <a href="../proactive-quality-updates/">Dynamics 365 for Finance and Operations のプロアクティブな品質更新プログラムの適用について</a>
+            <a href="">Dynamics 365 for Finance and Operations のプロアクティブな品質更新プログラムの適用について</a>
           </li>
         
           <li>
