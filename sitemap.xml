@@ -30,6 +30,13 @@
   </url>
   
   <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-use-tablebrowser-d365fo/</loc>
+    
+    <lastmod>2022-09-27</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/no-one-can-access-LCS-project/</loc>
     
     <lastmod>2022-09-27</lastmod>
@@ -79,13 +86,6 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-use-tablebrowser-d365fo/</loc>
-    
-    <lastmod>2022-09-27</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-set-related-tables-for-office-addin-using-word/</loc>
     
     <lastmod>2022-09-27</lastmod>
@@ -114,20 +114,6 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/fo-extend-trial/</loc>
-    
-    <lastmod>2022-09-27</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-check-necessary-role-and-license/</loc>
-    
-    <lastmod>2022-09-27</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/database-just-in-time-jit-access/</loc>
     
     <lastmod>2022-09-27</lastmod>
@@ -143,6 +129,20 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/export-to-data-lake-yammer-group/</loc>
+    
+    <lastmod>2022-09-27</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/fo-extend-trial/</loc>
+    
+    <lastmod>2022-09-27</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-check-necessary-role-and-license/</loc>
     
     <lastmod>2022-09-27</lastmod>
     
@@ -191,13 +191,6 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/how-to-create-purchase-order/</loc>
-    
-    <lastmod>2022-09-27</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/cancel-productreceipt-linkso/</loc>
     
     <lastmod>2022-09-27</lastmod>
@@ -205,7 +198,7 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/lumpsum-asset-depreciation-issue/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/how-to-create-purchase-order/</loc>
     
     <lastmod>2022-09-27</lastmod>
     
@@ -213,6 +206,13 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/show-depreciationprofile/</loc>
+    
+    <lastmod>2022-09-27</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/lumpsum-asset-depreciation-issue/</loc>
     
     <lastmod>2022-09-27</lastmod>
     
@@ -233,20 +233,6 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/create-form26-report/</loc>
-    
-    <lastmod>2022-09-27</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/get-environment-id/</loc>
-    
-    <lastmod>2022-09-27</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/create-appended-table16-report/</loc>
     
     <lastmod>2022-09-27</lastmod>
@@ -255,6 +241,13 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/create-consolidated-invoice/</loc>
+    
+    <lastmod>2022-09-27</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/create-form26-report/</loc>
     
     <lastmod>2022-09-27</lastmod>
     
