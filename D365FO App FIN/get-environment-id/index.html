@@ -4,22 +4,27 @@
   <meta charset="utf-8">
   
   
-  <title>Power BI.com integration と Power BI Embedded の違いについて | Japan Dynamics ERP Support Blog</title>
+  <title>環境名・環境IDの取得方法 | Japan Dynamics ERP Support Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="こんにちは、日本マイクロソフトの岡田です。Dynamics 365 Finance and Operations (以下D365FO) では、Power BI レポートの形式でデータを表示、及び参照することが可能です。D365FO のデータを Power BI レポートで表示、参照する機能は、主に2つございますが、この記事ではその2つの違いについてご紹介させていただきます。">
+  <meta name="description" content="こんにちは、Dynamics ERP サポートチームの西田です。私たちサポートチームにお問い合わせいただいた際、調査のために”環境名・環境IDをお教えください”とご依頼させていただくことがあります。この記事では、環境名・環境ID取得についてご紹介します。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Power BI.com integration と Power BI Embedded の違いについて">
-<meta property="og:url" content="https://jpdynamicserp.github.io/blog/D365FO%20Tech/powerbi-feature-difference/index.html">
+<meta property="og:title" content="環境名・環境IDの取得方法">
+<meta property="og:url" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/get-environment-id/index.html">
 <meta property="og:site_name" content="Japan Dynamics ERP Support Blog">
-<meta property="og:description" content="こんにちは、日本マイクロソフトの岡田です。Dynamics 365 Finance and Operations (以下D365FO) では、Power BI レポートの形式でデータを表示、及び参照することが可能です。D365FO のデータを Power BI レポートで表示、参照する機能は、主に2つございますが、この記事ではその2つの違いについてご紹介させていただきます。">
+<meta property="og:description" content="こんにちは、Dynamics ERP サポートチームの西田です。私たちサポートチームにお問い合わせいただいた際、調査のために”環境名・環境IDをお教えください”とご依頼させていただくことがあります。この記事では、環境名・環境ID取得についてご紹介します。">
 <meta property="og:locale" content="ja_JP">
-<meta property="article:published_time" content="2022-07-14T15:00:00.000Z">
-<meta property="article:modified_time" content="2022-09-27T08:30:48.547Z">
+<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/get-environment-id/image-name1.png">
+<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/get-environment-id/image-name2.png">
+<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/get-environment-id/image-name3.png">
+<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/get-environment-id/image-name4.png">
+<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/get-environment-id/image-name5.png">
+<meta property="article:published_time" content="2022-09-26T15:00:00.000Z">
+<meta property="article:modified_time" content="2022-09-27T08:30:48.239Z">
 <meta property="article:author" content="Dynamics ERP Support Japan">
 <meta property="article:tag" content="D365FO">
-<meta property="article:tag" content="Power BI.com integration">
-<meta property="article:tag" content="Power BI Embedded">
+<meta property="article:tag" content="Japan">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/get-environment-id/image-name1.png">
   
     <link rel="alternate" href="../../atom.xml" title="Japan Dynamics ERP Support Blog" type="application/atom+xml">
   
@@ -81,7 +86,7 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-D365FO Tech/powerbi-feature-difference" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-D365FO App FIN/get-environment-id" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
     
@@ -90,7 +95,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Power BI.com integration と Power BI Embedded の違いについて
+      環境名・環境IDの取得方法
     </h1>
   
 
@@ -98,60 +103,33 @@
       <div class="article-share">
         Last Update: 
         <a href="" class="article-date-single">
-  <time datetime="2022-07-14T15:00:00.000Z" itemprop="datePublished">2022-07-15</time>
+  <time datetime="2022-09-26T15:00:00.000Z" itemprop="datePublished">2022-09-27</time>
 </a>
         
         
-        <a href="https://github.com/jpdynamicserp/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+cb68e291-8032-5610-9a21-420eb7a6f935%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5BPower+BI.com+integration+%E3%81%A8+Power+BI+Embedded+%E3%81%AE%E9%81%95%E3%81%84%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%5D%28https%3A%2F%2Fjpdynamicserp.github.io%2Fblog%2FD365FO%2520Tech%2Fpowerbi-feature-difference%2F%29%0A*+Content+Source%3A+%5Barticles%2FD365FO+Tech%2Fpowerbi-feature-difference.md%5D%28https%3A%2F%2Fgithub.com%2Fjpdynamicserp%2Fblob%2Fmain%2Farticles%2FD365FO%2520Tech%2Fpowerbi-feature-difference.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
+        <a href="https://github.com/jpdynamicserp/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+0f4f6a5b-c28b-516d-bcb0-3c5caaf281e4%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5B%E7%92%B0%E5%A2%83%E5%90%8D%E3%83%BB%E7%92%B0%E5%A2%83ID%E3%81%AE%E5%8F%96%E5%BE%97%E6%96%B9%E6%B3%95%5D%28https%3A%2F%2Fjpdynamicserp.github.io%2Fblog%2FD365FO%2520App%2520FIN%2Fget-environment-id%2F%29%0A*+Content+Source%3A+%5Barticles%2FD365FO+App+FIN%2Fget-environment-id.md%5D%28https%3A%2F%2Fgithub.com%2Fjpdynamicserp%2Fblob%2Fmain%2Farticles%2FD365FO%2520App%2520FIN%2Fget-environment-id.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
         
-        <a data-url="https://jpdynamicserp.github.io/blog/D365FO%20Tech/powerbi-feature-difference/" data-id="cl8jxvdvh001o0moe13dug2wq" class="article-share-link">共有</a>
+        <a data-url="https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/get-environment-id/" data-id="cl8jxvduf00050moeab3z0nlk" class="article-share-link">共有</a>
       </div>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>こんにちは、日本マイクロソフトの岡田です。<br>Dynamics 365 Finance and Operations (以下D365FO) では、Power BI レポートの形式でデータを表示、及び参照することが可能です。<br>D365FO のデータを Power BI レポートで表示、参照する機能は、主に2つございますが、この記事ではその2つの違いについてご紹介させていただきます。</p>
+        <p>こんにちは、Dynamics ERP サポートチームの西田です。<br>私たちサポートチームにお問い合わせいただいた際、調査のために”環境名・環境IDをお教えください”とご依頼させていただくことがあります。<br>この記事では、環境名・環境ID取得についてご紹介します。  </p>
 <span id="more"></span>
 
-<p>D365FO のデータを Power BI レポートで表示、参照する機能は、Power BI.com integration と Power BI Embedded の2つがございます。その違いについて以下の表にまとめましたので、ご参考にして頂けますと幸いです。</p>
-<table>
-<thead>
-<tr>
-<th align="left"></th>
-<th align="left">Power BI.com integration</th>
-<th align="left">Power BI Embedded</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">概要</td>
-<td align="left">Power BI レポート を PowerBI.com に配置します。<br>Power BI レポートをD365FO のダッシュボードに<br>追加したり、PowerBI.com から参照可能です。</td>
-<td align="left">Power BI レポートを D365FO 内部に配置し(*1)、<br>D365FO の機能の一部として提供します。</td>
-</tr>
-<tr>
-<td align="left">開発方法</td>
-<td align="left">Odata フィード でデータを取得する場合、<br>Power BI Desktopもしくは PowerBI.com より行います。<br>Direct query の場合には Power BI Desktop より行います。</td>
-<td align="left">Power BI Desktop より行います。</td>
-</tr>
-<tr>
-<td align="left">データ接続</td>
-<td align="left">Odata フィードもしくは Direct Query より<br> Entity Store データベース(AxDW) に接続します。</td>
-<td align="left">Direct Query より Entity Store データベース(AxDW) に<br>接続します。</td>
-</tr>
-<tr>
-<td align="left">ライセンス</td>
-<td align="left">PowerBI.com で Power BI レポートを<br>共有ワークスペースへ公開する必要があるため、<br>Power BI Pro のライセンス(*2)が必要になります。</td>
-<td align="left">D365FO の機能の一部として提供するので<br> Power BI Pro ライセンスは必要ありません。</td>
-</tr>
-<tr>
-<td align="left">制限事項</td>
-<td align="left">特になし</td>
-<td align="left">Tier2 以上の環境(*3)で使用できる機能となっております。</td>
-</tr>
-</tbody></table>
-<p>(*1) Power BI レポートを D365FO へデプロイする方法と致しましては、以下弊社公式資料をご確認頂けますと幸いです。<br><a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces?toc=/fin-and-ops/toc.json">https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces?toc=%2Ffin-and-ops%2Ftoc.json</a></p>
-<p>(*2) PowerBI.com で、 Power BI レポートを共有ワークスペースへ公開しない場合、Power BI レポートを個人のワークスペースに<br>持っているユーザーでしか、D365FO 上で Power BI レポートを参照できません。<br>複数のユーザー間でレポートを参照されたい場合、Power BI レポートを共有ワークスペースへ公開する必要があります。<br>共有ワークスペースへのレポートの公開は、Power BI Pro のライセンスが必要となります。詳細は以下の弊社公式資料をご確認頂けますと幸いです。<br><a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports#share-dashboards-and-reports">https://docs.microsoft.com/en-us/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports#share-dashboards-and-reports</a></p>
-<p>(*3) Power BI Embedded は、Azure SQL DB で使用できる機能となっておりますので、DB が SQL server となっている Cloud-hosted 環境では使用できない機能となっております。</p>
-<hr>
-<h2 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h2><p>Power BI.com integration と Power BI Embedded の違いについて、ご紹介させていただきました。ご不明な点やご質問等ございましたら、弊社サポートまでお問い合わせ頂きますようお願いいたします。</p>
+
+<p>環境名・環境IDとは、下記画像の箇所のことを指します。<br><img src="/blog/D365FO%20App%20FIN/get-environment-id/image-name1.png"></p>
+<h1 id="環境名・環境IDの取得方法"><a href="#環境名・環境IDの取得方法" class="headerlink" title="環境名・環境IDの取得方法"></a>環境名・環境IDの取得方法</h1><ol>
+<li><p>Lifecycle Services(<a target="_blank" rel="noopener" href="https://lcs.dynamics.com/">https://lcs.dynamics.com/</a>) を開き、対象の実装プロジェクトを選択<br><img src="/blog/D365FO%20App%20FIN/get-environment-id/image-name2.png"></p>
+</li>
+<li><p>画面右上の三本線をクリックし、「クラウドホスト環境」を選択<br><img src="/blog/D365FO%20App%20FIN/get-environment-id/image-name3.png"></p>
+</li>
+<li><p>画面左側に表示される環境一覧の中から対象の環境を選び、「完全な詳細」を選択<br><img src="/blog/D365FO%20App%20FIN/get-environment-id/image-name4.png"></p>
+</li>
+<li><p>遷移先の画面の以下の箇所が環境名・環境IDです。<br><img src="/blog/D365FO%20App%20FIN/get-environment-id/image-name5.png"></p>
+</li>
+</ol>
+<h1 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h1><p>以上、環境名・環境ID取得についてご紹介しました。<br>より詳細な情報が必要な場合、弊社テクニカルサポート、Customer Success Account Manager (CSAM), Customer Engineer (CE) までお問い合わせください。</p>
 
       
       
@@ -165,10 +143,10 @@
     <footer class="article-footer">
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/D365FO/" rel="tag">D365FO</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/Power-BI-Embedded/" rel="tag">Power BI Embedded</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/Power-BI-com-integration/" rel="tag">Power BI.com integration</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/D365FO/" rel="tag">D365FO</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/Japan/" rel="tag">Japan</a></li></ul>
 
         
-        <a href="https://github.com/jpdynamicserp/edit/main/articles/D365FO%20Tech/powerbi-feature-difference.md" class="article-github-edit-link" target="_blank" rel="noopener noreferrer">GitHub で編集</a>
+        <a href="https://github.com/jpdynamicserp/edit/main/articles/D365FO%20App%20FIN/get-environment-id.md" class="article-github-edit-link" target="_blank" rel="noopener noreferrer">GitHub で編集</a>
         
     </footer>
   </div>
@@ -176,19 +154,10 @@
     
 <nav id="article-nav">
   
-    <a href="../how-to-post-ideas/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">次の記事</strong>
-      <div class="article-nav-title">
-        
-          Dynamics 365 製品のフィードバックサイト Ideas について
-        
-      </div>
-    </a>
   
-  
-    <a href="../how-to-update-WinRM/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="../how-to-register-temporary-credit-limit/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">前の記事</strong>
-      <div class="article-nav-title">クラウドホスト環境でWinRM 証明書をアップデートする方法</div>
+      <div class="article-nav-title">顧客の一時的な与信限度額の登録方法</div>
     </a>
   
 </nav>
@@ -207,11 +176,11 @@
       <ul>
         
           <li>
-            <a href="../../D365FO%20App%20FIN/get-environment-id/">環境名・環境IDの取得方法</a>
+            <a href="">環境名・環境IDの取得方法</a>
           </li>
         
           <li>
-            <a href="../../D365FO%20App%20FIN/how-to-register-temporary-credit-limit/">顧客の一時的な与信限度額の登録方法</a>
+            <a href="../how-to-register-temporary-credit-limit/">顧客の一時的な与信限度額の登録方法</a>
           </li>
         
           <li>
@@ -223,7 +192,7 @@
           </li>
         
           <li>
-            <a href="../../D365FO%20App%20FIN/how-to-correct-blank-journal-entry-in-financial-dimension/">財務分析コードが空白の仕訳が発生した際の訂正方法</a>
+            <a href="../how-to-correct-blank-journal-entry-in-financial-dimension/">財務分析コードが空白の仕訳が発生した際の訂正方法</a>
           </li>
         
       </ul>
