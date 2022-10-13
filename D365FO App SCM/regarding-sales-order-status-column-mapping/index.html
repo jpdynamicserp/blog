@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Dual Write 環境で販売注文のピッキングリストを削除しても D365CE 側の受注データの配送日が変更できない挙動について | Japan Dynamics ERP Support Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="こんにちは、日本マイクロソフト Dynamics ERP サポートチームの呉です。この記事では、 Dynamics 365 Finance and Operations (D365FO) と Dynamics 365 Customer Engagement (D365CE) を Dual Write で連携している環境にて、D365FO の販売注文のピッキングリストを削除した場合、 D365CE">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Dual Write 環境で販売注文のピッキングリストを削除しても D365CE 側の受注データの配送日が変更できない挙動について">
+<meta property="og:url" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/regarding-sales-order-status-column-mapping/index.html">
+<meta property="og:site_name" content="Japan Dynamics ERP Support Blog">
+<meta property="og:description" content="こんにちは、日本マイクロソフト Dynamics ERP サポートチームの呉です。この記事では、 Dynamics 365 Finance and Operations (D365FO) と Dynamics 365 Customer Engagement (D365CE) を Dual Write で連携している環境にて、D365FO の販売注文のピッキングリストを削除した場合、 D365CE">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/regarding-sales-order-status-column-mapping/repro-step1-1.png">
+<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/regarding-sales-order-status-column-mapping/repro-step1-2.png">
+<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/regarding-sales-order-status-column-mapping/repro-step2-1.png">
+<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/regarding-sales-order-status-column-mapping/repro-step2-2.png">
+<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/regarding-sales-order-status-column-mapping/repro-step3-1.png">
+<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/regarding-sales-order-status-column-mapping/repro-step3-2.png">
+<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/regarding-sales-order-status-column-mapping/repro-step4-2.png">
+<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/regarding-sales-order-status-column-mapping/result.png">
+<meta property="article:published_time" content="2022-10-13T15:00:00.000Z">
+<meta property="article:modified_time" content="2022-10-13T12:10:32.484Z">
+<meta property="article:author" content="Dynamics ERP Support Japan">
+<meta property="article:tag" content="D365FO">
+<meta property="article:tag" content="sales order">
+<meta property="article:tag" content="SCM">
+<meta property="article:tag" content="will fix">
+<meta property="article:tag" content="Dual Write">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/regarding-sales-order-status-column-mapping/repro-step1-1.png">
+  
+    <link rel="alternate" href="../../atom.xml" title="Japan Dynamics ERP Support Blog" type="application/atom+xml">
+  
+
+  <link rel="icon" href="../../favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+  <link rel="manifest" href="../../site.webmanifest">
+  <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="../../css/style.css">
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="site-header-logo"></div>
+  <div id="site-header-blog-wrapper"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        <div id="ms-logo"></div>
+        
+          <a class="main-nav-link" href="/blog/">Home</a>
+        
+          <a class="main-nav-link" href="/blog/archives">Archives</a>
+        
+        <a class="main-nav-link" target="_blank" rel="noopener" href="https://cssjpn.github.io/">サポート情報</a>
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="../../atom.xml" title="RSSフィード"></a>
+        
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//www.bing.com/search" method="get" accept-charset="UTF-8" name="bing-search" onsubmit="var f=this;if(f['q'].value){var searchUrl =  'https://www.bing.com/search?q=' +  encodeURIComponent(f['q'].value + ' site:' + f['sitesearch'].value) ;window.open(searchUrl, 'blank') };return false;" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="検索"><button type="submit" id="nav-search-btn" class="search-form-submit"></button><input type="hidden" name="sitesearch" value="https://jpdynamicserp.github.io/blog"></form>
+      </div>
+    </div>
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="../../index.html" id="logo">Japan Dynamics ERP Support Blog</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="../../index.html" id="subtitle">日本マイクロソフトの Dynamics ERP テクニカルサポートチームより、情報をお届けします！</a>
+        </h2>
+      
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-D365FO App SCM/regarding-sales-order-status-column-mapping" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+    
+      <header class="article-header-single">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Dual Write 環境で販売注文のピッキングリストを削除しても D365CE 側の受注データの配送日が変更できない挙動について
+    </h1>
+  
+
+      </header>
+      <div class="article-share">
+        Last Update: 
+        <a href="" class="article-date-single">
+  <time datetime="2022-10-13T15:00:00.000Z" itemprop="datePublished">2022-10-14</time>
+</a>
+        
+        
+        <a href="https://github.com/jpdynamicserp/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+d6e836b6-ba93-5d55-9846-95426671d703%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5BDual+Write+%E7%92%B0%E5%A2%83%E3%81%A7%E8%B2%A9%E5%A3%B2%E6%B3%A8%E6%96%87%E3%81%AE%E3%83%94%E3%83%83%E3%82%AD%E3%83%B3%E3%82%B0%E3%83%AA%E3%82%B9%E3%83%88%E3%82%92%E5%89%8A%E9%99%A4%E3%81%97%E3%81%A6%E3%82%82+D365CE+%E5%81%B4%E3%81%AE%E5%8F%97%E6%B3%A8%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E9%85%8D%E9%80%81%E6%97%A5%E3%81%8C%E5%A4%89%E6%9B%B4%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%8C%99%E5%8B%95%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%5D%28https%3A%2F%2Fjpdynamicserp.github.io%2Fblog%2FD365FO%2520App%2520SCM%2Fregarding-sales-order-status-column-mapping%2F%29%0A*+Content+Source%3A+%5Barticles%2FD365FO+App+SCM%2Fregarding-sales-order-status-column-mapping.md%5D%28https%3A%2F%2Fgithub.com%2Fjpdynamicserp%2Fblob%2Fmain%2Farticles%2FD365FO%2520App%2520SCM%2Fregarding-sales-order-status-column-mapping.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
+        
+        <a data-url="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/regarding-sales-order-status-column-mapping/" data-id="cl970rlk5000w0np43u5qaxnf" class="article-share-link">共有</a>
+      </div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>こんにちは、日本マイクロソフト Dynamics ERP サポートチームの呉です。<br>この記事では、 Dynamics 365 Finance and Operations (D365FO) と Dynamics 365 Customer Engagement (D365CE) を Dual Write で連携している環境にて、D365FO の販売注文のピッキングリストを削除した場合、 D365CE の受注データの配送日が変更できない挙動について紹介します。</p>
+<span id="more"></span>
+<h2 id="更新履歴"><a href="#更新履歴" class="headerlink" title="更新履歴"></a>更新履歴</h2><p>2022 年 10 月 14 日 (金) : ブログ公開</p>
+<h2 id="目次"><a href="#目次" class="headerlink" title="目次"></a>目次</h2><ul>
+<li><a href="#%E6%A4%9C%E8%A8%BC%E3%81%AB%E7%94%A8%E3%81%84%E3%81%9F%E8%A3%BD%E5%93%81%E3%83%BB%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3">検証に用いた製品・バージョン</a></li>
+<li><a href="#%E4%BA%8B%E8%B1%A1%E3%81%AE%E5%86%8D%E7%8F%BE%E6%89%8B%E9%A0%86">事象の再現手順</a></li>
+<li><a href="#%E7%99%BA%E7%94%9F%E3%81%99%E3%82%8B%E4%BA%8B%E8%B1%A1">発生する事象</a></li>
+<li><a href="#%E4%BA%8B%E8%B1%A1%E3%81%AE%E7%99%BA%E7%94%9F%E5%8E%9F%E5%9B%A0">事象の発生原因</a></li>
+<li><a href="#%E4%BF%AE%E6%AD%A3%E6%96%B9%E9%87%9D">修正方針</a></li>
+<li><a href="#%E4%BB%8A%E5%BE%8C%E3%81%AE%E3%82%BF%E3%82%A4%E3%83%A0%E3%83%A9%E3%82%A4%E3%83%B3">今後のタイムライン</a></li>
+</ul>
+<h2 id="検証に用いた製品・バージョン"><a href="#検証に用いた製品・バージョン" class="headerlink" title="検証に用いた製品・バージョン"></a>検証に用いた製品・バージョン</h2><p>Dynamics 365 Finance and Operations<br>Application version : 10.0.26<br>Platform version : PU50  </p>
+<p>Dynamics 365 Customer Engagement<br>Database version : 9.2.22093.00194<br>Release : 2022 release wave 2  </p>
+<h2 id="事象の再現手順"><a href="#事象の再現手順" class="headerlink" title="事象の再現手順"></a>事象の再現手順</h2><ol>
+<li><p>D365CE にて受注データを作成し、製品を 1 行追加する  </p>
+<ul>
+<li>D365CE<ul>
+<li>受注ステータス : 「アクティブ」</li>
+<li>処理状態 : 「アクティブ」<br><img src="/blog/D365FO%20App%20SCM/regarding-sales-order-status-column-mapping/repro-step1-1.png"></li>
+</ul>
+</li>
+<li>D365FO<ul>
+<li>販売注文ヘッダーの状態 : 「オープン注文」</li>
+<li>ドキュメントの状態 : 「なし」<br><img src="/blog/D365FO%20App%20SCM/regarding-sales-order-status-column-mapping/repro-step1-2.png"></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>D365FO にて販売注文を確定する</p>
+<ul>
+<li>D365CE<ul>
+<li>受注ステータス : 「アクティブ」から「提出済み」</li>
+<li>処理状態 : 「アクティブ」から「確認済み」<br><img src="/blog/D365FO%20App%20SCM/regarding-sales-order-status-column-mapping/repro-step2-1.png"></li>
+</ul>
+</li>
+<li>D365FO<ul>
+<li>販売注文ヘッダーの状態 : 「オープン注文」</li>
+<li>処理状態 : 「なし」から「確認書」<br><img src="/blog/D365FO%20App%20SCM/regarding-sales-order-status-column-mapping/repro-step2-2.png"></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>D365FO にてピッキング処理を実施する</p>
+<ul>
+<li>D365CE<ul>
+<li>受注ステータス : 「提出済み」</li>
+<li>処理状態 : 「確認済み」から「ピッキング済み」<br><img src="/blog/D365FO%20App%20SCM/regarding-sales-order-status-column-mapping/repro-step3-1.png"></li>
+</ul>
+</li>
+<li>D365FO<ul>
+<li>販売注文ヘッダーの状態 : 「オープン注文」</li>
+<li>処理状態 : 「確認書」から「ピッキングリスト」<br><img src="/blog/D365FO%20App%20SCM/regarding-sales-order-status-column-mapping/repro-step3-2.png"></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>D365FO にてピッキングリストを削除する</p>
+<ul>
+<li>D365CE<ul>
+<li>受注ステータス : 「提出済み」</li>
+<li>処理状態 : 「ピッキング済み」</li>
+</ul>
+</li>
+<li>D365FO<ul>
+<li>販売注文ヘッダーの状態 : 「オープン注文」</li>
+<li>処理状態 : 「ピッキングリスト」<br><img src="/blog/D365FO%20App%20SCM/regarding-sales-order-status-column-mapping/repro-step4-2.png"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="発生する事象"><a href="#発生する事象" class="headerlink" title="発生する事象"></a>発生する事象</h2><p>D365CE の受注データが読み取り専用となり、配送日の変更ができない状態になる。<br><img src="/blog/D365FO%20App%20SCM/regarding-sales-order-status-column-mapping/result.png"></p>
+<h2 id="事象の発生原因"><a href="#事象の発生原因" class="headerlink" title="事象の発生原因"></a>事象の発生原因</h2><p>D365FO の販売注文のドキュメントステータスが「確認書」または「ピッキングリスト」の場合、D365CE のステータスが「アクティブ」ではなく「提出済み」であるため、データが読み取り専用となります。</p>
+<h3 id="現在のマッピング"><a href="#現在のマッピング" class="headerlink" title="現在のマッピング"></a>現在のマッピング</h3><table>
+<thead>
+<tr>
+<th align="left">処理状態</th>
+<th align="left">D365FO の状態</th>
+<th align="left">D365FO のドキュメントの状態</th>
+<th align="left">D365CE のステータス</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">アクティブ</td>
+<td align="left">オープン注文</td>
+<td align="left">なし</td>
+<td align="left">アクティブ</td>
+</tr>
+<tr>
+<td align="left">確認済み</td>
+<td align="left">オープン注文</td>
+<td align="left">確認書</td>
+<td align="left">提出済み</td>
+</tr>
+<tr>
+<td align="left">ピッキング済</td>
+<td align="left">オープン注文</td>
+<td align="left">ピッキングリスト</td>
+<td align="left">提出済み</td>
+</tr>
+<tr>
+<td align="left">一部出荷済</td>
+<td align="left">オープン注文</td>
+<td align="left">梱包明細</td>
+<td align="left">アクティブ</td>
+</tr>
+<tr>
+<td align="left">一部請求済</td>
+<td align="left">オープン注文</td>
+<td align="left">請求書</td>
+<td align="left">アクティブ</td>
+</tr>
+<tr>
+<td align="left">出荷済</td>
+<td align="left">出荷済</td>
+<td align="left">梱包明細</td>
+<td align="left">履行済</td>
+</tr>
+<tr>
+<td align="left">請求済</td>
+<td align="left">請求済</td>
+<td align="left">請求書</td>
+<td align="left">請求済</td>
+</tr>
+<tr>
+<td align="left">キャンセル済</td>
+<td align="left">取消済</td>
+<td align="left">なし</td>
+<td align="left">キャンセル</td>
+</tr>
+</tbody></table>
+<p>(参考情報)<br><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/sales-status-map">販売注文の状態列のマッピングを設定する</a></p>
+<h2 id="修正方針"><a href="#修正方針" class="headerlink" title="修正方針"></a>修正方針</h2><p>D365FO の販売注文のドキュメントステータスが「確認書」または「ピッキングリスト」の場合、D365CE のステータスを「アクティブ」になるようにマッピングを変更する予定です。<br>また、本件の改善と直接的な関係はありませんが、処理状態に「出荷済、一部請求済」を新たに追加する予定です。  </p>
+<h3 id="修正後のマッピング"><a href="#修正後のマッピング" class="headerlink" title="修正後のマッピング"></a>修正後のマッピング</h3><table>
+<tr><td>処理状態<td>D365FO の状態<td>D365FO のドキュメントの状態<td>D365CE のステータス
+<tr><td>アクティブ<td>オープン注文<td>なし<td>アクティブ
+<tr><td>確認済み<td>オープン注文<td>確認書<td bgcolor=yellow>アクティブ
+<tr><td>ピッキング済<td>オープン注文<td>ピッキングリスト<td bgcolor=yellow>アクティブ
+<tr><td>一部出荷済<td>オープン注文<td>梱包明細<td>アクティブ
+<tr><td>一部請求済<td>オープン注文<td>請求書<td>アクティブ
+<tr><td>出荷済<td>出荷済<td>梱包明細<td>履行済
+<tr><td bgcolor=yellow>出荷済、一部請求済<td bgcolor=yellow>出荷済<td bgcolor=yellow>請求書<td bgcolor=yellow>履行済
+<tr><td>請求済<td>請求済<td>請求書<td>請求済
+<tr><td>キャンセル済<td>取消済<td>なし<td>キャンセル
+</table>
+
+<h2 id="今後のタイムライン"><a href="#今後のタイムライン" class="headerlink" title="今後のタイムライン"></a>今後のタイムライン</h2><p>D365FO の 10.0.34 にてリリースされる予定です。  </p>
+<h2 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h2><p>現在確認されている販売注文の状態のマッピング変更についてご案内いたしました。<br>今後リリース内容やリリース予定がアップデートされ次第、本ブログにて内容を公開・更新いたします。</p>
+
+      
+      
+        <div class="article-disclaimer">
+        
+          <p>※本情報の内容（添付文書、リンク先などを含む）は、作成日時点でのものであり、予告なく変更される場合があります。</p>
+        
+        </div>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/D365FO/" rel="tag">D365FO</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/Dual-Write/" rel="tag">Dual Write</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/SCM/" rel="tag">SCM</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/sales-order/" rel="tag">sales order</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/will-fix/" rel="tag">will fix</a></li></ul>
+
+        
+        <a href="https://github.com/jpdynamicserp/edit/main/articles/D365FO%20App%20SCM/regarding-sales-order-status-column-mapping.md" class="article-github-edit-link" target="_blank" rel="noopener noreferrer">GitHub で編集</a>
+        
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="../how-to-correct-deliverycontroldata/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前の記事</strong>
+      <div class="article-nav-title">既定の注文設定の購買管理フィールド取得元について</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最近の投稿</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="">Dual Write 環境で販売注文のピッキングリストを削除しても D365CE 側の受注データの配送日が変更できない挙動について</a>
+          </li>
+        
+          <li>
+            <a href="../how-to-correct-deliverycontroldata/">既定の注文設定の購買管理フィールド取得元について</a>
+          </li>
+        
+          <li>
+            <a href="../../D365FO%20Tech/submit-an-incident-in-lcs/">LCSにてDynamics 365 Finance and Operationsに関するサポートリクエストを起票する方法</a>
+          </li>
+        
+          <li>
+            <a href="../../D365FO%20App%20FIN/new-invoicing-system-requirements/">適格請求書等保存方式 (インボイス制度) の対応状況について</a>
+          </li>
+        
+          <li>
+            <a href="../../D365FO%20App%20FIN/perdiem-expense-project/">ワークスペース「経費管理」から特定のプロジェクトに経費カテゴリ「日当」を紐づける方法</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">タグ</h3>
+    <div class="widget">
+      <!-- <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="../../tags/10-0-29/" rel="tag">10.0.29</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Accounts-receivable-parameters/" rel="tag">Accounts receivable parameters</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Appended-table-16-series/" rel="tag">Appended table 16 series</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Azure-AD/" rel="tag">Azure AD</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Azure-DevOps/" rel="tag">Azure DevOps</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Azure-Pipelines/" rel="tag">Azure Pipelines</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Business-Impact/" rel="tag">Business Impact</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/D365BC/" rel="tag">D365BC</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/D365FO/" rel="tag">D365FO</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Data-fix/" rel="tag">Data fix</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Dual-Write/" rel="tag">Dual Write</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Export-to-Data-Lake/" rel="tag">Export to Data Lake</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Finance/" rel="tag">Finance</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Fixed-Assets/" rel="tag">Fixed Assets</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Fixed-assets/" rel="tag">Fixed assets</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Form-26/" rel="tag">Form 26</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Ideas/" rel="tag">Ideas</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Information/" rel="tag">Information</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Inventory-counting/" rel="tag">Inventory counting</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Inventory-management/" rel="tag">Inventory management</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Invoice/" rel="tag">Invoice</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Japan/" rel="tag">Japan</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/LCS/" rel="tag">LCS</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/License/" rel="tag">License</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Microsoft-hosted-agents/" rel="tag">Microsoft-hosted agents</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Office/" rel="tag">Office</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Power-BI-Embedded/" rel="tag">Power BI Embedded</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Power-BI-com-integration/" rel="tag">Power BI.com integration</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Procurement-and-sourcing-parameters/" rel="tag">Procurement and sourcing parameters</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Purchase-order/" rel="tag">Purchase order</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Quality-Update/" rel="tag">Quality Update</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/SCM/" rel="tag">SCM</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Sales-order/" rel="tag">Sales order</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Support-Request/" rel="tag">Support Request</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Visual-Studio/" rel="tag">Visual Studio</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/WinRM/" rel="tag">WinRM</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Word/" rel="tag">Word</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/add-in/" rel="tag">add-in</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/certification/" rel="tag">certification</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/cloudhost/" rel="tag">cloudhost</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/credit-limit/" rel="tag">credit limit</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/database/" rel="tag">database</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/finance/" rel="tag">finance</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/financial-dimensions/" rel="tag">financial dimensions</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/packing-slip/" rel="tag">packing slip</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/project/" rel="tag">project</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/purchase-order/" rel="tag">purchase order</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/sales-order/" rel="tag">sales order</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/tips/" rel="tag">tips</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/trace-parser/" rel="tag">trace parser</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/will-fix/" rel="tag">will fix</a></li></ul>  -->
+      <ul class="tag-list"></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">アーカイブ</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/10/">2022 / 10</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/09/">2022 / 09</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/08/">2022 / 08</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/07/">2022 / 07</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/06/">2022 / 06</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/05/">2022 / 05</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/04/">2022 / 04</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/03/">2022 / 03</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/02/">2022 / 02</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">タグクラウド</h3>
+    <div class="widget tagcloud">
+      <a href="../../tags/10-0-29/" style="font-size: 10px;">10.0.29</a> <a href="../../tags/Accounts-receivable-parameters/" style="font-size: 10px;">Accounts receivable parameters</a> <a href="../../tags/Appended-table-16-series/" style="font-size: 10px;">Appended table 16 series</a> <a href="../../tags/Azure-AD/" style="font-size: 10px;">Azure AD</a> <a href="../../tags/Azure-DevOps/" style="font-size: 10px;">Azure DevOps</a> <a href="../../tags/Azure-Pipelines/" style="font-size: 10px;">Azure Pipelines</a> <a href="../../tags/Business-Impact/" style="font-size: 10px;">Business Impact</a> <a href="../../tags/D365BC/" style="font-size: 10px;">D365BC</a> <a href="../../tags/D365FO/" style="font-size: 20px;">D365FO</a> <a href="../../tags/Data-fix/" style="font-size: 10px;">Data fix</a> <a href="../../tags/Dual-Write/" style="font-size: 10px;">Dual Write</a> <a href="../../tags/Export-to-Data-Lake/" style="font-size: 10px;">Export to Data Lake</a> <a href="../../tags/Finance/" style="font-size: 10px;">Finance</a> <a href="../../tags/Fixed-Assets/" style="font-size: 11.67px;">Fixed Assets</a> <a href="../../tags/Fixed-assets/" style="font-size: 10px;">Fixed assets</a> <a href="../../tags/Form-26/" style="font-size: 10px;">Form 26</a> <a href="../../tags/Ideas/" style="font-size: 10px;">Ideas</a> <a href="../../tags/Information/" style="font-size: 15px;">Information</a> <a href="../../tags/Inventory-counting/" style="font-size: 10px;">Inventory counting</a> <a href="../../tags/Inventory-management/" style="font-size: 10px;">Inventory management</a> <a href="../../tags/Invoice/" style="font-size: 11.67px;">Invoice</a> <a href="../../tags/Japan/" style="font-size: 16.67px;">Japan</a> <a href="../../tags/LCS/" style="font-size: 13.33px;">LCS</a> <a href="../../tags/License/" style="font-size: 10px;">License</a> <a href="../../tags/Microsoft-hosted-agents/" style="font-size: 10px;">Microsoft-hosted agents</a> <a href="../../tags/Office/" style="font-size: 10px;">Office</a> <a href="../../tags/Power-BI-Embedded/" style="font-size: 10px;">Power BI Embedded</a> <a href="../../tags/Power-BI-com-integration/" style="font-size: 10px;">Power BI.com integration</a> <a href="../../tags/Procurement-and-sourcing-parameters/" style="font-size: 10px;">Procurement and sourcing parameters</a> <a href="../../tags/Purchase-order/" style="font-size: 11.67px;">Purchase order</a> <a href="../../tags/Quality-Update/" style="font-size: 10px;">Quality Update</a> <a href="../../tags/SCM/" style="font-size: 16.67px;">SCM</a> <a href="../../tags/Sales-order/" style="font-size: 13.33px;">Sales order</a> <a href="../../tags/Support-Request/" style="font-size: 10px;">Support Request</a> <a href="../../tags/Visual-Studio/" style="font-size: 10px;">Visual Studio</a> <a href="../../tags/WinRM/" style="font-size: 10px;">WinRM</a> <a href="../../tags/Word/" style="font-size: 10px;">Word</a> <a href="../../tags/add-in/" style="font-size: 10px;">add-in</a> <a href="../../tags/certification/" style="font-size: 10px;">certification</a> <a href="../../tags/cloudhost/" style="font-size: 10px;">cloudhost</a> <a href="../../tags/credit-limit/" style="font-size: 10px;">credit limit</a> <a href="../../tags/database/" style="font-size: 10px;">database</a> <a href="../../tags/finance/" style="font-size: 11.67px;">finance</a> <a href="../../tags/financial-dimensions/" style="font-size: 10px;">financial dimensions</a> <a href="../../tags/packing-slip/" style="font-size: 11.67px;">packing slip</a> <a href="../../tags/project/" style="font-size: 10px;">project</a> <a href="../../tags/purchase-order/" style="font-size: 10px;">purchase order</a> <a href="../../tags/sales-order/" style="font-size: 13.33px;">sales order</a> <a href="../../tags/tips/" style="font-size: 18.33px;">tips</a> <a href="../../tags/trace-parser/" style="font-size: 10px;">trace parser</a> <a href="../../tags/will-fix/" style="font-size: 10px;">will fix</a>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2022 Dynamics ERP Support Japan<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="../../index.html" class="mobile-nav-link">Home</a>
+  
+    <a href="../../archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script src="../../js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
