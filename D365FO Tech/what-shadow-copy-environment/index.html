@@ -4,31 +4,22 @@
   <meta charset="utf-8">
   
   
-  <title>販売注文に紐づく発注書の製品受領書のキャンセル方法 | Japan Dynamics ERP Support Blog</title>
+  <title>Dynamics 365 Finance and Operations の調査に用いるシャドウ コピー環境について | Japan Dynamics ERP Support Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="こんにちは、Dynamics ERP サポートチームの木村です。この記事では、販売注文に紐づく発注書の製品受領書のキャンセル方法についてご案内いたします。">
+  <meta name="description" content="こんにちは、Dynamics ERP サポート チームの永吉です。 この記事では、Microsoft が Dynamics 365 Finance and Operations の調査に用いるシャドウ コピー環境についてご案内いたします。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="販売注文に紐づく発注書の製品受領書のキャンセル方法">
-<meta property="og:url" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/cancel-productreceipt-linkso/index.html">
+<meta property="og:title" content="Dynamics 365 Finance and Operations の調査に用いるシャドウ コピー環境について">
+<meta property="og:url" content="https://jpdynamicserp.github.io/blog/D365FO%20Tech/what-shadow-copy-environment/index.html">
 <meta property="og:site_name" content="Japan Dynamics ERP Support Blog">
-<meta property="og:description" content="こんにちは、Dynamics ERP サポートチームの木村です。この記事では、販売注文に紐づく発注書の製品受領書のキャンセル方法についてご案内いたします。">
+<meta property="og:description" content="こんにちは、Dynamics ERP サポート チームの永吉です。 この記事では、Microsoft が Dynamics 365 Finance and Operations の調査に用いるシャドウ コピー環境についてご案内いたします。">
 <meta property="og:locale" content="ja_JP">
-<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/cancel-productreceipt-linkso/cancel-productreceipt-linkso_1.png">
-<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/cancel-productreceipt-linkso/cancel-productreceipt-linkso_2.png">
-<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/cancel-productreceipt-linkso/cancel-productreceipt-linkso_3.png">
-<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/cancel-productreceipt-linkso/cancel-productreceipt-linkso_4.png">
-<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/cancel-productreceipt-linkso/cancel-productreceipt-linkso_5.png">
-<meta property="article:published_time" content="2022-09-06T15:00:00.000Z">
-<meta property="article:modified_time" content="2022-10-25T05:33:39.668Z">
+<meta property="article:published_time" content="2022-10-23T15:00:00.000Z">
+<meta property="article:modified_time" content="2022-10-25T05:33:40.080Z">
 <meta property="article:author" content="Dynamics ERP Support Japan">
-<meta property="article:tag" content="tips">
+<meta property="article:tag" content="Tech">
 <meta property="article:tag" content="D365FO">
-<meta property="article:tag" content="10.0.25">
-<meta property="article:tag" content="SCM">
-<meta property="article:tag" content="Sales order">
-<meta property="article:tag" content="Purchase order">
+<meta property="article:tag" content="Information">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/cancel-productreceipt-linkso/cancel-productreceipt-linkso_1.png">
   
     <link rel="alternate" href="../../atom.xml" title="Japan Dynamics ERP Support Blog" type="application/atom+xml">
   
@@ -90,7 +81,7 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-D365FO App SCM/cancel-productreceipt-linkso" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-D365FO Tech/what-shadow-copy-environment" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
     
@@ -99,7 +90,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      販売注文に紐づく発注書の製品受領書のキャンセル方法
+      Dynamics 365 Finance and Operations の調査に用いるシャドウ コピー環境について
     </h1>
   
 
@@ -107,40 +98,76 @@
       <div class="article-share">
         Last Update: 
         <a href="" class="article-date-single">
-  <time datetime="2022-09-06T15:00:00.000Z" itemprop="datePublished">2022-09-07</time>
+  <time datetime="2022-10-23T15:00:00.000Z" itemprop="datePublished">2022-10-24</time>
 </a>
         
         
-        <a href="https://github.com/jpdynamicserp/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+807187ba-ce53-56f3-ba7e-0ad89f711251%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5B%E8%B2%A9%E5%A3%B2%E6%B3%A8%E6%96%87%E3%81%AB%E7%B4%90%E3%81%A5%E3%81%8F%E7%99%BA%E6%B3%A8%E6%9B%B8%E3%81%AE%E8%A3%BD%E5%93%81%E5%8F%97%E9%A0%98%E6%9B%B8%E3%81%AE%E3%82%AD%E3%83%A3%E3%83%B3%E3%82%BB%E3%83%AB%E6%96%B9%E6%B3%95%5D%28https%3A%2F%2Fjpdynamicserp.github.io%2Fblog%2FD365FO%2520App%2520SCM%2Fcancel-productreceipt-linkso%2F%29%0A*+Content+Source%3A+%5Barticles%2FD365FO+App+SCM%2Fcancel-productreceipt-linkso.md%5D%28https%3A%2F%2Fgithub.com%2Fjpdynamicserp%2Fblob%2Fmain%2Farticles%2FD365FO%2520App%2520SCM%2Fcancel-productreceipt-linkso.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
+        <a href="https://github.com/jpdynamicserp/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+4c439c32-0f89-5f85-9db0-a2756635de24%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5BDynamics+365+Finance+and+Operations+%E3%81%AE%E8%AA%BF%E6%9F%BB%E3%81%AB%E7%94%A8%E3%81%84%E3%82%8B%E3%82%B7%E3%83%A3%E3%83%89%E3%82%A6+%E3%82%B3%E3%83%94%E3%83%BC%E7%92%B0%E5%A2%83%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%5D%28https%3A%2F%2Fjpdynamicserp.github.io%2Fblog%2FD365FO%2520Tech%2Fwhat-shadow-copy-environment%2F%29%0A*+Content+Source%3A+%5Barticles%2FD365FO+Tech%2Fwhat-shadow-copy-environment.md%5D%28https%3A%2F%2Fgithub.com%2Fjpdynamicserp%2Fblob%2Fmain%2Farticles%2FD365FO%2520Tech%2Fwhat-shadow-copy-environment.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
         
-        <a data-url="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/cancel-productreceipt-linkso/" data-id="cl9nrvf96000e0ms6ef1r0sgp" class="article-share-link">共有</a>
+        <a data-url="https://jpdynamicserp.github.io/blog/D365FO%20Tech/what-shadow-copy-environment/" data-id="cl9nrvfa800290ms6a3l2a8iq" class="article-share-link">共有</a>
       </div>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>こんにちは、Dynamics ERP サポートチームの木村です。<br>この記事では、販売注文に紐づく発注書の製品受領書のキャンセル方法についてご案内いたします。  </p>
+        <p>こんにちは、Dynamics ERP サポート チームの永吉です。</p>
+<p>この記事では、Microsoft が Dynamics 365 Finance and Operations の調査に用いるシャドウ コピー環境についてご案内いたします。</p>
 <span id="more"></span>
-<h2 id="検証に用いた製品・バージョン"><a href="#検証に用いた製品・バージョン" class="headerlink" title="検証に用いた製品・バージョン:"></a>検証に用いた製品・バージョン:</h2><p>Dynamics 365 Finance and Operations<br>Application version: 10.0.25<br>Platform version: PU49 </p>
-<p>販売注文に紐づく発注書の製品受領書のキャンセル方法につきましては以下をご覧ください。  </p>
-<h2 id="販売注文に紐づく発注書の製品受領書のキャンセル方法"><a href="#販売注文に紐づく発注書の製品受領書のキャンセル方法" class="headerlink" title="販売注文に紐づく発注書の製品受領書のキャンセル方法"></a>販売注文に紐づく発注書の製品受領書のキャンセル方法</h2><p>下記エラーメッセージが表示された際のキャンセル方法についてご案内いたします。</p>
-<blockquote>
-<p>1.00 cannot be picked because only 0.00 is/are available from the inventory for item: 1000.</p>
-<p>日本語：品目1000の在庫から0.00しか利用できないため、1.00をピッキングできません。<br><img src="/blog/D365FO%20App%20SCM/cancel-productreceipt-linkso/cancel-productreceipt-linkso_1.png"></p>
-</blockquote>
-<ol>
-<li><p>紐づく販売注文画面の Inventory &gt; Maintain &gt; Resrvation を押下する<br><img src="/blog/D365FO%20App%20SCM/cancel-productreceipt-linkso/cancel-productreceipt-linkso_2.png"></p>
+
+<h2 id="はじめに"><a href="#はじめに" class="headerlink" title="はじめに"></a>はじめに</h2><p>Microsoft は Dynamics 365 Finance and Operaitons のサポート サービスにおける調査の一環として、事象の再現及びトラブルシュートを実施する環境を用意する必要があります。この時、Shadow Copy Environment (シャドウ コピー環境) を作成することで、よりスムーズに調査を進めることが可能となります。この記事ではシャドウ コピー環境の機能や性質をご紹介いたします。</p>
+<h2 id="お客様のプライバシーの尊重"><a href="#お客様のプライバシーの尊重" class="headerlink" title="お客様のプライバシーの尊重"></a>お客様のプライバシーの尊重</h2><p>Microsoft はお客様のプライバシーを尊重し、シャドウ コピー環境に関する同意をお客様にて管理できるようにします。Mictosoft はお客様の同意なしにお客様のデータにアクセスしたり、お客様の環境を複製したりすることは決してございません。サポート リクエストを起票いただく際の事象説明欄に 「<strong>シャドウ コピー環境の作成に同意する旨</strong>」 と 「<strong>シャドウ コピー環境を作成するソース環境</strong>」 を記載いただくことで、問題解決時間の遅延をなくし、問題解決を迅速化することができます。同意は一時的なものであり、Microsoft のサポート チームに連絡することでいつでも取り消すことができます。</p>
+<h2 id="シャドウ-コピー環境とは"><a href="#シャドウ-コピー環境とは" class="headerlink" title="シャドウ コピー環境とは"></a>シャドウ コピー環境とは</h2><p>シャドウ コピー環境とは、 Microsoft サポート チームが専用テナント内に作成する環境のレプリカです。シャドウ コピー環境を試用して、お客様の本番環境やビジネス オペレーションに影響を与えることなく、問題を再現して解決します。<br>シャドウ コピー環境について知っておいていただきたいことがいくつかあります。  </p>
+<ul>
+<li>シャドウ コピー環境を作成するために別の環境を購入する必要はありません</li>
+<li>シャドウ コピー環境のデータベース サイズはお客様のストレージ上限に影響しません</li>
+<li>シャドウ コピー環境は、ソース環境と同じ地域にあります</li>
+<li>シャドウ コピー環境へのアクセスおよび使用は監査されています</li>
+<li>シャドウ コピー環境はサポート リクエストの問題解決を迅速化するためだけに使用されます</li>
+</ul>
+<h2 id="シャドウ-コピー環境を作成できるソース環境"><a href="#シャドウ-コピー環境を作成できるソース環境" class="headerlink" title="シャドウ コピー環境を作成できるソース環境"></a>シャドウ コピー環境を作成できるソース環境</h2><p>シャドウ コピー環境のソース環境は Microsoft が管理している環境のみとなります。</p>
+<ul>
+<li>シャドウ コピー環境の作成が可能な環境<ul>
+<li>クラウドの本番環境</li>
+<li>既存の Tier 2 環境</li>
+<li> Tier 5 環境などの追加で購入いただいた環境</li>
+</ul>
 </li>
-<li><p>Reservation field を 1 から 0 に変更（引当数量をなくす）<br><img src="/blog/D365FO%20App%20SCM/cancel-productreceipt-linkso/cancel-productreceipt-linkso_3.png"><br>※変更後<br><img src="/blog/D365FO%20App%20SCM/cancel-productreceipt-linkso/cancel-productreceipt-linkso_4.png"></p>
+<li>シャドウ コピー環境の作成が不可能な環境<ul>
+<li>LCS で作成したクラウド ホスト環境</li>
+<li>VHD から作成した Hyper-V 環境</li>
+<li>オンプレミスの本番環境および検証環境</li>
+</ul>
 </li>
-<li><p>再度、発注書を開く</p>
+</ul>
+<h2 id="シャドウ-コピー環境に含まれるデータ"><a href="#シャドウ-コピー環境に含まれるデータ" class="headerlink" title="シャドウ コピー環境に含まれるデータ"></a>シャドウ コピー環境に含まれるデータ</h2><p>シャドウ コピー環境は、ソース環境の全てのデータとカスタマイズが含まれています。<br>例外として、以下のデータは含まれていません。</p>
+<ul>
+<li>LogisticsElectronicAddress テーブルの E メール アドレス</li>
+<li>BatchJobHistory, BatchHistory, BatchConstraintHistory テーブルのバッチ ジョブ履歴</li>
+<li>SysEmailParameters テーブルの SMTP リレー サーバー</li>
+<li>PrintMgmtSettings, PrintMgmtDocInstance テーブルのプリント管理設定</li>
+<li>SysServerConfig, SysServerSessions, SysCorpNetPrinters, SysClientSessions, BatchServerConfig, BatchServerGroup テーブルの環境固有レコード</li>
+<li>DocuValue テーブルの添付文書。これらの添付文書には、ソース環境で上書きされた Microsoft Office テンプレートが含まれます</li>
+</ul>
+<h2 id="シャドウ-コピー環境にアクセス権を持つユーザー"><a href="#シャドウ-コピー環境にアクセス権を持つユーザー" class="headerlink" title="シャドウ コピー環境にアクセス権を持つユーザー"></a>シャドウ コピー環境にアクセス権を持つユーザー</h2><p>シャドウ コピー環境は、Microsoft の問題解決に寄与する個人にアクセスが制限されます。</p>
+<h2 id="シャドウ-コピー環境の技術的制限"><a href="#シャドウ-コピー環境の技術的制限" class="headerlink" title="シャドウ コピー環境の技術的制限"></a>シャドウ コピー環境の技術的制限</h2><p>シャドウ コピー環境にはお客様のビジネス オペレーションに影響を与えず、安全に調査を進めるために以下の制限があります。</p>
+<ul>
+<li>管理者を除くすべてのユーザーは無効に設定されます</li>
+<li>管理者ユーザーはシャドウ コピー環境を作成したユーザーに設定されます</li>
+<li>すべてのバッチ ジョブが保留のステータスに設定されます</li>
+<li>すべてのユーザーのパーティション値が「初期」パーティション レコード ID にリセットされます</li>
+<li>Microsoft で暗号化されたすべてのフィールドは別のデータベース サーバーでは復号化できないためクリアされます。例として、SysEmailSMTPPassword テーブルのパスワード フィールドが挙げられます</li>
+<li>シャドウコピー環境自体のバージョンをアップデートすることはできません</li>
+<li>シャドウコピー環境にアクセスするユーザーはセキュリティで保護された専用のワークステーションからアクセスします</li>
+</ul>
+<h2 id="Microsoft-のシャドウ-コピー環境に対するデータアクセスの方法"><a href="#Microsoft-のシャドウ-コピー環境に対するデータアクセスの方法" class="headerlink" title="Microsoft のシャドウ コピー環境に対するデータアクセスの方法"></a>Microsoft のシャドウ コピー環境に対するデータアクセスの方法</h2><ul>
+<li>オンライン (アプリ経由) : システム管理者権限と同等</li>
+<li>データベース (SQL クエリ ツール経由) : すべてのテーブルへの読み取り/書き込みアクセス<ul>
+<li>データベースへのアクセスには、Microsoft 内部における追加の承認が必要であり、必要に応じて管理・制御・付与されます。</li>
+<li>データベースへのアクセスは、標準のジャスト インタイム アクセス制御の対象となります。例えば、アクセスは時間制限され自動的に期限切れになります。</li>
+</ul>
 </li>
-<li><p>Receive &gt; Journals &gt; Product receipt を開く</p>
-</li>
-<li><p>製品受領書のキャンセルを実施<br><img src="/blog/D365FO%20App%20SCM/cancel-productreceipt-linkso/cancel-productreceipt-linkso_5.png"> </p>
-</li>
-</ol>
-<h2 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h2><hr>
-<p>以上、販売注文に紐づく発注書の製品受領書のキャンセル方法についてご案内いたしました。<br>また、設定内容や利用方法により上記の手順が適用できない可能性があることを予めご了承ください。</p>
+</ul>
+<h2 id="シャドウ-コピー環境が維持される期間"><a href="#シャドウ-コピー環境が維持される期間" class="headerlink" title="シャドウ コピー環境が維持される期間"></a>シャドウ コピー環境が維持される期間</h2><p>シャドウ コピー環境は、作成から 7 日後またはサポート リクエストが解決された時点で期限切れになります。また、お客様が同意を取り消された時点で期限切れになります。</p>
+<h2 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h2><p>以上、Microsoft が Dynamics 365 Finance and Operations の調査に用いるシャドウ コピー環境について紹介いたしました。<br>より詳細な情報が必要な場合、弊社テクニカル サポート, Customer Success Account Manager (CSAM), Customer Engineer (CE) までお問い合わせください。</p>
 
       
       
@@ -154,10 +181,10 @@
     <footer class="article-footer">
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/10-0-25/" rel="tag">10.0.25</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/D365FO/" rel="tag">D365FO</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/Purchase-order/" rel="tag">Purchase order</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/SCM/" rel="tag">SCM</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/Sales-order/" rel="tag">Sales order</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/tips/" rel="tag">tips</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/D365FO/" rel="tag">D365FO</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/Information/" rel="tag">Information</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/Tech/" rel="tag">Tech</a></li></ul>
 
         
-        <a href="https://github.com/jpdynamicserp/edit/main/articles/D365FO%20App%20SCM/cancel-productreceipt-linkso.md" class="article-github-edit-link" target="_blank" rel="noopener noreferrer">GitHub で編集</a>
+        <a href="https://github.com/jpdynamicserp/edit/main/articles/D365FO%20Tech/what-shadow-copy-environment.md" class="article-github-edit-link" target="_blank" rel="noopener noreferrer">GitHub で編集</a>
         
     </footer>
   </div>
@@ -165,19 +192,19 @@
     
 <nav id="article-nav">
   
-    <a href="../../D365BC%20Tech/how-to-check-table-data-d365bc/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="../stuck-in-pre-servicing/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">次の記事</strong>
       <div class="article-nav-title">
         
-          D365BCの画面上でテーブルデータを確認する方法
+          パッケージ適用時にサービス提供前 (Pre-Servicing) という環境のステータスが数時間続く場合について
         
       </div>
     </a>
   
   
-    <a href="../../D365FO%20Tech/how-to-set-related-tables-for-office-addin-using-word/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="../../D365FO%20App%20SCM/regarding-sales-order-status-column-mapping/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">前の記事</strong>
-      <div class="article-nav-title">Office 統合の Word テンプレートにおける関連テーブルのリレーション設定方法</div>
+      <div class="article-nav-title">Dual Write 環境で販売注文のピッキングリストを削除しても D365CE 側の受注データの配送日が変更できない挙動について</div>
     </a>
   
 </nav>
@@ -196,23 +223,23 @@
       <ul>
         
           <li>
-            <a href="../../D365FO%20Tech/stuck-in-pre-servicing/">パッケージ適用時にサービス提供前 (Pre-Servicing) という環境のステータスが数時間続く場合について</a>
+            <a href="../stuck-in-pre-servicing/">パッケージ適用時にサービス提供前 (Pre-Servicing) という環境のステータスが数時間続く場合について</a>
           </li>
         
           <li>
-            <a href="../../D365FO%20Tech/what-shadow-copy-environment/">Dynamics 365 Finance and Operations の調査に用いるシャドウ コピー環境について</a>
+            <a href="">Dynamics 365 Finance and Operations の調査に用いるシャドウ コピー環境について</a>
           </li>
         
           <li>
-            <a href="../regarding-sales-order-status-column-mapping/">Dual Write 環境で販売注文のピッキングリストを削除しても D365CE 側の受注データの配送日が変更できない挙動について</a>
+            <a href="../../D365FO%20App%20SCM/regarding-sales-order-status-column-mapping/">Dual Write 環境で販売注文のピッキングリストを削除しても D365CE 側の受注データの配送日が変更できない挙動について</a>
           </li>
         
           <li>
-            <a href="../how-to-correct-deliverycontroldata/">既定の注文設定の購買管理フィールド取得元について</a>
+            <a href="../../D365FO%20App%20SCM/how-to-correct-deliverycontroldata/">既定の注文設定の購買管理フィールド取得元について</a>
           </li>
         
           <li>
-            <a href="../../D365FO%20Tech/submit-an-incident-in-lcs/">LCSにてDynamics 365 Finance and Operationsに関するサポートリクエストを起票する方法</a>
+            <a href="../submit-an-incident-in-lcs/">LCSにてDynamics 365 Finance and Operationsに関するサポートリクエストを起票する方法</a>
           </li>
         
       </ul>
