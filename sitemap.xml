@@ -142,6 +142,13 @@
   </url>
   
   <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/database-just-in-time-jit-access/</loc>
+    
+    <lastmod>2022-12-09</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/environments/</loc>
     
     <lastmod>2022-12-09</lastmod>
@@ -170,6 +177,13 @@
   </url>
   
   <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/apply-quality-update-d365fo/</loc>
+    
+    <lastmod>2022-12-09</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/browser-session-id/</loc>
     
     <lastmod>2022-12-09</lastmod>
@@ -177,21 +191,7 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/database-just-in-time-jit-access/</loc>
-    
-    <lastmod>2022-12-09</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/aad-conditional-access/</loc>
-    
-    <lastmod>2022-12-09</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/apply-quality-update-d365fo/</loc>
     
     <lastmod>2022-12-09</lastmod>
     
@@ -254,13 +254,6 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/cancel-productreceipt-linkso/</loc>
-    
-    <lastmod>2022-12-09</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/how-to-correct-deliverycontroldata/</loc>
     
     <lastmod>2022-12-09</lastmod>
@@ -276,6 +269,13 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/show-depreciationprofile/</loc>
+    
+    <lastmod>2022-12-09</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/cancel-productreceipt-linkso/</loc>
     
     <lastmod>2022-12-09</lastmod>
     
@@ -382,14 +382,7 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/tags/D365FO/</loc>
-    <lastmod>2022-12-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/tags/Finance/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/tags/D365FO-Finance/</loc>
     <lastmod>2022-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -410,14 +403,7 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/tags/Japan/</loc>
-    <lastmod>2022-12-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/tags/10-0-27/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/tags/Japan-localization/</loc>
     <lastmod>2022-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -431,35 +417,7 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/tags/10-0-25/</loc>
-    <lastmod>2022-12-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/tags/Form-26/</loc>
-    <lastmod>2022-12-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/tags/10-0-29/</loc>
-    <lastmod>2022-12-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/tags/financial-dimensions/</loc>
-    <lastmod>2022-12-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/tags/10-0-28/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/tags/Financial-dimensions/</loc>
     <lastmod>2022-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -473,21 +431,14 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/tags/Fixed-Assets/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/tags/Bug-Info/</loc>
     <lastmod>2022-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/tags/fixing/</loc>
-    <lastmod>2022-12-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/tags/Information/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/tags/D365FO-Fixed-Assets-issue/</loc>
     <lastmod>2022-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -501,14 +452,7 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/tags/10-0-26/</loc>
-    <lastmod>2022-12-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/tags/10-0-24/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/tags/D365FO/</loc>
     <lastmod>2022-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -536,6 +480,13 @@
   </url>
   
   <url>
+    <loc>https://jpdynamicserp.github.io/blog/tags/10-0-25/</loc>
+    <lastmod>2022-12-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://jpdynamicserp.github.io/blog/tags/sales-order/</loc>
     <lastmod>2022-12-09</lastmod>
     <changefreq>daily</changefreq>
@@ -543,7 +494,21 @@
   </url>
   
   <url>
+    <loc>https://jpdynamicserp.github.io/blog/tags/10-0-29/</loc>
+    <lastmod>2022-12-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://jpdynamicserp.github.io/blog/tags/purchase-order/</loc>
+    <lastmod>2022-12-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/tags/10-0-28/</loc>
     <lastmod>2022-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -585,7 +550,28 @@
   </url>
   
   <url>
+    <loc>https://jpdynamicserp.github.io/blog/tags/fixing/</loc>
+    <lastmod>2022-12-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/tags/10-0-26/</loc>
+    <lastmod>2022-12-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://jpdynamicserp.github.io/blog/tags/Procurement-and-sourcing-parameters/</loc>
+    <lastmod>2022-12-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/tags/10-0-24/</loc>
     <lastmod>2022-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -662,6 +648,13 @@
   </url>
   
   <url>
+    <loc>https://jpdynamicserp.github.io/blog/tags/Information/</loc>
+    <lastmod>2022-12-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://jpdynamicserp.github.io/blog/tags/Export-to-Data-Lake/</loc>
     <lastmod>2022-12-09</lastmod>
     <changefreq>daily</changefreq>
@@ -670,6 +663,13 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/tags/License/</loc>
+    <lastmod>2022-12-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/tags/Japan/</loc>
     <lastmod>2022-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
