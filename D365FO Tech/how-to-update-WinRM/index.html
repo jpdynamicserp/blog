@@ -18,7 +18,7 @@
 <meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-update-WinRM/how-to-update-WinRM2.png">
 <meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-update-WinRM/how-to-update-WinRM3.png">
 <meta property="article:published_time" content="2022-07-03T15:00:00.000Z">
-<meta property="article:modified_time" content="2022-12-29T05:08:59.157Z">
+<meta property="article:modified_time" content="2022-12-29T05:21:20.396Z">
 <meta property="article:author" content="Dynamics ERP Support Japan">
 <meta property="article:tag" content="D365FO Tech">
 <meta property="article:tag" content="LCS">
@@ -109,7 +109,7 @@
         
         <a href="https://github.com/jpdynamicserp/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+161fec1c-a4c6-59bf-8af0-e9b5964e1663%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5B%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E3%83%9B%E3%82%B9%E3%83%88%E7%92%B0%E5%A2%83%E3%81%A7WinRM+%E8%A8%BC%E6%98%8E%E6%9B%B8%E3%82%92%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95%5D%28https%3A%2F%2Fjpdynamicserp.github.io%2Fblog%2FD365FO%2520Tech%2Fhow-to-update-WinRM%2F%29%0A*+Content+Source%3A+%5Barticles%2FD365FO+Tech%2Fhow-to-update-WinRM.md%5D%28https%3A%2F%2Fgithub.com%2Fjpdynamicserp%2Fblob%2Fmain%2Farticles%2FD365FO%2520Tech%2Fhow-to-update-WinRM.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
         
-        <a data-url="https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-update-WinRM/" data-id="clc8mm4e3001t0mrs0bhm33j4" class="article-share-link">共有</a>
+        <a data-url="https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-update-WinRM/" data-id="clc8n1xya001t0mljc8fchhxp" class="article-share-link">共有</a>
       </div>
     
     <div class="article-entry" itemprop="articleBody">
@@ -117,7 +117,7 @@
         <p>こんにちは、Dynamics ERP サポートチームの佐藤です。</p>
 <p>Dynamics 365 Finance and Operations のクラウドホスト環境でシークレットの入れ替えを実施した際に、<br>WinRM SSL 証明書の有効期限が切れている旨のエラーが出ることがありますので、WinRM SSL 証明書の有効期限をアップデートする方法を紹介します。  </p>
 <span id="more"></span>
-<h2 id="検証に用いた製品・バージョン"><a href="#検証に用いた製品・バージョン" class="headerlink" title="検証に用いた製品・バージョン"></a>検証に用いた製品・バージョン</h2><p>Dynamics 365 Finance and Operations<br>Application version: 10.0.26<br>Platform version: PU50</p>
+<h2 id="検証に用いた製品・バージョン"><a href="#検証に用いた製品・バージョン" class="headerlink" title="検証に用いた製品・バージョン"></a>検証に用いた製品・バージョン</h2><p>Dynamics 365 Finance and Operations<br>Application version: 10.0.31<br>Platform version: PU55</p>
 <h2 id="シークレットの入れ替え方法"><a href="#シークレットの入れ替え方法" class="headerlink" title="シークレットの入れ替え方法"></a>シークレットの入れ替え方法</h2><p>プロジェクトオーナーまたは環境管理者は、LCSからシークレットを入れ替えることが可能です。<br>シークレットの入れ替えを行うには、LCS にて対象プロジェクト &gt; [対象の環境] &gt; [管理] &gt; [シークレットの入れ替え] を選択します。<br>エラーが出なければ、本Blogの<a href="#%E5%B1%A5%E6%AD%B4%E3%81%AE%E7%A2%BA%E8%AA%8D">履歴の確認</a>の操作にて、[シークレットの入れ替え] の完了が確認できます。  </p>
 <h2 id="前提条件"><a href="#前提条件" class="headerlink" title="前提条件"></a>前提条件</h2><p>クラウドホスト環境のWinRM SSL 証明書の有効期限は、環境が構築された日から 1 年です。  </p>
 <h2 id="WinRM-SSL-証明書の有効期限の確認方法"><a href="#WinRM-SSL-証明書の有効期限の確認方法" class="headerlink" title="WinRM SSL 証明書の有効期限の確認方法"></a>WinRM SSL 証明書の有効期限の確認方法</h2><ol>
