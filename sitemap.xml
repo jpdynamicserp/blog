@@ -30,13 +30,6 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/temporary-change-language-d365fo/</loc>
-    
-    <lastmod>2023-01-16</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/no-one-can-access-LCS-project/</loc>
     
     <lastmod>2023-01-16</lastmod>
@@ -86,6 +79,13 @@
   </url>
   
   <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/temporary-change-language-d365fo/</loc>
+    
+    <lastmod>2023-01-16</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-update-WinRM/</loc>
     
     <lastmod>2023-01-16</lastmod>
@@ -107,13 +107,6 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-powerautomateapi/</loc>
-    
-    <lastmod>2023-01-16</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-run-custom-script-d365fo/</loc>
     
     <lastmod>2023-01-16</lastmod>
@@ -122,6 +115,13 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-post-ideas/</loc>
+    
+    <lastmod>2023-01-16</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-powerautomateapi/</loc>
     
     <lastmod>2023-01-16</lastmod>
     
@@ -226,6 +226,13 @@
   </url>
   
   <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/product-filter/</loc>
+    
+    <lastmod>2023-01-16</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/inventory-counting-group/</loc>
     
     <lastmod>2023-01-16</lastmod>
@@ -261,6 +268,13 @@
   </url>
   
   <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/cancel-productreceipt-linkso/</loc>
+    
+    <lastmod>2023-01-16</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/how-to-correct-deliverycontroldata/</loc>
     
     <lastmod>2023-01-16</lastmod>
@@ -282,7 +296,7 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/cancel-productreceipt-linkso/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/lumpsum-asset-depreciation-issue/</loc>
     
     <lastmod>2023-01-16</lastmod>
     
@@ -303,14 +317,14 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/lumpsum-asset-depreciation-issue/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/how-to-register-temporary-credit-limit/</loc>
     
     <lastmod>2023-01-16</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/how-to-register-temporary-credit-limit/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/create-consolidated-invoice/</loc>
     
     <lastmod>2023-01-16</lastmod>
     
@@ -331,20 +345,6 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/create-appended-table16-report/</loc>
-    
-    <lastmod>2023-01-16</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/create-consolidated-invoice/</loc>
-    
-    <lastmod>2023-01-16</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/add-new-fiscal-year/</loc>
     
     <lastmod>2023-01-16</lastmod>
@@ -353,6 +353,13 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/change-fixed-asset-service-life/</loc>
+    
+    <lastmod>2023-01-16</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/create-appended-table16-report/</loc>
     
     <lastmod>2023-01-16</lastmod>
     
@@ -530,6 +537,13 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/tags/Inventory-counting/</loc>
+    <lastmod>2023-01-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/tags/Product-filter/</loc>
     <lastmod>2023-01-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
