@@ -30,27 +30,6 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/temporary-change-language-d365fo/</loc>
-    
-    <lastmod>2023-02-28</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-use-tablebrowser-d365fo/</loc>
-    
-    <lastmod>2023-02-28</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/no-one-can-access-LCS-project/</loc>
-    
-    <lastmod>2023-02-28</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/notes-on-updating-d365fo/</loc>
     
     <lastmod>2023-02-28</lastmod>
@@ -93,6 +72,13 @@
   </url>
   
   <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/temporary-change-language-d365fo/</loc>
+    
+    <lastmod>2023-02-28</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-update-WinRM/</loc>
     
     <lastmod>2023-02-28</lastmod>
@@ -100,7 +86,28 @@
   </url>
   
   <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-use-tablebrowser-d365fo/</loc>
+    
+    <lastmod>2023-02-28</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/no-one-can-access-LCS-project/</loc>
+    
+    <lastmod>2023-02-28</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-set-related-tables-for-office-addin-using-word/</loc>
+    
+    <lastmod>2023-02-28</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-powerautomateapi/</loc>
     
     <lastmod>2023-02-28</lastmod>
     
@@ -115,13 +122,6 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-post-ideas/</loc>
-    
-    <lastmod>2023-02-28</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-powerautomateapi/</loc>
     
     <lastmod>2023-02-28</lastmod>
     
@@ -149,20 +149,6 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/environments/</loc>
-    
-    <lastmod>2023-02-28</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/export-to-data-lake-yammer-group/</loc>
-    
-    <lastmod>2023-02-28</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/fo-extend-trial/</loc>
     
     <lastmod>2023-02-28</lastmod>
@@ -171,13 +157,6 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/get-environment-id/</loc>
-    
-    <lastmod>2023-02-28</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/apply-quality-update-d365fo/</loc>
     
     <lastmod>2023-02-28</lastmod>
     
@@ -198,6 +177,20 @@
   </url>
   
   <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/environments/</loc>
+    
+    <lastmod>2023-02-28</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/export-to-data-lake-yammer-group/</loc>
+    
+    <lastmod>2023-02-28</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/aad-conditional-access/</loc>
     
     <lastmod>2023-02-28</lastmod>
@@ -206,6 +199,13 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/about-fno-support/</loc>
+    
+    <lastmod>2023-02-28</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/apply-quality-update-d365fo/</loc>
     
     <lastmod>2023-02-28</lastmod>
     
@@ -345,6 +345,13 @@
   </url>
   
   <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/how-to-register-temporary-credit-limit/</loc>
+    
+    <lastmod>2023-02-28</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/create-form26-report/</loc>
     
     <lastmod>2023-02-28</lastmod>
@@ -359,7 +366,7 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/how-to-register-temporary-credit-limit/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/change-fixed-asset-service-life/</loc>
     
     <lastmod>2023-02-28</lastmod>
     
@@ -395,13 +402,6 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/add-new-fiscal-year/</loc>
-    
-    <lastmod>2023-02-28</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/change-fixed-asset-service-life/</loc>
     
     <lastmod>2023-02-28</lastmod>
     
