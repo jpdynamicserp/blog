@@ -6,19 +6,19 @@
   
   <title>保管場所を移動しても償却資産税申告書に反映されない事象について | Japan Dynamics ERP Support Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="こんにちは、Dynamics ERP サポートチームの尾崎です。この記事では固定資産の保管場所を移動した際に、償却資産税申告書に移動結果が反映されない事象についてご案内します。 更新履歴2023 年 3 月 20 日 (月) : ブログ公開 検証に用いた製品・バージョンDynamics 365 Finance and OperationsApplication version: 10.0.32 P">
+  <meta name="description" content="こんにちは、Dynamics ERP サポートチームの尾崎です。この記事では固定資産の保管場所を移動した際に、償却資産税申告書に移動結果が反映されない事象についてご案内します。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="保管場所を移動しても償却資産税申告書に反映されない事象について">
 <meta property="og:url" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/form26-report-fixed-asset-location-issue/index.html">
 <meta property="og:site_name" content="Japan Dynamics ERP Support Blog">
-<meta property="og:description" content="こんにちは、Dynamics ERP サポートチームの尾崎です。この記事では固定資産の保管場所を移動した際に、償却資産税申告書に移動結果が反映されない事象についてご案内します。 更新履歴2023 年 3 月 20 日 (月) : ブログ公開 検証に用いた製品・バージョンDynamics 365 Finance and OperationsApplication version: 10.0.32 P">
+<meta property="og:description" content="こんにちは、Dynamics ERP サポートチームの尾崎です。この記事では固定資産の保管場所を移動した際に、償却資産税申告書に移動結果が反映されない事象についてご案内します。">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/form26-report-fixed-asset-location-issue/form26-report-fixed-asset-location-issue1.png">
 <meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/form26-report-fixed-asset-location-issue/form26-report-fixed-asset-location-issue2.png">
 <meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/form26-report-fixed-asset-location-issue/form26-report-fixed-asset-location-issue3.png">
 <meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/form26-report-fixed-asset-location-issue/form26-report-fixed-asset-location-issue4.png">
 <meta property="article:published_time" content="2023-03-19T15:00:00.000Z">
-<meta property="article:modified_time" content="2023-03-20T07:06:23.926Z">
+<meta property="article:modified_time" content="2023-03-22T05:39:49.641Z">
 <meta property="article:author" content="Dynamics ERP Support Japan">
 <meta property="article:tag" content="D365FO Fixed Assets issue">
 <meta name="twitter:card" content="summary">
@@ -107,14 +107,16 @@
         
         <a href="https://github.com/jpdynamicserp/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+43f8f01c-feac-5c14-be8a-300bb059872d%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5B%E4%BF%9D%E7%AE%A1%E5%A0%B4%E6%89%80%E3%82%92%E7%A7%BB%E5%8B%95%E3%81%97%E3%81%A6%E3%82%82%E5%84%9F%E5%8D%B4%E8%B3%87%E7%94%A3%E7%A8%8E%E7%94%B3%E5%91%8A%E6%9B%B8%E3%81%AB%E5%8F%8D%E6%98%A0%E3%81%95%E3%82%8C%E3%81%AA%E3%81%84%E4%BA%8B%E8%B1%A1%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%5D%28https%3A%2F%2Fjpdynamicserp.github.io%2Fblog%2FD365FO%2520App%2520FIN%2Fform26-report-fixed-asset-location-issue%2F%29%0A*+Content+Source%3A+%5Barticles%2FD365FO+App+FIN%2Fform26-report-fixed-asset-location-issue.md%5D%28https%3A%2F%2Fgithub.com%2Fjpdynamicserp%2Fblob%2Fmain%2Farticles%2FD365FO%2520App%2520FIN%2Fform26-report-fixed-asset-location-issue.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
         
-        <a data-url="https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/form26-report-fixed-asset-location-issue/" data-id="clfghh3b1000c0nnthqk1ej0x" class="article-share-link">共有</a>
+        <a data-url="https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/form26-report-fixed-asset-location-issue/" data-id="clfj99i25000c0npie99x7abk" class="article-share-link">共有</a>
       </div>
     
     <div class="article-entry" itemprop="articleBody">
       
         <p>こんにちは、Dynamics ERP サポートチームの尾崎です。<br>この記事では固定資産の保管場所を移動した際に、償却資産税申告書に移動結果が反映されない事象についてご案内します。</p>
+<span id="more"></span>
+
 <h2 id="更新履歴"><a href="#更新履歴" class="headerlink" title="更新履歴"></a>更新履歴</h2><p>2023 年 3 月 20 日 (月) : ブログ公開</p>
-<h2 id="検証に用いた製品・バージョン"><a href="#検証に用いた製品・バージョン" class="headerlink" title="検証に用いた製品・バージョン"></a>検証に用いた製品・バージョン</h2><p>Dynamics 365 Finance and Operations<br>Application version: 10.0.32 Platform version: PU56</p>
+<h2 id="検証に用いた製品・バージョン"><a href="#検証に用いた製品・バージョン" class="headerlink" title="検証に用いた製品・バージョン"></a>検証に用いた製品・バージョン</h2><p>Dynamics 365 Finance and Operations<br>Application version: 10.0.32<br>Platform version: PU56  </p>
 <h2 id="事象の再現手順"><a href="#事象の再現手順" class="headerlink" title="事象の再現手順"></a>事象の再現手順</h2><p>弊社標準環境 JPMF を使用した事象の再現手順は以下のようになっております。</p>
 <ol>
 <li>固定資産パラメーターにて場所移動を許可します。</li>
