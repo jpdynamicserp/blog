@@ -30,6 +30,20 @@
   </url>
   
   <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/temporary-change-language-d365fo/</loc>
+    
+    <lastmod>2023-03-23</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/no-one-can-access-LCS-project/</loc>
+    
+    <lastmod>2023-03-23</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/notes-on-updating-d365fo/</loc>
     
     <lastmod>2023-03-23</lastmod>
@@ -72,7 +86,7 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/temporary-change-language-d365fo/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-update-WinRM/</loc>
     
     <lastmod>2023-03-23</lastmod>
     
@@ -86,28 +100,7 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/no-one-can-access-LCS-project/</loc>
-    
-    <lastmod>2023-03-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-update-WinRM/</loc>
-    
-    <lastmod>2023-03-23</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-set-related-tables-for-office-addin-using-word/</loc>
-    
-    <lastmod>2023-03-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-powerautomateapi/</loc>
     
     <lastmod>2023-03-23</lastmod>
     
@@ -128,14 +121,14 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-pipeline/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-powerautomateapi/</loc>
     
     <lastmod>2023-03-23</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-create-env-with-sample-data/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-pipeline/</loc>
     
     <lastmod>2023-03-23</lastmod>
     
@@ -149,7 +142,35 @@
   </url>
   
   <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-create-env-with-sample-data/</loc>
+    
+    <lastmod>2023-03-23</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-check-necessary-role-and-license/</loc>
+    
+    <lastmod>2023-03-23</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/fo-extend-trial/</loc>
+    
+    <lastmod>2023-03-23</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/get-environment-id/</loc>
+    
+    <lastmod>2023-03-23</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/browser-session-id/</loc>
     
     <lastmod>2023-03-23</lastmod>
     
@@ -177,20 +198,6 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/fo-extend-trial/</loc>
-    
-    <lastmod>2023-03-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/get-environment-id/</loc>
-    
-    <lastmod>2023-03-23</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/about-fno-support/</loc>
     
     <lastmod>2023-03-23</lastmod>
@@ -205,7 +212,7 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/browser-session-id/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/restrict-so-edit/</loc>
     
     <lastmod>2023-03-23</lastmod>
     
@@ -220,13 +227,6 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/restrict-po-edit/</loc>
-    
-    <lastmod>2023-03-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/restrict-so-edit/</loc>
     
     <lastmod>2023-03-23</lastmod>
     
@@ -324,6 +324,13 @@
   </url>
   
   <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/show-depreciationprofile/</loc>
+    
+    <lastmod>2023-03-23</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/new-invoicing-system-requirements/</loc>
     
     <lastmod>2023-03-23</lastmod>
@@ -332,13 +339,6 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/perdiem-expense-project/</loc>
-    
-    <lastmod>2023-03-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/show-depreciationprofile/</loc>
     
     <lastmod>2023-03-23</lastmod>
     
@@ -373,6 +373,20 @@
   </url>
   
   <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/form26-report-fixed-asset-location-issue/</loc>
+    
+    <lastmod>2023-03-23</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/create-consolidated-invoice/</loc>
+    
+    <lastmod>2023-03-23</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/create-form26-report/</loc>
     
     <lastmod>2023-03-23</lastmod>
@@ -380,7 +394,14 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/form26-report-fixed-asset-location-issue/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/White-paper-that-the-Act-on-Book-and-Record-Keeping-through-Electronic-Method/</loc>
+    
+    <lastmod>2023-03-23</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/add-new-fiscal-year/</loc>
     
     <lastmod>2023-03-23</lastmod>
     
@@ -401,28 +422,7 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/create-consolidated-invoice/</loc>
-    
-    <lastmod>2023-03-23</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365BC%20Tech/how-to-enable-table-change-log-d365bc/</loc>
-    
-    <lastmod>2023-03-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/White-paper-that-the-Act-on-Book-and-Record-Keeping-through-Electronic-Method/</loc>
-    
-    <lastmod>2023-03-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/add-new-fiscal-year/</loc>
     
     <lastmod>2023-03-23</lastmod>
     
