@@ -20,6 +20,9 @@
 <meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/how-to-create-sales-order/step5-1.png">
 <meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/how-to-create-sales-order/step6.png">
 <meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/how-to-create-sales-order/step7.png">
+<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/how-to-create-sales-order/hou-to-create-sales-order/step7-2.png">
+<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/how-to-create-sales-order/hou-to-create-sales-order/step7-3.png">
+<meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/how-to-create-sales-order/hou-to-create-sales-order/step7-4.png">
 <meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/how-to-create-sales-order/step8.png">
 <meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/how-to-create-sales-order/step9-1.png">
 <meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/how-to-create-sales-order/step9-2.png">
@@ -27,7 +30,7 @@
 <meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/how-to-create-sales-order/step11.png">
 <meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/how-to-create-sales-order/step12.png">
 <meta property="article:published_time" content="2022-09-21T15:00:00.000Z">
-<meta property="article:modified_time" content="2023-04-13T11:08:03.354Z">
+<meta property="article:modified_time" content="2023-04-20T00:00:23.720Z">
 <meta property="article:author" content="Dynamics ERP Support Japan">
 <meta property="article:tag" content="D365FO SCM">
 <meta property="article:tag" content="Sales order">
@@ -117,50 +120,52 @@
         
         <a href="https://github.com/jpdynamicserp/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+5636d523-8562-538a-9d14-aa8e74b9188d%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5B%E8%B2%A9%E5%A3%B2%E6%B3%A8%E6%96%87%E4%BD%9C%E6%88%90%E3%81%AE%E4%B8%80%E9%80%A3%E3%81%AE%E6%B5%81%E3%82%8C%5D%28https%3A%2F%2Fjpdynamicserp.github.io%2Fblog%2FD365FO%2520App%2520SCM%2Fhow-to-create-sales-order%2F%29%0A*+Content+Source%3A+%5Barticles%2FD365FO+App+SCM%2Fhow-to-create-sales-order.md%5D%28https%3A%2F%2Fgithub.com%2Fjpdynamicserp%2Fblob%2Fmain%2Farticles%2FD365FO%2520App%2520SCM%2Fhow-to-create-sales-order.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
         
-        <a data-url="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/how-to-create-sales-order/" data-id="clgf0ocjo00120no204abguot" class="article-share-link">共有</a>
+        <a data-url="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/how-to-create-sales-order/" data-id="clgocwmrc00120npa9ad7dc1k" class="article-share-link">共有</a>
       </div>
     
     <div class="article-entry" itemprop="articleBody">
       
         <p>こんにちは、Dynamics ERP サポートチームの道浦です。<br>この記事では、 Dynamics 365 Finance and Operations にて、 販売注文作成の一連の流れについて紹介します。</p>
 <span id="more"></span>
-<h2 id="検証に用いた製品・バージョン"><a href="#検証に用いた製品・バージョン" class="headerlink" title="検証に用いた製品・バージョン"></a>検証に用いた製品・バージョン</h2><p>Dynamics 365 Finance and Operations<br>Application version: 10.0.28<br>Platform version: PU52  </p>
-<h2 id="販売注文作成の一連の流れ"><a href="#販売注文作成の一連の流れ" class="headerlink" title="販売注文作成の一連の流れ"></a>販売注文作成の一連の流れ</h2><ol>
-<li><p>売掛金管理 &gt; 注文 &gt; すべての販売注文の順にクリックする<br> <img src="/blog/D365FO%20App%20SCM/how-to-create-sales-order/step1.png"></p>
+<h2 id="検証に用いた製品・バージョン"><a href="#検証に用いた製品・バージョン" class="headerlink" title="検証に用いた製品・バージョン"></a>検証に用いた製品・バージョン</h2><p>Dynamics 365 Finance and Operations<br>Application version : 10.0.33<br>Platform version : PU 57<br>Legal entity : USMF  </p>
+<h2 id="販売注文作成前の一連の流れ"><a href="#販売注文作成前の一連の流れ" class="headerlink" title="販売注文作成前の一連の流れ"></a>販売注文作成前の一連の流れ</h2><ol>
+<li><p>[売掛金管理] &gt; [注文] &gt; [すべての販売注文] の順にクリックする<br> <img src="/blog/D365FO%20App%20SCM/how-to-create-sales-order/step1.png"></p>
 </li>
-<li><p>左上の「+ 新規」をクリックし、「顧客ID」を入力する<br> 設定が完了した後、OK ボタンをクリックする<br> ※顧客 ID を入力すると、「名前」以降は自動入力されます<br> <img src="/blog/D365FO%20App%20SCM/how-to-create-sales-order/step2.png"></p>
+<li><p>[新規] をクリックし、[顧客 ID] を入力する<br> 設定が完了した後、[OK] ボタンをクリックする<br> ※ 顧客 ID を入力すると、”名前” 以降は自動で入力されます<br> <img src="/blog/D365FO%20App%20SCM/how-to-create-sales-order/step2.png"></p>
 </li>
-</ol>
-<ol start="3">
-<li>「購買注文明細行」に必要な項目を入力する<br> ※「品目番号」を入力すると、製品マスタに登録している内容は自動入力されます。<br> <img src="/blog/D365FO%20App%20SCM/how-to-create-sales-order/step3.png"></li>
-</ol>
-<ol start="4">
-<li>左上の「保存」ボタンをクリックする  </li>
-</ol>
-<ol start="5">
-<li><p>販売 &gt; 生成 &gt; 販売注文の確認の順にクリックし、販売注文の入力内容を確認し、 「 OK 」をクリックする<br> <img src="/blog/D365FO%20App%20SCM/how-to-create-sales-order/step5.png"><br> <img src="/blog/D365FO%20App%20SCM/how-to-create-sales-order/step5-1.png"> </p>
-<p> ※ピッキングリストを作成する必要がない場合は、6, 7 番の手順はスキップします</p>
+<li><p>“購買注文明細行” に必要な項目を入力する<br> ※ [品目番号] を入力すると、製品マスタに登録している内容は自動入力されます。<br> <img src="/blog/D365FO%20App%20SCM/how-to-create-sales-order/step3.png"></p>
 </li>
-<li><p>ピッキングと梱包 &gt; 生成 &gt; ピッキングリストの生成の順にクリックする<br> <img src="/blog/D365FO%20App%20SCM/how-to-create-sales-order/step6.png"> </p>
-</li>
-<li><p>入力内容を確認し、「 OK 」をクリックする<br> <img src="/blog/D365FO%20App%20SCM/how-to-create-sales-order/step7.png"> </p>
+<li><p>[保存] ボタンをクリックする<br> 販売注文のステータスが “オープン注文” と表示されれば販売注文が作成されたことになります。  </p>
 </li>
 </ol>
-<ol start="8">
-<li><p>ピッキングと梱包 &gt; 生成 &gt; 梱包明細の転記を順にクリックする<br> <img src="/blog/D365FO%20App%20SCM/how-to-create-sales-order/step8.png"> </p>
+<h2 id="販売注文作成後の一連の流れ"><a href="#販売注文作成後の一連の流れ" class="headerlink" title="販売注文作成後の一連の流れ"></a>販売注文作成後の一連の流れ</h2><ol>
+<li><p>[販売] &gt; [生成] &gt; [販売注文の確認] の順にクリックし、販売注文の入力内容を確認し、[OK] をクリックする<br> <img src="/blog/D365FO%20App%20SCM/how-to-create-sales-order/step5.png"> </p>
+<p> <img src="/blog/D365FO%20App%20SCM/how-to-create-sales-order/step5-1.png"> </p>
+<p> ※ピッキング リストを作成する必要がない場合は、以下 3 つの手順はスキップします</p>
 </li>
-<li><p>「パラメーター」の「数量」の箇所について、 6 番の手順を実施した場合は「ピッキング済み」、6 番の手順をスキップした場合は「すべて」に変更する。  </p>
-<p> &lt; ピッキングリスト作成した場合 &gt;<br> <img src="/blog/D365FO%20App%20SCM/how-to-create-sales-order/step9-1.png"><br> &lt; ピッキングリストの作成をスキップした場合 &gt;<br> <img src="/blog/D365FO%20App%20SCM/how-to-create-sales-order/step9-2.png"> </p>
+<li><p>[ピッキングと梱包] &gt; [生成] &gt; [ピッキング リストの生成] の順にクリックする<br> <img src="/blog/D365FO%20App%20SCM/how-to-create-sales-order/step6.png"> </p>
 </li>
-<li><p>請求書 &gt; 生成 &gt; 請求書の順にクリックする<br><img src="/blog/D365FO%20App%20SCM/how-to-create-sales-order/step10.png"></p>
+<li><p>入力内容を確認し、[OK] をクリックする<br> <img src="/blog/D365FO%20App%20SCM/how-to-create-sales-order/step7.png"> </p>
 </li>
-<li><p>請求の転記する内容を確認して、「 OK 」をクリックする<br><img src="/blog/D365FO%20App%20SCM/how-to-create-sales-order/step11.png"></p>
+<li><p>[ピッキングと梱包] &gt; [生成] &gt; [ピッキング リスト登録] の順にクリックする<br> <img src="./hou-to-create-sales-order/step7-2.png"></p>
 </li>
-<li><p>画面遷移後、画面右上のところに「請求済」が表示されます。<br>表示されれば販売注文が無事に作成されたことになります。<br> <img src="/blog/D365FO%20App%20SCM/how-to-create-sales-order/step12.png">   </p>
+<li><p>[更新] &gt; [すべて更新] の順にクリックする<br> <img src="./hou-to-create-sales-order/step7-3.png"></p>
+</li>
+<li><p>[明細行] に表示されている全ての明細行の [処理ステータス] が “完了” になっていることを確認し、販売注文に戻る<br> <img src="./hou-to-create-sales-order/step7-4.png"></p>
+</li>
+<li><p>[ピッキングと梱包] &gt; [生成] &gt; [梱包明細の転記] の順にクリックする<br> <img src="/blog/D365FO%20App%20SCM/how-to-create-sales-order/step8.png"> </p>
+</li>
+<li><p>“パラメーター” の “数量” の箇所について、 ピッキング リスト作成の手順を実施した場合は [ピッキング済] とし、手順をスキップした場合は [すべて] に変更し、[OK] をクリックする  </p>
+<p> &lt;ピッキング リスト作成した場合&gt;<br> <img src="/blog/D365FO%20App%20SCM/how-to-create-sales-order/step9-1.png"><br> &lt;ピッキング リストの作成をスキップした場合&gt;<br> <img src="/blog/D365FO%20App%20SCM/how-to-create-sales-order/step9-2.png">  </p>
+</li>
+<li><p>[請求書] &gt; [生成] &gt; [請求書] の順にクリックする<br> <img src="/blog/D365FO%20App%20SCM/how-to-create-sales-order/step10.png"></p>
+</li>
+<li><p>請求の転記内容を確認して、[OK] をクリックする<br> <img src="/blog/D365FO%20App%20SCM/how-to-create-sales-order/step11.png"></p>
 </li>
 </ol>
+<h2 id="販売注文の一連の流れが完了した後"><a href="#販売注文の一連の流れが完了した後" class="headerlink" title="販売注文の一連の流れが完了した後"></a>販売注文の一連の流れが完了した後</h2><p>販売注文のステータスが “請求済” と表示されます<br><img src="/blog/D365FO%20App%20SCM/how-to-create-sales-order/step12.png">   </p>
 <hr>
-<h2 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h2><p>以上、 Dynamics 365 Finance and Operations にて、販売注文作成の一連の流れについてご紹介しました。<br>より詳細な情報が必要な場合、弊社テクニカルサポート, Customer Success Account Manager (CSAM), Customer Engineer (CE) までお問い合わせください。</p>
+<h2 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h2><p>以上、 Dynamics 365 Finance and Operations にて、販売注文作成の一連の流れについてご紹介しました。<br>より詳細な情報が必要な場合、弊社テクニカルサポート、貴社担当のアカウントマネージャー (CSAM, PSAM)、弊社営業、およびクラウドソリューションアーキテクト (CSA-E) までお問い合わせください。</p>
 
       
       

@@ -18,7 +18,7 @@
 <meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/create-consolidated-invoice/CreateConsolidatedInvoice3.png">
 <meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/create-consolidated-invoice/CreateConsolidatedInvoice4.png">
 <meta property="article:published_time" content="2022-06-30T15:00:00.000Z">
-<meta property="article:modified_time" content="2023-04-13T11:08:03.186Z">
+<meta property="article:modified_time" content="2023-04-20T00:00:23.580Z">
 <meta property="article:author" content="Dynamics ERP Support Japan">
 <meta property="article:tag" content="D365FO Finance">
 <meta property="article:tag" content="Japan localization">
@@ -109,50 +109,48 @@
         
         <a href="https://github.com/jpdynamicserp/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+74cd59f9-e255-532e-a9a6-1e0cf7fd95da%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5B%E6%9C%88%E6%AC%A1%E7%B7%A0%E3%82%81%E8%AB%8B%E6%B1%82%E6%9B%B8%E3%81%AE%E4%BD%9C%E6%88%90%E6%89%8B%E9%A0%86%5D%28https%3A%2F%2Fjpdynamicserp.github.io%2Fblog%2FD365FO%2520App%2520FIN%2Fcreate-consolidated-invoice%2F%29%0A*+Content+Source%3A+%5Barticles%2FD365FO+App+FIN%2Fcreate-consolidated-invoice.md%5D%28https%3A%2F%2Fgithub.com%2Fjpdynamicserp%2Fblob%2Fmain%2Farticles%2FD365FO%2520App%2520FIN%2Fcreate-consolidated-invoice.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
         
-        <a data-url="https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/create-consolidated-invoice/" data-id="clgf0ocj0000a0no263tm8972" class="article-share-link">共有</a>
+        <a data-url="https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/create-consolidated-invoice/" data-id="clgocwmqt000a0npa1nq5gv0d" class="article-share-link">共有</a>
       </div>
     
     <div class="article-entry" itemprop="articleBody">
       
         <p>こんにちは、Dynamics ERP サポートチームの尾崎です。<br>この記事では、Dynamics 365 Finance and Operations (D365FO) の日本向けローカライゼーション機能である月次締め請求書作成手順を紹介します。  </p>
 <span id="more"></span>
-<h2 id="検証に用いた製品・バージョン"><a href="#検証に用いた製品・バージョン" class="headerlink" title="検証に用いた製品・バージョン"></a>検証に用いた製品・バージョン</h2><p>Dynamics 365 Finance and Operations<br>Application version: 10.0.25<br>Platform version: PU49</p>
+<h2 id="検証に用いた製品・バージョン"><a href="#検証に用いた製品・バージョン" class="headerlink" title="検証に用いた製品・バージョン"></a>検証に用いた製品・バージョン</h2><p>Dynamics 365 Finance and Operations<br>Application version : 10.0.33<br>Platform version : PU 57<br>Legal entity : JPMF  </p>
 <p>請求書に記載する毎月の支払予定日の情報を入力します。手順は以下のようになります。</p>
 <ol>
-<li>売掛金管理＞支払の設定＞支払期日を開く</li>
-<li>+新規ボタンを押下し、支払期日の名称を入力</li>
-<li>支払期日明細行では”週/月”に”月”を入力、”月の日付”には毎月の期日を入力（毎月の支払日に末日を設定する場合には31を入力）</li>
+<li>[売掛金管理] &gt; [支払の設定] &gt; [支払期日] を開く</li>
+<li>[新規] ボタンを押下し、”支払期日” の名称を入力</li>
+<li>支払期日明細行では [週/月] に “月” を入力、[月の日付] には毎月の期日を入力 (毎月の支払日に末日を設定する場合には 31 を入力)<br><img src="/blog/D365FO%20App%20FIN/create-consolidated-invoice/CreateConsolidatedInvoice1.png"></li>
 </ol>
-<p><img src="/blog/D365FO%20App%20FIN/create-consolidated-invoice/CreateConsolidatedInvoice1.png"></p>
 <h1 id="支払条件の設定"><a href="#支払条件の設定" class="headerlink" title="支払条件の設定"></a>支払条件の設定</h1><p>月次締め請求書における締日などの支払い条件を登録します。手順は以下のようになります。</p>
 <ol>
-<li>売掛金管理＞支払の設定＞支払条件を開く</li>
-<li>+新規ボタンを押下し、支払条件の名称を入力、支払方法には”締日”を選択</li>
-<li>月数には当月、翌月、翌々月などの情報を数字で入力（20日締翌月末払いの場合、締日に20、月数に1を入力）</li>
+<li>[売掛金管理] &gt; [支払の設定] &gt; [支払条件] を開く</li>
+<li>[新規] ボタンを押下し、[支払条件] の名称を入力、[支払方法] には “締日” を選択</li>
+<li>月数には当月、翌月、翌々月などの情報を数字で入力 (20 日締翌月末払いの場合、締日に “20”、月数に “1” を入力)<br><img src="/blog/D365FO%20App%20FIN/create-consolidated-invoice/CreateConsolidatedInvoice2.png"></li>
 </ol>
-<p><img src="/blog/D365FO%20App%20FIN/create-consolidated-invoice/CreateConsolidatedInvoice2.png"></p>
 <h1 id="月次締めグループの登録"><a href="#月次締めグループの登録" class="headerlink" title="月次締めグループの登録"></a>月次締めグループの登録</h1><p>月次締め請求書出力時に使用する顧客の月次締め日を登録します。手順は以下のようになります。</p>
 <ol>
-<li>売掛金管理＞顧客＞すべての顧客を開く</li>
-<li>対象の顧客を選択し、支払の既定値＞月次締め日に顧客の月次締め日を入力</li>
-<li>支払条件についても作成したものを入力</li>
+<li>[売掛金管理] &gt; [顧客] &gt; [すべての顧客] を開く</li>
+<li>対象の顧客を選択し、[支払の既定値] &gt; [月次締めグループ] &gt; [月次締め日] に顧客の月次締め日を入力</li>
+<li>[支払の既定値] &gt; [支払] &gt; [支払い条件] に作成したものを入力<br><img src="/blog/D365FO%20App%20FIN/create-consolidated-invoice/CreateConsolidatedInvoice3.png"></li>
 </ol>
-<p><img src="/blog/D365FO%20App%20FIN/create-consolidated-invoice/CreateConsolidatedInvoice3.png"></p>
-<h1 id="販売注文の作成"><a href="#販売注文の作成" class="headerlink" title="販売注文の作成"></a>販売注文の作成</h1><p>販売注文は通常の手順で作成したものを使用できます。月次締め日を登録した顧客について販売注文を作成し転記まで行います。</p>
+<h1 id="販売注文の作成および請求"><a href="#販売注文の作成および請求" class="headerlink" title="販売注文の作成および請求"></a>販売注文の作成および請求</h1><p>販売注文は通常の手順で作成したものを使用できます。月次締め日を登録した顧客について販売注文を作成し、請求書の転記まで行います。<br>参考ブログ : <a href="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/how-to-create-sales-order/">販売注文作成の一連の流れ</a>  </p>
 <h1 id="月次締め請求書の出力"><a href="#月次締め請求書の出力" class="headerlink" title="月次締め請求書の出力"></a>月次締め請求書の出力</h1><p>月次締め請求書の出力は以下の手順になります。</p>
 <ol>
-<li>売掛金管理＞定期処理のタスク＞月次締め請求書を開く</li>
-<li>+新規ボタンを押下し、パラメーターとレコードを選択して実行<ol>
-<li>パラメーターの実行日はセッション日付</li>
-<li>月次締め日を手動で設定したい場合、 “以下で指定する月次締め日の使用” を “はい” に変更</li>
+<li>[売掛金管理] &gt; [定期処理のタスク] &gt; [月次締め請求書] を開く</li>
+<li>[新規] ボタンを押下し、パラメーターとレコードを選択して実行<ol>
+<li>[パラメーター] &gt; [実行日] はセッション日付</li>
+<li>月次締め日を手動で設定したい場合、 [以下で指定する月次締め日の使用] を [Yes] に変更</li>
+<li>[対象に含めるレコード] &gt; [フィルター] を押下し、条件を指定する</li>
 </ol>
 </li>
-<li>データの取得に成功すると一覧に表示されるので、データを選択した状態で月次締め請求書＞月次締め請求書ボタンより印刷</li>
-<li>出力結果について確定する場合は確認ボタンを押下（確認済のものを変更する場合は再オープンを押下する）</li>
+<li>データの取得に成功すると一覧に表示されるので、データを選択した状態で [月次締め請求書] &gt; [印刷] &gt; [月次締め請求書] ボタンより印刷</li>
+<li>出力結果について確定する場合は[確認] ボタンを押下（確認済のものを変更する場合は [再オープン] を押下する）<br><img src="/blog/D365FO%20App%20FIN/create-consolidated-invoice/CreateConsolidatedInvoice4.png"></li>
 </ol>
-<p><img src="/blog/D365FO%20App%20FIN/create-consolidated-invoice/CreateConsolidatedInvoice4.png"></p>
-<p>(参考URL)<br><a target="_blank" rel="noopener" href="https://docs.microsoft.com/ja-jp/dynamics365/finance/localizations/tasks/create-confirm-customer-consolidated-invoice">顧客月次締め請求書の作成および確認</a><br><a target="_blank" rel="noopener" href="https://docs.microsoft.com/ja-jp/dynamics365/finance/localizations/apac-jpn-consolidate-invoices">日本向け月次締め請求書</a>  </p>
-<h1 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h1><p>以上、月次締め請求書の事前設定と出力の手順についてご紹介しました。<br>より詳細な情報が必要な場合、弊社テクニカルサポート、Customer Success Account Manager (CSAM), Customer Engineer (CE) までお問い合わせください。</p>
+<p>参考資料<br><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/dynamics365/finance/localizations/tasks/create-confirm-customer-consolidated-invoice">顧客月次締め請求書の作成および確認 - Finance | Dynamics 365 | Microsoft Learn</a><br><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/dynamics365/finance/localizations/apac-jpn-consolidate-invoices">日本向け月次締め請求書 - Finance | Dynamics 365 | Microsoft Learn</a>  </p>
+<hr>
+<h1 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h1><p>以上、月次締め請求書の事前設定と出力の手順についてご紹介しました。<br>より詳細な情報が必要な場合、弊社テクニカルサポート、貴社担当のアカウントマネージャー (CSAM, PSAM)、弊社営業、およびクラウドソリューションアーキテクト (CSA-E) までお問い合わせください。</p>
 
       
       

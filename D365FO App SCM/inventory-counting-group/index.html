@@ -20,7 +20,7 @@
 <meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/inventory-counting-group/inventory-counting-group_5.png">
 <meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/inventory-counting-group/inventory-counting-group_6.png">
 <meta property="article:published_time" content="2022-06-30T15:00:00.000Z">
-<meta property="article:modified_time" content="2023-04-13T11:08:03.530Z">
+<meta property="article:modified_time" content="2023-04-20T00:00:23.864Z">
 <meta property="article:author" content="Dynamics ERP Support Japan">
 <meta property="article:tag" content="D365FO SCM">
 <meta property="article:tag" content="Inventory counting">
@@ -110,56 +110,55 @@
         
         <a href="https://github.com/jpdynamicserp/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+2242ee09-0313-5d17-80a7-4f2db4ed73b4%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5B%E6%A3%9A%E5%8D%B8%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%9F%E6%A3%9A%E5%8D%B8%E3%81%AE%E5%AE%9F%E6%96%BD%E6%96%B9%E6%B3%95%5D%28https%3A%2F%2Fjpdynamicserp.github.io%2Fblog%2FD365FO%2520App%2520SCM%2Finventory-counting-group%2F%29%0A*+Content+Source%3A+%5Barticles%2FD365FO+App+SCM%2Finventory-counting-group.md%5D%28https%3A%2F%2Fgithub.com%2Fjpdynamicserp%2Fblob%2Fmain%2Farticles%2FD365FO%2520App%2520SCM%2Finventory-counting-group.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
         
-        <a data-url="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/inventory-counting-group/" data-id="clgf0ocjx001d0no2gi191mzr" class="article-share-link">共有</a>
+        <a data-url="https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/inventory-counting-group/" data-id="clgocwmrh001d0npa3goyaiad" class="article-share-link">共有</a>
       </div>
     
     <div class="article-entry" itemprop="articleBody">
       
         <p>こんにちは、Dynamics ERP サポートチームの細野です。<br>この記事では、棚卸グループを使用した棚卸の実施方法についてご案内いたします。  </p>
 <span id="more"></span>
-<h2 id="検証に用いた製品・バージョン"><a href="#検証に用いた製品・バージョン" class="headerlink" title="検証に用いた製品・バージョン"></a>検証に用いた製品・バージョン</h2><p>Dynamics 365 Finance and Operations<br>Application version: 10.0.25<br>Platform version: PU49</p>
+<h2 id="検証に用いた製品・バージョン"><a href="#検証に用いた製品・バージョン" class="headerlink" title="検証に用いた製品・バージョン"></a>検証に用いた製品・バージョン</h2><p>Dynamics 365 Finance and Operations<br>Application version : 10.0.33<br>Platform version : PU 57<br>Legal entity : USMF  </p>
 <p>棚卸グループを活用することにより、在庫棚卸仕訳帳において複数の品目に対する明細を簡単に作成することができます。<br>具体的な操作手順は以下の通りです。  </p>
 <h2 id="操作手順"><a href="#操作手順" class="headerlink" title="操作手順"></a>操作手順</h2><h3 id="棚卸グループの登録方法"><a href="#棚卸グループの登録方法" class="headerlink" title="棚卸グループの登録方法"></a>棚卸グループの登録方法</h3><ol>
-<li>在庫管理 &gt; 設定 &gt; 在庫 &gt; 棚卸グループ と遷移する</li>
-<li>「新規」を選択する</li>
-<li>「棚卸グループ」「名前」を指定する</li>
-<li>「棚卸コード」を選択する</li>
-<li>「保存」を選択する<br><img src="/blog/D365FO%20App%20SCM/inventory-counting-group/inventory-counting-group_1.png"></li>
+<li>[在庫管理] &gt; [設定] &gt; [在庫] &gt; [棚卸グループ] と遷移する</li>
+<li>[新規] を選択する</li>
+<li>“棚卸グループ” “名前” を指定する</li>
+<li>“棚卸コード” を選択する</li>
+<li>[保存] を選択する<br><img src="/blog/D365FO%20App%20SCM/inventory-counting-group/inventory-counting-group_1.png"></li>
 </ol>
 <hr>
 <h3 id="棚卸グループの割当"><a href="#棚卸グループの割当" class="headerlink" title="棚卸グループの割当"></a>棚卸グループの割当</h3><ol>
-<li><p>製品情報管理 &gt; 製品 &gt; リリース済製品 と遷移する</p>
+<li><p>[製品情報管理] &gt; [製品] &gt; [リリースされた製品] と遷移する</p>
 </li>
-<li><p>一覧で、棚卸ポリシーを設定する製品の品目を選択する</p>
-<p> 追跡される在庫から品目を選択する必要があります。 非在庫製品はカウントできません。<br><img src="/blog/D365FO%20App%20SCM/inventory-counting-group/inventory-counting-group_2.png"></p>
+<li><p>一覧から棚卸ポリシーを設定する製品の品目を選択する<br> 追跡される在庫から品目を選択する必要があります。 非在庫製品はカウントできません。<br><img src="/blog/D365FO%20App%20SCM/inventory-counting-group/inventory-counting-group_2.png"></p>
 </li>
-<li><p>編集 を選択する</p>
+<li><p>[編集] を選択する</p>
 </li>
-<li><p>在庫の管理 セクション を展開する</p>
+<li><p>[在庫の管理] セクション を展開する</p>
 </li>
-<li><p>棚卸グループ フィールドのドロップダウン メニューで、以前に作成した棚卸グループを選択する<br><img src="/blog/D365FO%20App%20SCM/inventory-counting-group/inventory-counting-group_3.png"></p>
+<li><p>「棚卸グループ」フィールドのドロップダウン メニューで、作成した棚卸グループを選択する<br><img src="/blog/D365FO%20App%20SCM/inventory-counting-group/inventory-counting-group_3.png"></p>
 </li>
-<li><p>保存 を選択する</p>
+<li><p>[保存] を選択する</p>
 </li>
 </ol>
 <hr>
 <h3 id="在庫棚卸仕訳帳での操作手順"><a href="#在庫棚卸仕訳帳での操作手順" class="headerlink" title="在庫棚卸仕訳帳での操作手順"></a>在庫棚卸仕訳帳での操作手順</h3><ol>
-<li><p>在庫管理 &gt; 仕訳入力 &gt; 品目棚卸 &gt; 棚卸 と遷移する</p>
+<li><p>[在庫管理] &gt; [仕訳入力] &gt; [品目棚卸] &gt; [棚卸] と遷移する</p>
 </li>
-<li><p>「新規」を選択し、新規に在庫棚卸仕訳帳を作成する</p>
+<li><p>[新規] を選択し、新規に在庫棚卸仕訳帳を作成する</p>
 </li>
-<li><p>   在庫棚卸仕訳帳にて「行の作成」を選択し、「手持在庫/品目/期限切れのバッチ」のいずれかを選択する<br><img src="/blog/D365FO%20App%20SCM/inventory-counting-group/inventory-counting-group_4.png"></p>
+<li><p>   在庫棚卸仕訳帳にて [行の作成] を選択し、[手持在庫][品目][期限切れのバッチ] のいずれかを選択する<br><img src="/blog/D365FO%20App%20SCM/inventory-counting-group/inventory-counting-group_4.png"></p>
 </li>
-<li><p>「手持在庫」を選択した場合、下記画像のダイアログが表示される</p>
+<li><p>[手持在庫] を選択した場合、下記画像のダイアログが表示される</p>
 </li>
-<li><p>ダイアログにて棚卸グループを指定し、OKを選択する<br><img src="/blog/D365FO%20App%20SCM/inventory-counting-group/inventory-counting-group_5.png"></p>
+<li><p>ダイアログにて棚卸グループを指定し、[OK] を選択する<br><img src="/blog/D365FO%20App%20SCM/inventory-counting-group/inventory-counting-group_5.png"></p>
 </li>
 <li><p>下記画像のように棚卸グループに設定されている品目など、上記ダイアログの条件に該当する品目に対して明細行が追加される<br><img src="/blog/D365FO%20App%20SCM/inventory-counting-group/inventory-counting-group_6.png"></p>
 </li>
 </ol>
-<h2 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h2><hr>
-<p>以上、棚卸グループを使用した棚卸の実施方法についてご紹介いたしました。  </p>
-<p>参考：<br><a target="_blank" rel="noopener" href="https://docs.microsoft.com/ja-jp/dynamics365/supply-chain/inventory/tasks/define-inventory-counting-processes#create-a-counting-group">https://docs.microsoft.com/ja-jp/dynamics365/supply-chain/inventory/tasks/define-inventory-counting-processes#create-a-counting-group</a></p>
+<p>参考：<br><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/inventory/tasks/define-inventory-counting-processes#create-a-counting-group">在庫棚卸プロセスの定義 - Supply Chain Management | Dynamics 365 | Microsoft Learn</a>  </p>
+<hr>
+<h2 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h2><p>以上、棚卸グループを使用した棚卸の実施方法についてご紹介いたしました。<br>より詳細な情報が必要な場合、弊社テクニカルサポート、貴社担当のアカウントマネージャー (CSAM, PSAM)、弊社営業、およびクラウドソリューションアーキテクト (CSA-E) までお問い合わせください。</p>
 
       
       
