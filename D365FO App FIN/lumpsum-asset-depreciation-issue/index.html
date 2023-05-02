@@ -16,7 +16,7 @@
 <meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/lumpsum-asset-depreciation-issue/lumpsum-asset-depreciation-issue1.png">
 <meta property="og:image" content="https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/lumpsum-asset-depreciation-issue/lumpsum-asset-depreciation-issue2.png">
 <meta property="article:published_time" content="2022-09-08T15:00:00.000Z">
-<meta property="article:modified_time" content="2023-04-25T07:10:31.564Z">
+<meta property="article:modified_time" content="2023-05-02T04:11:20.709Z">
 <meta property="article:author" content="Dynamics ERP Support Japan">
 <meta property="article:tag" content="D365FO Fixed Assets issue">
 <meta property="article:tag" content="Bug Info">
@@ -106,31 +106,31 @@
         
         <a href="https://github.com/jpdynamicserp/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+5a1b4540-cf22-5825-b88d-e7bd074e81c5%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5B%E4%B8%80%E6%8B%AC%E5%84%9F%E5%8D%B4%E8%B3%87%E7%94%A3%E3%81%AE%E6%B8%9B%E4%BE%A1%E5%84%9F%E5%8D%B4%E6%89%8B%E9%A0%86%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%5D%28https%3A%2F%2Fjpdynamicserp.github.io%2Fblog%2FD365FO%2520App%2520FIN%2Flumpsum-asset-depreciation-issue%2F%29%0A*+Content+Source%3A+%5Barticles%2FD365FO+App+FIN%2Flumpsum-asset-depreciation-issue.md%5D%28https%3A%2F%2Fgithub.com%2Fjpdynamicserp%2Fblob%2Fmain%2Farticles%2FD365FO%2520App%2520FIN%2Flumpsum-asset-depreciation-issue.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
         
-        <a data-url="https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/lumpsum-asset-depreciation-issue/" data-id="clgvxh1nx000k0nn21ckg369w" class="article-share-link">共有</a>
+        <a data-url="https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/lumpsum-asset-depreciation-issue/" data-id="clh5r5mxn000k0npn0r232ewm" class="article-share-link">共有</a>
       </div>
     
     <div class="article-entry" itemprop="articleBody">
       
         <p>こんにちは、Dynamics ERP サポートチームの尾崎です。<br>この記事では、Dynamics 365 Finance and Operations (D365FO) の日本向けローカライゼーション機能である一括償却資産の償却について、<br>総額から算出した当期の償却額を転記する手順を紹介します。<br>2022 年 8 月現在このシナリオはサポートされておらず、償却提案時には各一括償却資産から個別に算出された償却額を積み上げた値が提案されております。<br>例えば、165,100 円の固定資産が3つ登録されている場合、総額から算出すると 165,100 円となりますが、各資産の償却額を積み上げた場合、165100 / 3 ≒ 55033 * 3 = 165,099 となり 1 円のズレが生じます。</p>
 <span id="more"></span>
-<h2 id="検証に用いた製品・バージョン"><a href="#検証に用いた製品・バージョン" class="headerlink" title="検証に用いた製品・バージョン:"></a>検証に用いた製品・バージョン:</h2><p>Dynamics 365 Finance and Operations<br>Application version: 10.0.27<br>Platform version: PU51 </p>
+<h2 id="検証に用いた製品・バージョン"><a href="#検証に用いた製品・バージョン" class="headerlink" title="検証に用いた製品・バージョン:"></a>検証に用いた製品・バージョン:</h2><p>Dynamics 365 Finance and Operations<br>Application version : 10.0.27<br>Platform version : PU 51<br>Legal entity : JPMF </p>
 <p>一括償却資産の作成と取得を行います。</p>
 <h1 id="当期分の損金算入限度額の確認"><a href="#当期分の損金算入限度額の確認" class="headerlink" title="当期分の損金算入限度額の確認"></a>当期分の損金算入限度額の確認</h1><p>別表 16-8 レポートを出力し、当期の損金算入限度額を確認します。別表 16-8 レポートの出力方法は以下のようになります。</p>
 <ol>
-<li>固定資産＞照会およびレポート＞法人税別表 16 シリーズ＞別表 8 レポートを起動</li>
+<li>[固定資産] &gt; [照会およびレポート] &gt; [法人税別表 16 シリーズ] &gt; [別表 8 レポート] を起動</li>
 <li>パラメーターを選択して実行<br>一括償却資産の取得価額の合計額 (項目2) より算出された当期の損金算入限度額 (項目4) を確認します。</li>
 </ol>
 <p><img src="/blog/D365FO%20App%20FIN/lumpsum-asset-depreciation-issue/lumpsum-asset-depreciation-issue1.png"></p>
 <h1 id="償却提案の作成"><a href="#償却提案の作成" class="headerlink" title="償却提案の作成"></a>償却提案の作成</h1><p>当期の償却提案を行います。</p>
 <ol>
-<li>固定資産＞仕訳入力＞固定資産仕訳帳を起動</li>
-<li>＋新規より減価償却用の仕訳行を作成後、明細行をクリック</li>
-<li>提案＞償却提案より固定資産グループ等の条件を使用して一括償却資産に対象を絞り、償却提案を実行</li>
+<li>[固定資産] &gt; [仕訳入力] &gt; [固定資産仕訳帳] を起動</li>
+<li>[新規] より減価償却用の仕訳行を作成後、[明細行] をクリック</li>
+<li>[提案] &gt; [償却提案] より固定資産グループ等の条件を使用して一括償却資産に対象を絞り、償却提案を実行</li>
 <li>作成された減価償却金額と、確認した当期分の損金算入限度額の差額を調整<br>調整を行った対象を追跡可能とするため、説明欄に調整内容等を記載します。</li>
 </ol>
 <p><img src="/blog/D365FO%20App%20FIN/lumpsum-asset-depreciation-issue/lumpsum-asset-depreciation-issue2.png"></p>
 <h1 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h1><p>以上、一括償却資産の減価償却手順における調整手順についてご紹介しました。<br>一括償却資産の総額から当期の償却額を算出する方法について現在弊社にて修正を検討中でございます。</p>
-<p>より詳細な情報が必要な場合、弊社テクニカルサポート、Customer Success Account Manager (CSAM), Customer Engineer (CE) までお問い合わせください。</p>
+<p>より詳細な情報が必要な場合、弊社テクニカルサポート、貴社担当のアカウントマネージャー (CSAM, PSAM)、弊社営業、およびクラウドソリューションアーキテクト (CSA-E) までお問い合わせください。</p>
 
       
       
