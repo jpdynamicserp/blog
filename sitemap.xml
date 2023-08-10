@@ -2,27 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/temporary-change-language-d365fo/</loc>
-    
-    <lastmod>2023-08-10</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/update-subscription-estimator/</loc>
-    
-    <lastmod>2023-08-10</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/what-is-business-impact/</loc>
-    
-    <lastmod>2023-08-10</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/what-is-flight/</loc>
     
     <lastmod>2023-08-10</lastmod>
@@ -44,7 +23,14 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/no-one-can-access-LCS-project/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/update-subscription-estimator/</loc>
+    
+    <lastmod>2023-08-10</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/what-is-business-impact/</loc>
     
     <lastmod>2023-08-10</lastmod>
     
@@ -93,7 +79,7 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-update-WinRM/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/temporary-change-language-d365fo/</loc>
     
     <lastmod>2023-08-10</lastmod>
     
@@ -107,14 +93,21 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-set-related-tables-for-office-addin-using-word/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/no-one-can-access-LCS-project/</loc>
     
     <lastmod>2023-08-10</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-post-ideas/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-update-WinRM/</loc>
+    
+    <lastmod>2023-08-10</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-set-related-tables-for-office-addin-using-word/</loc>
     
     <lastmod>2023-08-10</lastmod>
     
@@ -135,7 +128,7 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-makedataevent/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-post-ideas/</loc>
     
     <lastmod>2023-08-10</lastmod>
     
@@ -143,6 +136,13 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-pipeline/</loc>
+    
+    <lastmod>2023-08-10</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-makedataevent/</loc>
     
     <lastmod>2023-08-10</lastmod>
     
@@ -170,21 +170,14 @@
   </url>
   
   <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-check-recurring-job/</loc>
+    
+    <lastmod>2023-08-10</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-check-necessary-role-and-license/</loc>
-    
-    <lastmod>2023-08-10</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/database-just-in-time-jit-access/</loc>
-    
-    <lastmod>2023-08-10</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/environments/</loc>
     
     <lastmod>2023-08-10</lastmod>
     
@@ -212,6 +205,27 @@
   </url>
   
   <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/browser-session-id/</loc>
+    
+    <lastmod>2023-08-10</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/database-just-in-time-jit-access/</loc>
+    
+    <lastmod>2023-08-10</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/environments/</loc>
+    
+    <lastmod>2023-08-10</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/about-fno-support/</loc>
     
     <lastmod>2023-08-10</lastmod>
@@ -226,20 +240,6 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/browser-session-id/</loc>
-    
-    <lastmod>2023-08-10</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/restrict-so-edit/</loc>
-    
-    <lastmod>2023-08-10</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/aad-conditional-access/</loc>
     
     <lastmod>2023-08-10</lastmod>
@@ -248,6 +248,13 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/restrict-po-edit/</loc>
+    
+    <lastmod>2023-08-10</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/restrict-so-edit/</loc>
     
     <lastmod>2023-08-10</lastmod>
     
@@ -310,20 +317,6 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/change-mrp-engine-from-32/</loc>
-    
-    <lastmod>2023-08-10</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/how-to-change-purchase-order-status/</loc>
-    
-    <lastmod>2023-08-10</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/how-to-correct-deliverycontroldata/</loc>
     
     <lastmod>2023-08-10</lastmod>
@@ -338,14 +331,35 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/show-depreciationprofile/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/cancel-productreceipt-linkso/</loc>
     
     <lastmod>2023-08-10</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/cancel-productreceipt-linkso/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/change-mrp-engine-from-32/</loc>
+    
+    <lastmod>2023-08-10</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/how-to-change-purchase-order-status/</loc>
+    
+    <lastmod>2023-08-10</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/perdiem-expense-project/</loc>
+    
+    <lastmod>2023-08-10</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/show-depreciationprofile/</loc>
     
     <lastmod>2023-08-10</lastmod>
     
@@ -360,13 +374,6 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/new-invoicing-system-requirements/</loc>
-    
-    <lastmod>2023-08-10</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/perdiem-expense-project/</loc>
     
     <lastmod>2023-08-10</lastmod>
     
@@ -429,13 +436,6 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365BC%20Tech/how-to-enable-table-change-log-d365bc/</loc>
-    
-    <lastmod>2023-08-10</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/White-paper-that-the-Act-on-Book-and-Record-Keeping-through-Electronic-Method/</loc>
     
     <lastmod>2023-08-10</lastmod>
@@ -451,6 +451,13 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/change-fixed-asset-service-life/</loc>
+    
+    <lastmod>2023-08-10</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365BC%20Tech/how-to-enable-table-change-log-d365bc/</loc>
     
     <lastmod>2023-08-10</lastmod>
     
@@ -761,6 +768,20 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/tags/Security-Roles/</loc>
+    <lastmod>2023-08-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/tags/recurring-integrations/</loc>
+    <lastmod>2023-08-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/tags/REST-API/</loc>
     <lastmod>2023-08-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
