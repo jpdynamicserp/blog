@@ -28,9 +28,8 @@ steps:
     git checkout -b $(newBranchName)
     git remote add repoA $(workingDirectory)/repoA
     git fetch repoA
-    latestCommit=$(git --git-dir=$(workingDirectory)/repoA/.git log -n 1 --pretty=format:"%H")
-    git cherry-pick $latestCommit
-  displayName: 'Cherry-pick Latest Commit from Repo A to New Branch in Repo B'
+    git merge repoA/main --strategy-option theirs
+  displayName: 'Merge Changes from Repo A to New Branch in Repo B with Conflict Resolution'
 
 - script: |
     cd $(workingDirectory)/repoB
