@@ -11,6 +11,8 @@ variables:
   azureDevOpsToken: $(AzureDevOpsPersonalAccessToken)
   githubToken: $(GithubPersonalAccessToken)
   workingDirectory: $(Pipeline.Workspace)/s
+  gitUserEmail: 'kanagayo@microsoft.com'
+  gitUserName: 'kanagayo'
 
 steps:
 - script: git clone https://$(azureDevOpsToken)@dev.azure.com/jpdynamics/DynamicsERP/_git/blog $(workingDirectory)/repoA
@@ -21,8 +23,10 @@ steps:
 
 - script: |
     cd $(workingDirectory)/repoB
+    git config user.email "$(gitUserEmail)"
+    git config user.name "$(gitUserName)"
     git checkout -b $(newBranchName)
-  displayName: 'Create and Checkout New Branch in Repo B'
+  displayName: 'Setup Git and Checkout New Branch in Repo B'
 
 - script: |
     rsync -av --exclude='.git/' $(workingDirectory)/repoA/ $(workingDirectory)/repoB/
@@ -33,6 +37,7 @@ steps:
     git add .
     git commit -m "Sync changes from Repo A"
     git push origin $(newBranchName)
+    echo "Pushed new branch $(newBranchName) to remote."
   displayName: 'Commit and Push New Branch to Repo B'
 
 - script: |
