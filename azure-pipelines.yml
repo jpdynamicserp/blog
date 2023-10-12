@@ -25,18 +25,17 @@ steps:
     cd $(workingDirectory)/repoB
     git config user.email "$(gitUserEmail)"
     git config user.name "$(gitUserName)"
+    git checkout -b $(newBranchName)
     git remote add repoA $(workingDirectory)/repoA
     git fetch repoA
-    git checkout -b $(newBranchName)
-    git merge repoA/main --allow-unrelated-histories
-  displayName: 'Merge Changes from Repo A to New Branch in Repo B'
+    latestCommit=$(git --git-dir=$(workingDirectory)/repoA/.git log -n 1 --pretty=format:"%H")
+    git cherry-pick $latestCommit
+  displayName: 'Cherry-pick Latest Commit from Repo A to New Branch in Repo B'
 
 - script: |
     cd $(workingDirectory)/repoB
-    git add .
-    git commit -m "Sync changes from Repo A"
     git push origin $(newBranchName)
-  displayName: 'Commit and Push New Branch to Repo B'
+  displayName: 'Push New Branch to Repo B'
 
 - script: |
     curl -X POST -H "Authorization: token $(githubToken)" -d '{
