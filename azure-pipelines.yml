@@ -10,8 +10,11 @@ variables:
 
 steps:
 - script: |
-    git clone https://jpdynamics:$(PRIVATE_REPO_TOKEN)@dev.azure.com/jpdynamics/DynamicsERP/_git/blog private-repository
+    git clone https://jpdynamics:${PRIVATE_REPO_TOKEN}@dev.azure.com/jpdynamics/DynamicsERP/_git/blog private-repository
   displayName: 'Clone private repo'
+  env:
+    PRIVATE_REPO_TOKEN: $(PrivateRepoToken)
+
 
 - script: |
     sudo apt-get install -y software-properties-common
