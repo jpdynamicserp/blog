@@ -10,25 +10,26 @@ variables:
   newBranchName: 'new-feature-$(Build.BuildId)'
   azureDevOpsToken: $(AzureDevOpsPersonalAccessToken)
   githubToken: $(GithubPersonalAccessToken)
+  workingDirectory: $(Pipeline.Workspace)/s
 
 steps:
-- script: git clone https://$(azureDevOpsToken)@dev.azure.com/jpdynamics/DynamicsERP/_git/blog repoA
+- script: git clone https://$(azureDevOpsToken)@dev.azure.com/jpdynamics/DynamicsERP/_git/blog $(workingDirectory)/repoA
   displayName: 'Clone Repo A from Azure DevOps'
 
-- script: git clone https://$(githubToken)@github.com/jpdynamicserp/blog.git repoB
+- script: git clone https://$(githubToken)@github.com/jpdynamicserp/blog.git $(workingDirectory)/repoB
   displayName: 'Clone Repo B from GitHub'
 
 - script: |
-    cd repoB
+    cd $(workingDirectory)/repoB
     git checkout -b $(newBranchName)
   displayName: 'Create and Checkout New Branch in Repo B'
 
 - script: |
-    rsync -av --exclude='.git/' ../repoA/ ./ 
+    rsync -av --exclude='.git/' $(workingDirectory)/repoA/ $(workingDirectory)/repoB/
   displayName: 'Copy Changes from Repo A to New Branch in Repo B'
 
 - script: |
-    cd repoB
+    cd $(workingDirectory)/repoB
     git add .
     git commit -m "Sync changes from Repo A"
     git push origin $(newBranchName)
