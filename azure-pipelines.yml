@@ -8,8 +8,8 @@ pool:
 
 variables:
   # Define your variables here, for example:
-  # PRIVATE_REPO_TOKEN: $(PrivateRepoToken)
-  # PUBLIC_REPO_TOKEN: $(PublicRepoToken)
+  PRIVATE_REPO_TOKEN: $(PrivateRepoToken)
+  PUBLIC_REPO_TOKEN: $(PublicRepoToken)
 
 steps:
 - checkout: self
