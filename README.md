@@ -1,20 +1,47 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Blog Example
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+[template] Microsoft CSS Japan example blog repository.
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+## Getting Started
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+[Getting Started](./docs/getting-started.md)
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+## Init / Update blog theme
+
+https://github.com/jpazureid/hexo-theme-jpazure
+
+```shell
+git submodule update -i
+```
+
+## Start / Stop Hexo server (local-preview)
+
+```shell
+docker-compose up
+
+# Ctrl+C
+docker-compose down
+```
+
+## Directory structure
+
+```
+example
+├── .github
+│   └── workflows      # Workflows for GitHub Actions
+│       └── upload-gh-pages.yml
+├── .gitignore
+├── .textlintrc
+├── README.md
+├── _config.yml        # Site configration
+├── articles           # Blog articles
+│   └── information
+│       └── test.md    # Example post
+├── docker-compose.yaml    # Configuration for containers (local-preview)
+├── docs               # Documents
+├── github-issue-template.md
+├── scaffolds
+├── source
+└── themes             # Blog themes
+    └── jpazure (git submodule)
+```
