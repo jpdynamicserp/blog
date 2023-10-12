@@ -1,58 +1,44 @@
 trigger:
-- main
+  branches:
+    include:
+    - main
 
 pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-  PRIVATE_REPO_TOKEN: $(PrivateRepoToken)
-  PUBLIC_REPO_TOKEN: $(PublicRepoToken)
+  newBranchName: 'new-feature-$(Build.BuildId)'
+  azureDevOpsToken: $(AzureDevOpsPersonalAccessToken)
+  githubToken: $(GithubPersonalAccessToken)
 
 steps:
-- script: |
-    git clone https://:$(PRIVATE_REPO_TOKEN)@dev.azure.com/jpdynamics/DynamicsERP/_git/blog private-repository
-  displayName: 'Clone private repo'
-  env:
-    PRIVATE_REPO_TOKEN: $(PrivateRepoToken)
+- script: git clone https://$(azureDevOpsToken)@dev.azure.com/jpdynamics/DynamicsERP/_git/blog repoA
+  displayName: 'Clone Repo A from Azure DevOps'
+
+- script: git clone https://$(githubToken)@github.com/jpdynamicserp/blog.git repoB
+  displayName: 'Clone Repo B from GitHub'
 
 - script: |
-    sudo apt-get install -y software-properties-common
-    sudo apt-add-repository -y ppa:github/git-lfs
-    sudo apt-get update
-    sudo apt-get install -y gh
-  displayName: 'Install GitHub CLI'
+    cd repoB
+    git checkout -b $(newBranchName)
+  displayName: 'Create and Checkout New Branch in Repo B'
 
 - script: |
-    git clone https://github.com/jpdynamicserp/blog.git public-repo
-  displayName: 'Clone public repo'
+    rsync -av --exclude='.git/' ../repoA/ ./ 
+  displayName: 'Copy Changes from Repo A to New Branch in Repo B'
 
 - script: |
-    git config --global user.name "kanagayo"
-    git config --global user.email "kanagayo@microsoft.com"
-  displayName: 'Set up Git'
-
-- script: |
-    cp -R private-repository/* public-repo/
-    cd public-repo
+    cd repoB
     git add .
-    git commit -m "Update from private repository"
-  displayName: 'Copy changes to public repo'
+    git commit -m "Sync changes from Repo A"
+    git push origin $(newBranchName)
+  displayName: 'Commit and Push New Branch to Repo B'
 
 - script: |
-    cd public-repo
-    git remote set-url origin https://github.com/jpdynamicserp/blog.git
-    git checkout -b new-pr-branch-$(Build.BuildId)
-    git push origin new-pr-branch-$(Build.BuildId)
-  displayName: 'Push changes to public repo'
-
-- script: |
-    cd public-repo
-    echo $(PUBLIC_REPO_TOKEN) | gh auth login --with-token
-    gh pr create --title "Update from private repository" \
-    --body "This PR updates the public repository with the latest changes from the private repository." \
-    --base main \
-    --head new-pr-branch-$(Build.BuildId) \
-    --repo jpdynamicserp/blog
-  displayName: 'Create Pull Request'
-  env:
-    PUBLIC_REPO_TOKEN: $(PUBLIC_REPO_TOKEN)
+    curl -X POST -H "Authorization: token $(githubToken)" -d '{
+    "title": "New Feature",
+    "head": "'$(newBranchName)'",
+    "base": "main",
+    "body": "Please pull these changes."
+    }' https://api.github.com/repos/jpdynamicserp/blog/pulls
+  displayName: 'Create Pull Request in Repo B'
