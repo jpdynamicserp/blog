@@ -10,7 +10,7 @@ variables:
 
 steps:
 - script: |
-    git clone https://kanagayo:${PRIVATE_REPO_TOKEN}@dev.azure.com/jpdynamics/DynamicsERP/_git/blog private-repository
+    git clone https://:${PRIVATE_REPO_TOKEN}@dev.azure.com/jpdynamics/DynamicsERP/_git/blog private-repository
   displayName: 'Clone private repo'
   env:
     PRIVATE_REPO_TOKEN: $(PrivateRepoToken)
