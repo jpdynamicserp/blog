@@ -1,5 +1,3 @@
-# azure-pipelines.yml
-
 trigger:
 - main
 
@@ -7,13 +5,13 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-  # Define your variables here, for example:
   PRIVATE_REPO_TOKEN: $(PrivateRepoToken)
   PUBLIC_REPO_TOKEN: $(PublicRepoToken)
 
 steps:
-- checkout: self
-  path: 'private-repository'
+- script: |
+    git clone https://jpdynamics:$(PRIVATE_REPO_TOKEN)@dev.azure.com/jpdynamics/DynamicsERP/_git/blog private-repository
+  displayName: 'Clone private repo'
 
 - script: |
     sudo apt-get install -y software-properties-common
@@ -47,7 +45,7 @@ steps:
 
 - script: |
     cd public-repo
-    gh auth login --with-token < $(PUBLIC_REPO_TOKEN)
+    echo $(PUBLIC_REPO_TOKEN) | gh auth login --with-token
     gh pr create --title "Update from private repository" \
     --body "This PR updates the public repository with the latest changes from the private repository." \
     --base main \
