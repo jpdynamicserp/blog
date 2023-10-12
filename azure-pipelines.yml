@@ -1,0 +1,50 @@
+trigger:
+  branches:
+    include:
+    - main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  newBranchName: 'new-feature-$(Build.BuildId)'
+  azureDevOpsToken: $(AzureDevOpsPersonalAccessToken)
+  githubToken: $(GithubPersonalAccessToken)
+  workingDirectory: $(Pipeline.Workspace)/s
+  gitUserEmail: 'kanagayo@microsoft.com'
+  gitUserName: 'kanagayo'
+
+steps:
+- script: git clone https://$(azureDevOpsToken)@dev.azure.com/jpdynamics/DynamicsERP/_git/blog $(workingDirectory)/repoA
+  displayName: 'Clone Repo A from Azure DevOps'
+
+- script: git clone https://$(githubToken)@github.com/jpdynamicserp/blog.git $(workingDirectory)/repoB
+  displayName: 'Clone Repo B from GitHub'
+
+- script: |
+    cd $(workingDirectory)/repoB
+    git config user.email "$(gitUserEmail)"
+    git config user.name "$(gitUserName)"
+    git checkout -b $(newBranchName)
+  displayName: 'Setup Git and Checkout New Branch in Repo B'
+
+- script: |
+    rsync -av --exclude='.git/' $(workingDirectory)/repoA/ $(workingDirectory)/repoB/
+  displayName: 'Copy Changes from Repo A to New Branch in Repo B'
+
+- script: |
+    cd $(workingDirectory)/repoB
+    git add .
+    git commit -m "Sync changes from Repo A"
+    git push origin $(newBranchName)
+    echo "Pushed new branch $(newBranchName) to remote."
+  displayName: 'Commit and Push New Branch to Repo B'
+
+- script: |
+    curl -X POST -H "Authorization: token $(githubToken)" -d '{
+    "title": "New Feature",
+    "head": "'$(newBranchName)'",
+    "base": "main",
+    "body": "Please pull these changes."
+    }' https://api.github.com/repos/jpdynamicserp/blog/pulls
+  displayName: 'Create Pull Request in Repo B'
