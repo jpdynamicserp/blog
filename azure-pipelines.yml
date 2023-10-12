@@ -15,7 +15,6 @@ steps:
   env:
     PRIVATE_REPO_TOKEN: $(PrivateRepoToken)
 
-
 - script: |
     sudo apt-get install -y software-properties-common
     sudo apt-add-repository -y ppa:github/git-lfs
