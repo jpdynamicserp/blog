@@ -1,19 +1,58 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
+# azure-pipelines.yml
 
 trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: 'ubuntu-latest'
+
+variables:
+  # Define your variables here, for example:
+  # PRIVATE_REPO_TOKEN: $(PrivateRepoToken)
+  # PUBLIC_REPO_TOKEN: $(PublicRepoToken)
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- checkout: self
+  path: 'private-repository'
 
 - script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+    sudo apt-get install -y software-properties-common
+    sudo apt-add-repository -y ppa:github/git-lfs
+    sudo apt-get update
+    sudo apt-get install -y gh
+  displayName: 'Install GitHub CLI'
+
+- script: |
+    git clone https://github.com/jpdynamicserp/blog.git public-repo
+  displayName: 'Clone public repo'
+
+- script: |
+    git config --global user.name "kanagayo"
+    git config --global user.email "kanagayo@microsoft.com"
+  displayName: 'Set up Git'
+
+- script: |
+    cp -R private-repository/* public-repo/
+    cd public-repo
+    git add .
+    git commit -m "Update from private repository"
+  displayName: 'Copy changes to public repo'
+
+- script: |
+    cd public-repo
+    git remote set-url origin https://github.com/jpdynamicserp/blog.git
+    git checkout -b new-pr-branch-$(Build.BuildId)
+    git push origin new-pr-branch-$(Build.BuildId)
+  displayName: 'Push changes to public repo'
+
+- script: |
+    cd public-repo
+    gh auth login --with-token < $(PUBLIC_REPO_TOKEN)
+    gh pr create --title "Update from private repository" \
+    --body "This PR updates the public repository with the latest changes from the private repository." \
+    --base main \
+    --head new-pr-branch-$(Build.BuildId) \
+    --repo jpdynamicserp/blog
+  displayName: 'Create Pull Request'
+  env:
+    PUBLIC_REPO_TOKEN: $(PUBLIC_REPO_TOKEN)
