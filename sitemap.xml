@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/what-is-flight/</loc>
+    
+    <lastmod>2023-11-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/what-shadow-copy-environment/</loc>
+    
+    <lastmod>2023-11-06</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jpdynamicserp.github.io/blog/information/infomation/</loc>
     
     <lastmod>2023-11-06</lastmod>
@@ -24,20 +38,6 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/what-is-business-impact/</loc>
-    
-    <lastmod>2023-11-06</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/what-is-flight/</loc>
-    
-    <lastmod>2023-11-06</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/what-shadow-copy-environment/</loc>
     
     <lastmod>2023-11-06</lastmod>
     
@@ -114,6 +114,13 @@
   </url>
   
   <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-powerautomateapi/</loc>
+    
+    <lastmod>2023-11-06</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-run-custom-script-d365fo/</loc>
     
     <lastmod>2023-11-06</lastmod>
@@ -128,7 +135,7 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-powerautomateapi/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-makedataevent/</loc>
     
     <lastmod>2023-11-06</lastmod>
     
@@ -136,13 +143,6 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-pipeline/</loc>
-    
-    <lastmod>2023-11-06</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/how-to-makedataevent/</loc>
     
     <lastmod>2023-11-06</lastmod>
     
@@ -184,27 +184,6 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/fo-extend-trial/</loc>
-    
-    <lastmod>2023-11-06</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/get-environment-id/</loc>
-    
-    <lastmod>2023-11-06</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/browser-session-id/</loc>
-    
-    <lastmod>2023-11-06</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/database-just-in-time-jit-access/</loc>
     
     <lastmod>2023-11-06</lastmod>
@@ -226,14 +205,14 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/what-is-repro-steps/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/fo-extend-trial/</loc>
     
     <lastmod>2023-11-06</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/aad-conditional-access/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/get-environment-id/</loc>
     
     <lastmod>2023-11-06</lastmod>
     
@@ -254,7 +233,7 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/restrict-po-edit/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/browser-session-id/</loc>
     
     <lastmod>2023-11-06</lastmod>
     
@@ -262,6 +241,27 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/restrict-so-edit/</loc>
+    
+    <lastmod>2023-11-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/what-is-repro-steps/</loc>
+    
+    <lastmod>2023-11-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/aad-conditional-access/</loc>
+    
+    <lastmod>2023-11-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20SCM/restrict-po-edit/</loc>
     
     <lastmod>2023-11-06</lastmod>
     
@@ -415,13 +415,6 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/create-consolidated-invoice/</loc>
-    
-    <lastmod>2023-11-06</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/create-form26-report/</loc>
     
     <lastmod>2023-11-06</lastmod>
@@ -458,6 +451,13 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/create-appended-table16-report/</loc>
+    
+    <lastmod>2023-11-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/create-consolidated-invoice/</loc>
     
     <lastmod>2023-11-06</lastmod>
     
@@ -725,13 +725,6 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/tags/Information/</loc>
-    <lastmod>2023-11-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://jpdynamicserp.github.io/blog/tags/D365FO-Tech/</loc>
     <lastmod>2023-11-06</lastmod>
     <changefreq>daily</changefreq>
@@ -852,6 +845,13 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/tags/Data-event/</loc>
+    <lastmod>2023-11-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/tags/Information/</loc>
     <lastmod>2023-11-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
