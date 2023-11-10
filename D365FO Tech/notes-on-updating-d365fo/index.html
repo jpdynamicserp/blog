@@ -6,15 +6,15 @@
   
   <title>D365FOのアップデートに関する注意事項 | Japan Dynamics ERP Support Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="こんにちは、Dynamics ERP サポートチームの今岡です。この記事では、Dynamics 365 Finance and Operations (D365FO) のアップデートに関する注意事項を紹介します。">
+  <meta name="description" content="こんにちは、Dynamics ERP サポートチームです。この記事では、Dynamics 365 Finance and Operations (D365FO) のアップデートに関する注意事項を紹介します。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="D365FOのアップデートに関する注意事項">
 <meta property="og:url" content="https://jpdynamicserp.github.io/blog/D365FO%20Tech/notes-on-updating-d365fo/index.html">
 <meta property="og:site_name" content="Japan Dynamics ERP Support Blog">
-<meta property="og:description" content="こんにちは、Dynamics ERP サポートチームの今岡です。この記事では、Dynamics 365 Finance and Operations (D365FO) のアップデートに関する注意事項を紹介します。">
+<meta property="og:description" content="こんにちは、Dynamics ERP サポートチームです。この記事では、Dynamics 365 Finance and Operations (D365FO) のアップデートに関する注意事項を紹介します。">
 <meta property="og:locale" content="ja_JP">
-<meta property="article:published_time" content="2022-03-03T15:00:00.000Z">
-<meta property="article:modified_time" content="2023-11-10T00:55:18.385Z">
+<meta property="article:published_time" content="2023-11-09T15:00:00.000Z">
+<meta property="article:modified_time" content="2023-11-10T06:38:00.310Z">
 <meta property="article:author" content="Dynamics ERP Support Japan">
 <meta property="article:tag" content="Information">
 <meta name="twitter:card" content="summary">
@@ -96,36 +96,37 @@
       <div class="article-share">
         Last Update: 
         <a href="" class="article-date-single">
-  <time datetime="2022-03-03T15:00:00.000Z" itemprop="datePublished">2022-03-04</time>
+  <time datetime="2023-11-09T15:00:00.000Z" itemprop="datePublished">2023-11-10</time>
 </a>
         
         
         <a href="https://github.com/jpdynamicserp/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+e957fd08-4b7d-5be1-a0ae-64ea890c6904%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5BD365FO%E3%81%AE%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A0%85%5D%28https%3A%2F%2Fjpdynamicserp.github.io%2Fblog%2FD365FO%2520Tech%2Fnotes-on-updating-d365fo%2F%29%0A*+Content+Source%3A+%5Barticles%2FD365FO+Tech%2Fnotes-on-updating-d365fo.md%5D%28https%3A%2F%2Fgithub.com%2Fjpdynamicserp%2Fblob%2Fmain%2Farticles%2FD365FO%2520Tech%2Fnotes-on-updating-d365fo.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
         
-        <a data-url="https://jpdynamicserp.github.io/blog/D365FO%20Tech/notes-on-updating-d365fo/" data-id="clorwp1kc002y0opm8vge00t0" class="article-share-link">共有</a>
+        <a data-url="https://jpdynamicserp.github.io/blog/D365FO%20Tech/notes-on-updating-d365fo/" data-id="clos8xr3d002y0no20e1m89u7" class="article-share-link">共有</a>
       </div>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>こんにちは、Dynamics ERP サポートチームの今岡です。<br>この記事では、Dynamics 365 Finance and Operations (D365FO) のアップデートに関する注意事項を紹介します。  </p>
+        <p>こんにちは、Dynamics ERP サポートチームです。<br>この記事では、Dynamics 365 Finance and Operations (D365FO) のアップデートに関する注意事項を紹介します。  </p>
 <span id="more"></span>
 
-
-
-<p>D365FO のサービスアップデートにつきまして、以下のドキュメントに記載されていますように、<br>最大 3 つまでの更新を続けて一時停止することができます。  </p>
-<p><a target="_blank" rel="noopener" href="https://docs.microsoft.com/ja-jp/dynamics365/fin-ops-core/fin-ops/get-started/one-version#can-the-update-be-delayed-what-is-the-policy">更新を遅らせることができますか、ポリシーとは何ですか。</a></p>
-<p>4 回以上の一時停止は、<strong>いかなる理由でも実施できません</strong>のでご注意ください。<br>本番環境は、サービス終了する前にアップデートして頂くことで、常にサポートされている環境を維持頂き<br>何らかの理由で、サービス終了までにアップデートできなかった場合も、3 つの一時停止の範囲内で最新のサービスアップデートをご適用ください。  </p>
-<p>ただし、4 回目のアップデート期日前に、本番環境に手動で最新サービスアップデートを適用した場合は、LCS から一時停止が可能となります。<br>遅くとも自動適用予定日の 1 週間前には手動でご適用ください。  </p>
-<h1 id="「サービス終了」の期日"><a href="#「サービス終了」の期日" class="headerlink" title="「サービス終了」の期日"></a>「サービス終了」の期日</h1><p>各サービスアップデートの「サービス終了」期日は以下のドキュメントでご確認頂けます。<br><a target="_blank" rel="noopener" href="https://docs.microsoft.com/ja-jp/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-releases">サービス更新の可用性</a></p>
+<h2 id="更新履歴"><a href="#更新履歴" class="headerlink" title="更新履歴"></a>更新履歴</h2><p>2023 年 11 月 10 日 (金) : バージョンアップデートの頻度の変更について更新しました。</p>
+<p>バージョンアップデートの頻度が、年 7 回から年 4 回に変更されます。連続で最大 1 つまでの更新を一時停止することができ、年に少なくとも 2 回バージョンアップデートを実施して頂く必要があります。</p>
+<p>詳細は以下のドキュメントをご確認お願い致します。</p>
+<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/one-version#whats-changing-with-the-new-release-cadence">What’s changing with the new release cadence?</a></p>
+<h1 id="「サービスアップデート自動適用の一時停止」の注意点"><a href="#「サービスアップデート自動適用の一時停止」の注意点" class="headerlink" title="「サービスアップデート自動適用の一時停止」の注意点"></a>「サービスアップデート自動適用の一時停止」の注意点</h1><p>D365FO のサービスアップデートにつきまして、以下のドキュメントに記載されていますように、2024 年 4 月より連続で最大 1 つまでの更新を続けて一時停止することができます。  </p>
+<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/one-version#can-the-updates-be-delayed-whats-the-policy">更新を遅らせることができますか、ポリシーとは何ですか。</a></p>
+<p>連続で 2 回以上の一時停止は、<strong>いかなる理由でも実施できません</strong>のでご注意ください。<br>本番環境は、サービス終了する前にアップデートして頂くことで、常にサポートされている環境を維持頂きますようお願い致します。</p>
+<h1 id="「サービス終了」の期日"><a href="#「サービス終了」の期日" class="headerlink" title="「サービス終了」の期日"></a>「サービス終了」の期日</h1><p>各サービスアップデートの「サービス終了」期日は以下のドキュメントでご確認頂けます。<br><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases">サービス更新の可用性</a></p>
 <h1 id="サービス終了前にアップデートを適用するメリット"><a href="#サービス終了前にアップデートを適用するメリット" class="headerlink" title="サービス終了前にアップデートを適用するメリット"></a>サービス終了前にアップデートを適用するメリット</h1><p>サービス終了前にアップデート頂くことで、常にサポートされている環境を維持でき、以下のようなメリットもございます。  </p>
 <ol>
 <li>問題発生時に調査及びトラブルシューティングを依頼可能です。  </li>
-<li>Criticalな問題が発見された場合、新しいサービスアップデートを適用することなく、Quality Updateから修正を入手可能です。  </li>
+<li>Critical な問題が発見された場合、新しいサービスアップデートを適用することなく、Quality Update から修正を入手可能です。  </li>
 </ol>
 <h1 id="「サービス終了」した環境の制約"><a href="#「サービス終了」した環境の制約" class="headerlink" title="「サービス終了」した環境の制約"></a>「サービス終了」した環境の制約</h1><p>「サービス終了」した環境では多くの制約が発生しますのでご注意ください。  </p>
 <ol>
 <li>Microsoft は、サービスの終了に達しているバージョンに対して、修正プログラムをリリースしません。  </li>
-<li>3つのサービス更新より古いバージョンで発生した問題の調査とトラブルシューティングを行いません。  </li>
+<li>3 つのサービス更新より古いバージョンで発生した問題の調査とトラブルシューティングを行いません。  </li>
 <li>以下の LCS 機能が使用不可となる可能性がございます。  <ul>
 <li>メンテナンス モードの有効化  </li>
 <li>環境または環境間でデータベースを移動するために提供されるすべての機能を使用する  </li>
@@ -135,8 +136,9 @@
 </ul>
 </li>
 </ol>
-<p>(参考URL)<br><a target="_blank" rel="noopener" href="https://docs.microsoft.com/ja-jp/dynamics365/fin-ops-core/fin-ops/get-started/one-version#what-does-end-of-service-mean">サービスの終了にはどのような意味がありますか?</a><br><a target="_blank" rel="noopener" href="https://docs.microsoft.com/ja-jp/dynamics365/fin-ops-core/fin-ops/get-started/one-version#what-happens-to-an-environment-that-is-running-a-finance-and-operations-version-that-is-no-longer-supported">サポートされなくなった Finance and Operations バージョンを実行している環境はどうなりますか？</a>  </p>
-<h1 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h1>
+<p>(参考URL)<br><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/get-started/one-version#what-does-end-of-service-mean">サービスの終了にはどのような意味がありますか?</a>  </p>
+<h1 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h1><p>以上、 Dynamics 365 Finance and Operations (D365FO) のアップデートに関する注意事項を紹介いたしました。</p>
+
       
       
         <div class="article-disclaimer">
@@ -160,19 +162,10 @@
     
 <nav id="article-nav">
   
-    <a href="../temporary-change-language-d365fo/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">次の記事</strong>
-      <div class="article-nav-title">
-        
-          D365FOで使用する言語を一時的に変更する方法
-        
-      </div>
-    </a>
   
-  
-    <a href="../../information/infomation/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="../submit-an-incident-in-lcs/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">前の記事</strong>
-      <div class="article-nav-title">Japan Dynamics ERP Support Blog 開設のお知らせ</div>
+      <div class="article-nav-title">LCSにてDynamics 365 Finance and Operationsに関するサポートリクエストを起票する方法</div>
     </a>
   
 </nav>
@@ -191,6 +184,10 @@
       <ul>
         
           <li>
+            <a href="">D365FOのアップデートに関する注意事項</a>
+          </li>
+        
+          <li>
             <a href="../submit-an-incident-in-lcs/">LCSにてDynamics 365 Finance and Operationsに関するサポートリクエストを起票する方法</a>
           </li>
         
@@ -204,10 +201,6 @@
         
           <li>
             <a href="../how-to-get-trace-parser/">Trace Parserを使用したトレースの実行方法</a>
-          </li>
-        
-          <li>
-            <a href="../how-to-executingalert/">Power Automate と Business Event を使用した Executing のままになっているバッチジョブの検知方法</a>
           </li>
         
       </ul>
