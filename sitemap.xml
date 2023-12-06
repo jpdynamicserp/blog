@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-SCM/what-is-repro-steps/</loc>
+    
+    <lastmod>2023-12-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/information/how-to-post-ideas/</loc>
+    
+    <lastmod>2023-12-06</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jpdynamicserp.github.io/blog/information/infomation/</loc>
     
     <lastmod>2023-12-06</lastmod>
@@ -30,20 +44,6 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-SCM/what-is-repro-steps/</loc>
-    
-    <lastmod>2023-12-06</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/information/how-to-post-ideas/</loc>
-    
-    <lastmod>2023-12-06</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpdynamicserp.github.io/blog/FinOps-SCM/restrict-po-edit/</loc>
     
     <lastmod>2023-12-06</lastmod>
@@ -58,14 +58,14 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-SCM/product-filter/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-SCM/inventory-counting-group/</loc>
     
     <lastmod>2023-12-06</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-SCM/inventory-counting-group/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-SCM/product-filter/</loc>
     
     <lastmod>2023-12-06</lastmod>
     
@@ -408,14 +408,14 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-Finance/how-to-correct-blank-journal-entry-in-financial-dimension/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-Finance/how-to-register-temporary-credit-limit/</loc>
     
     <lastmod>2023-12-06</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-Finance/how-to-register-temporary-credit-limit/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-Finance/how-to-correct-blank-journal-entry-in-financial-dimension/</loc>
     
     <lastmod>2023-12-06</lastmod>
     
@@ -437,13 +437,6 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/FinOps-Finance/form26-report-fixed-asset-location-issue/</loc>
-    
-    <lastmod>2023-12-06</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/D365FO%20Tech/notes-on-updating-d365fo/</loc>
     
     <lastmod>2023-12-06</lastmod>
     
@@ -506,13 +499,6 @@
     <priority>1.0</priority>
   </url>
 
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/tags/Information/</loc>
-    <lastmod>2023-12-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/tags/D365FO-Finance/</loc>
@@ -621,6 +607,13 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/tags/WinRM/</loc>
+    <lastmod>2023-12-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/tags/Information/</loc>
     <lastmod>2023-12-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
