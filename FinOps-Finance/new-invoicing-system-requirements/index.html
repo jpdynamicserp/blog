@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Japan Dynamics ERP Support Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD:articles&#x2F;D365FO App FIN&#x2F;new-invoicing-system-requirements.mdtitle: 適格請求書等保存方式 (インボイス制度) の対応状況についてdate: 2023-03-23tags:  D365FO Finance New Invoicing system requiremen">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Japan Dynamics ERP Support Blog">
+<meta property="og:url" content="https://jpdynamicserp.github.io/blog/FinOps-Finance/new-invoicing-system-requirements/index.html">
+<meta property="og:site_name" content="Japan Dynamics ERP Support Blog">
+<meta property="og:description" content="&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD:articles&#x2F;D365FO App FIN&#x2F;new-invoicing-system-requirements.mdtitle: 適格請求書等保存方式 (インボイス制度) の対応状況についてdate: 2023-03-23tags:  D365FO Finance New Invoicing system requiremen">
+<meta property="og:locale" content="ja_JP">
+<meta property="article:published_time" content="2023-12-06T00:42:00.704Z">
+<meta property="article:modified_time" content="2023-12-06T00:41:55.844Z">
+<meta property="article:author" content="Dynamics ERP Support Japan">
+<meta property="article:tag" content="Dynamics">
+<meta property="article:tag" content="Dynamics 365 for Finance and Operations">
+<meta property="article:tag" content="Dynamics 365 Finance&amp;Operations">
+<meta property="article:tag" content="Dynamics 365F&amp;O">
+<meta property="article:tag" content="Dynamics 365fo">
+<meta property="article:tag" content="D365FO">
+<meta property="article:tag" content="Dynamics ERP">
+<meta property="article:tag" content="Dynamics 365 Business Central">
+<meta property="article:tag" content="D365BC">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="../../atom.xml" title="Japan Dynamics ERP Support Blog" type="application/atom+xml">
+  
+
+  <link rel="icon" href="../../favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+  <link rel="manifest" href="../../site.webmanifest">
+  <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="../../css/style.css">
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="site-header-logo"></div>
+  <div id="site-header-blog-wrapper"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        <div id="ms-logo"></div>
+        
+          <a class="main-nav-link" href="/blog/">Home</a>
+        
+          <a class="main-nav-link" href="/blog/archives">Archives</a>
+        
+        <a class="main-nav-link" target="_blank" rel="noopener" href="https://cssjpn.github.io/">サポート情報</a>
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="../../atom.xml" title="RSSフィード"></a>
+        
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//www.bing.com/search" method="get" accept-charset="UTF-8" name="bing-search" onsubmit="var f=this;if(f['q'].value){var searchUrl =  'https://www.bing.com/search?q=' +  encodeURIComponent(f['q'].value + ' site:' + f['sitesearch'].value) ;window.open(searchUrl, 'blank') };return false;" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="検索"><button type="submit" id="nav-search-btn" class="search-form-submit"></button><input type="hidden" name="sitesearch" value="https://jpdynamicserp.github.io/blog"></form>
+      </div>
+    </div>
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="../../index.html" id="logo">Japan Dynamics ERP Support Blog</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="../../index.html" id="subtitle">日本マイクロソフトの Dynamics ERP テクニカルサポートチームより、情報をお届けします！</a>
+        </h2>
+      
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-FinOps-Finance/new-invoicing-system-requirements" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="lt-lt-lt-lt-lt-lt-lt-HEAD-articles-D365FO-App-FIN-new-invoicing-system-requirements-md"><a href="#lt-lt-lt-lt-lt-lt-lt-HEAD-articles-D365FO-App-FIN-new-invoicing-system-requirements-md" class="headerlink" title="&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD:articles/D365FO App FIN/new-invoicing-system-requirements.md"></a>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD:articles/D365FO App FIN/new-invoicing-system-requirements.md</h2><p>title: 適格請求書等保存方式 (インボイス制度) の対応状況について<br>date: 2023-03-23<br>tags:</p>
+<ul>
+<li>D365FO Finance</li>
+<li>New Invoicing system requirements</li>
+<li>Japan localization<br>disableDisclaimer: false</li>
+</ul>
+<hr>
+<p>こんにちは、Dynamics ERP サポートチームの尾崎です。<br>この記事では、 2023 年 10 月 1 日より開始される適格請求書等保存方式 (インボイス制度) について<br>Dynamics 365 Finance and Operations (D365FO) における対応状況を随時更新して参ります。  </p>
+<span id="more"></span>
+<p>弊社では各チャネルでお客様への情報公開の準備を進めています。<br>記事更新時点で公開が確認されているものおよび公開が予定されているものについて記載しています。  </p>
+<p>なお制度の詳細については国税庁ホームページをご確認ください。<br><a target="_blank" rel="noopener" href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6498.htm">No.6498 適格請求書等保存方式（インボイス制度）</a>  </p>
+<h2 id="変更予定の内容"><a href="#変更予定の内容" class="headerlink" title="変更予定の内容"></a>変更予定の内容</h2><p>売掛金管理の請求書、買掛金管理の請求書、プロジェクト請求書および各種月次締め請求書にて<br>適格請求書発行事業者としての登録番号が記載されるようになります。<br>また、請求書の消費税欄には総額から算出した消費税額を表示するように変更が行われます。  </p>
+<h2 id="情報公開チャネル"><a href="#情報公開チャネル" class="headerlink" title="情報公開チャネル"></a>情報公開チャネル</h2><ol>
+<li>Issue search<br> LCS の Issue search では以下の問題番号より最新の状況をご確認いただくことが可能になっております。<br> 記載のリリースバージョンやリリース予定日については更新時点での目安となっており、予告なく変更される場合がございます。あらかじめご了承ください。<br> <a target="_blank" rel="noopener" href="https://fix.lcs.dynamics.com/Issue/Details?bugId=3993335&dbType=1&qc=6d1ad5edb8ddbde5803973547e7f38aa41021ef5939f24d4a43f17f83ad5a332">Issue: 3993335</a>  </li>
+<li>Yammer<br> Yammer でのアナウンスを予定しております。投稿が行われましたら投稿先を掲載予定です。  </li>
+</ol>
+<h2 id="近日公開の機能"><a href="#近日公開の機能" class="headerlink" title="近日公開の機能"></a>近日公開の機能</h2><p>適格請求書発行事業者の登録番号を入力する機能がバージョン 10.0.34 にてリリースされております。<br>登録方法は以下の記事にてご案内しております。<br><a href="https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/new-invoicing-system-requirements-QIInumber-setting/">https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/new-invoicing-system-requirements-QIInumber-setting/</a></p>
+<p>その他の機能についてもリリース時期が決定次第、Issue Search や本記事内で随時更新いたします。</p>
+<h2 id="経過措置について"><a href="#経過措置について" class="headerlink" title="経過措置について"></a>経過措置について</h2><p>免税事業者などとの仕入取引に対する経過措置の対応方法を以下の記事で公開しております。<br><a href="https://jpdynamicserp.github.io/blog/D365FO%20App%20FIN/new-invoicing-system-requirements-transitional-measures/">適格請求書等保存方式 (インボイス制度) における事業者番号の登録および請求書への印字について | Japan Dynamics ERP Support Blog</a></p>
+<h2 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h2><h1 id="以上、適格請求書等保存方式-インボイス制度-の対応状況についてご案内いたしました。"><a href="#以上、適格請求書等保存方式-インボイス制度-の対応状況についてご案内いたしました。" class="headerlink" title="以上、適格請求書等保存方式 (インボイス制度) の対応状況についてご案内いたしました。  "></a>以上、適格請求書等保存方式 (インボイス制度) の対応状況についてご案内いたしました。  </h1><hr>
+<p>title: 適格請求書等保存方式 (インボイス制度) の対応状況について<br>date: 2023-03-23<br>tags:</p>
+<ul>
+<li>D365FO Finance</li>
+<li>New Invoicing system requirements</li>
+<li>Japan localization<br>disableDisclaimer: false</li>
+</ul>
+<hr>
+<p>こんにちは、Dynamics ERP サポートチームの尾崎です。<br>この記事では、 2023 年 10 月 1 日より開始される適格請求書等保存方式 (インボイス制度) について<br>Dynamics 365 Finance and Operations (D365FO) における対応状況を随時更新して参ります。  </p>
+<!-- more -->
+<p>弊社では各チャネルでお客様への情報公開の準備を進めています。<br>記事更新時点で公開が確認されているものおよび公開が予定されているものについて記載しています。  </p>
+<p>なお制度の詳細については国税庁ホームページをご確認ください。<br><a target="_blank" rel="noopener" href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6498.htm">No.6498 適格請求書等保存方式（インボイス制度）</a>  </p>
+<h2 id="変更予定の内容-1"><a href="#変更予定の内容-1" class="headerlink" title="変更予定の内容"></a>変更予定の内容</h2><p>売掛金管理の請求書、買掛金管理の請求書、プロジェクト請求書および各種月次締め請求書にて<br>適格請求書発行事業者としての登録番号が記載されるようになります。<br>また、請求書の消費税欄には総額から算出した消費税額を表示するように変更が行われます。  </p>
+<h2 id="情報公開チャネル-1"><a href="#情報公開チャネル-1" class="headerlink" title="情報公開チャネル"></a>情報公開チャネル</h2><ol>
+<li>Issue search<br> LCS の Issue search では以下の問題番号より最新の状況をご確認いただくことが可能になっております。<br> 記載のリリースバージョンやリリース予定日については更新時点での目安となっており、予告なく変更される場合がございます。あらかじめご了承ください。<br> <a target="_blank" rel="noopener" href="https://fix.lcs.dynamics.com/Issue/Details?bugId=3993335&dbType=1&qc=6d1ad5edb8ddbde5803973547e7f38aa41021ef5939f24d4a43f17f83ad5a332">Issue: 3993335</a>  </li>
+<li>Yammer<br> Yammer でのアナウンスを予定しております。投稿が行われましたら投稿先を掲載予定です。  </li>
+</ol>
+<h2 id="近日公開の機能-1"><a href="#近日公開の機能-1" class="headerlink" title="近日公開の機能"></a>近日公開の機能</h2><p>適格請求書発行事業者の登録番号を入力する機能がバージョン 10.0.34 にてリリースされております。<br>登録方法は以下の記事にてご案内しております。<br><a href="https://jpdynamicserp.github.io/blog/FinOps-Finance/new-invoicing-system-requirements-QIInumber-setting/">https://jpdynamicserp.github.io/blog/FinOps-Finance/new-invoicing-system-requirements-QIInumber-setting/</a></p>
+<p>その他の機能についてもリリース時期が決定次第、Issue Search や本記事内で随時更新いたします。</p>
+<h2 id="経過措置について-1"><a href="#経過措置について-1" class="headerlink" title="経過措置について"></a>経過措置について</h2><p>免税事業者などとの仕入取引に対する経過措置の対応方法を以下の記事で公開しております。<br><a href="https://jpdynamicserp.github.io/blog/FinOps-Finance/new-invoicing-system-requirements-transitional-measures/">適格請求書等保存方式 (インボイス制度) における事業者番号の登録および請求書への印字について | Japan Dynamics ERP Support Blog</a></p>
+<h2 id="おわりに-1"><a href="#おわりに-1" class="headerlink" title="おわりに"></a>おわりに</h2><p>以上、適格請求書等保存方式 (インボイス制度) の対応状況についてご案内いたしました。  </p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>repoA/main:articles/FinOps-Finance/new-invoicing-system-requirements.md</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+
+      
+      
+        <div class="article-disclaimer">
+        
+          <p>※本情報の内容（添付文書、リンク先などを含む）は、作成日時点でのものであり、予告なく変更される場合があります。より詳細な情報が必要な場合は、弊社テクニカル サポート, アカウント マネージャー, ソリューション アーキテクト, FastTrack までお問い合わせください。</p>
+        
+        </div>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+        
+        <a href="https://github.com/jpdynamicserp/edit/main/articles/FinOps-Finance/new-invoicing-system-requirements.md" class="article-github-edit-link" target="_blank" rel="noopener noreferrer">GitHub で編集</a>
+        
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="../../FinOps-SCM/cancel-productreceipt-linkso/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">次の記事</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="../perdiem-expense-project/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前の記事</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最近の投稿</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="../../FinOps-Platform/what-shadow-copy-environment/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="../../information/how-to-post-ideas/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="../../information/what-is-business-impact/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="../../FinOps-Platform/proactive-quality-updates/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="../../FinOps-Platform/stuck-in-pre-servicing/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">タグ</h3>
+    <div class="widget">
+      <!-- <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Accounts-receivable-parameters/" rel="tag">Accounts receivable parameters</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Bug-Info/" rel="tag">Bug Info</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Business-Event/" rel="tag">Business Event</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/D365FO-FIN/" rel="tag">D365FO FIN</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/D365FO-Finance/" rel="tag">D365FO Finance</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/D365FO-SCM/" rel="tag">D365FO SCM</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/D365FO-Tech/" rel="tag">D365FO Tech</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Data-event/" rel="tag">Data event</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Demo-data/" rel="tag">Demo data</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Dual-Write-issue/" rel="tag">Dual Write issue</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Fixed-assets/" rel="tag">Fixed assets</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Flight/" rel="tag">Flight</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Information/" rel="tag">Information</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Japan-localization/" rel="tag">Japan localization</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/LCS/" rel="tag">LCS</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Master-Planning/" rel="tag">Master Planning</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/OData/" rel="tag">OData</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Power-Automate/" rel="tag">Power Automate</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Procurement-and-sourcing-parameters/" rel="tag">Procurement and sourcing parameters</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Purchase-order/" rel="tag">Purchase order</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/REST-API/" rel="tag">REST API</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Sales-order/" rel="tag">Sales order</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Standard/" rel="tag">Standard</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Tips/" rel="tag">Tips</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/WinRM/" rel="tag">WinRM</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/recurring-integrations/" rel="tag">recurring integrations</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/repro-steps/" rel="tag">repro steps</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/the-Act-on-Book-and-Record-Keeping-through-Electronic-Method/" rel="tag">the Act on Book and Record Keeping through Electronic Method</a></li></ul>  -->
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Information/">Information</a><span class="tag-list-count">4</span><ul><li class="tag-list-item tag-list-item-child-tag"><a class="tag-list-link tag-list-link-child" href="../../tags/Information/Flight">Flight</a><span class="tag-list-count">1</span></li></ul></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/D365FO-Finance/">D365FO Finance</a><span class="tag-list-count">2</span><ul><li class="tag-list-item tag-list-item-child-tag"><a class="tag-list-link tag-list-link-child" href="../../tags/D365FO-Finance/Fixed-assets">Fixed assets</a><span class="tag-list-count">1</span></li><li class="tag-list-item tag-list-item-child-tag"><a class="tag-list-link tag-list-link-child" href="../../tags/D365FO-Finance/Japan-localization">Japan localization</a><span class="tag-list-count">1</span></li><li class="tag-list-item tag-list-item-child-tag"><a class="tag-list-link tag-list-link-child" href="../../tags/D365FO-Finance/the-Act-on-Book-and-Record-Keeping-through-Electronic-Method">the Act on Book and Record Keeping through Electronic Method</a><span class="tag-list-count">1</span></li></ul></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/D365FO-Tech/">D365FO Tech</a><span class="tag-list-count">8</span><ul><li class="tag-list-item tag-list-item-child-tag"><a class="tag-list-link tag-list-link-child" href="../../tags/D365FO-Tech/Business-Event">Business Event</a><span class="tag-list-count">1</span></li><li class="tag-list-item tag-list-item-child-tag"><a class="tag-list-link tag-list-link-child" href="../../tags/D365FO-Tech/Data-event">Data event</a><span class="tag-list-count">1</span></li><li class="tag-list-item tag-list-item-child-tag"><a class="tag-list-link tag-list-link-child" href="../../tags/D365FO-Tech/Demo-data">Demo data</a><span class="tag-list-count">1</span></li><li class="tag-list-item tag-list-item-child-tag"><a class="tag-list-link tag-list-link-child" href="../../tags/D365FO-Tech/LCS">LCS</a><span class="tag-list-count">1</span></li><li class="tag-list-item tag-list-item-child-tag"><a class="tag-list-link tag-list-link-child" href="../../tags/D365FO-Tech/OData">OData</a><span class="tag-list-count">1</span></li><li class="tag-list-item tag-list-item-child-tag"><a class="tag-list-link tag-list-link-child" href="../../tags/D365FO-Tech/Power-Automate">Power Automate</a><span class="tag-list-count">2</span></li><li class="tag-list-item tag-list-item-child-tag"><a class="tag-list-link tag-list-link-child" href="../../tags/D365FO-Tech/REST-API">REST API</a><span class="tag-list-count">1</span></li><li class="tag-list-item tag-list-item-child-tag"><a class="tag-list-link tag-list-link-child" href="../../tags/D365FO-Tech/Standard">Standard</a><span class="tag-list-count">1</span></li><li class="tag-list-item tag-list-item-child-tag"><a class="tag-list-link tag-list-link-child" href="../../tags/D365FO-Tech/Tips">Tips</a><span class="tag-list-count">2</span></li><li class="tag-list-item tag-list-item-child-tag"><a class="tag-list-link tag-list-link-child" href="../../tags/D365FO-Tech/WinRM">WinRM</a><span class="tag-list-count">1</span></li><li class="tag-list-item tag-list-item-child-tag"><a class="tag-list-link tag-list-link-child" href="../../tags/D365FO-Tech/recurring-integrations">recurring integrations</a><span class="tag-list-count">1</span></li></ul></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/D365FO-SCM/">D365FO SCM</a><span class="tag-list-count">5</span><ul><li class="tag-list-item tag-list-item-child-tag"><a class="tag-list-link tag-list-link-child" href="../../tags/D365FO-SCM/Accounts-receivable-parameters">Accounts receivable parameters</a><span class="tag-list-count">1</span></li><li class="tag-list-item tag-list-item-child-tag"><a class="tag-list-link tag-list-link-child" href="../../tags/D365FO-SCM/D365FO-FIN">D365FO FIN</a><span class="tag-list-count">2</span></li><li class="tag-list-item tag-list-item-child-tag"><a class="tag-list-link tag-list-link-child" href="../../tags/D365FO-SCM/Master-Planning">Master Planning</a><span class="tag-list-count">1</span></li><li class="tag-list-item tag-list-item-child-tag"><a class="tag-list-link tag-list-link-child" href="../../tags/D365FO-SCM/Procurement-and-sourcing-parameters">Procurement and sourcing parameters</a><span class="tag-list-count">1</span></li><li class="tag-list-item tag-list-item-child-tag"><a class="tag-list-link tag-list-link-child" href="../../tags/D365FO-SCM/Purchase-order">Purchase order</a><span class="tag-list-count">1</span></li><li class="tag-list-item tag-list-item-child-tag"><a class="tag-list-link tag-list-link-child" href="../../tags/D365FO-SCM/Sales-order">Sales order</a><span class="tag-list-count">1</span></li><li class="tag-list-item tag-list-item-child-tag"><a class="tag-list-link tag-list-link-child" href="../../tags/D365FO-SCM/repro-steps">repro steps</a><span class="tag-list-count">2</span></li></ul></li><li class="tag-list-item"><a class="tag-list-link" href="../../tags/Bug-Info/">Bug Info</a><span class="tag-list-count">1</span><ul><li class="tag-list-item tag-list-item-child-tag"><a class="tag-list-link tag-list-link-child" href="../../tags/Bug-Info/Dual-Write-issue">Dual Write issue</a><span class="tag-list-count">1</span></li></ul></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">アーカイブ</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/12/">2023 / 12</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/11/">2023 / 11</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/10/">2023 / 10</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/08/">2023 / 08</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/06/">2023 / 06</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/04/">2023 / 04</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/03/">2023 / 03</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/02/">2023 / 02</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/01/">2023 / 01</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/10/">2022 / 10</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/07/">2022 / 07</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/06/">2022 / 06</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/05/">2022 / 05</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/03/">2022 / 03</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/02/">2022 / 02</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">タグクラウド</h3>
+    <div class="widget tagcloud">
+      <a href="../../tags/Accounts-receivable-parameters/" style="font-size: 10px;">Accounts receivable parameters</a> <a href="../../tags/Bug-Info/" style="font-size: 10px;">Bug Info</a> <a href="../../tags/Business-Event/" style="font-size: 10px;">Business Event</a> <a href="../../tags/D365FO-FIN/" style="font-size: 12.5px;">D365FO FIN</a> <a href="../../tags/D365FO-Finance/" style="font-size: 12.5px;">D365FO Finance</a> <a href="../../tags/D365FO-SCM/" style="font-size: 17.5px;">D365FO SCM</a> <a href="../../tags/D365FO-Tech/" style="font-size: 20px;">D365FO Tech</a> <a href="../../tags/Data-event/" style="font-size: 10px;">Data event</a> <a href="../../tags/Demo-data/" style="font-size: 10px;">Demo data</a> <a href="../../tags/Dual-Write-issue/" style="font-size: 10px;">Dual Write issue</a> <a href="../../tags/Fixed-assets/" style="font-size: 10px;">Fixed assets</a> <a href="../../tags/Flight/" style="font-size: 10px;">Flight</a> <a href="../../tags/Information/" style="font-size: 15px;">Information</a> <a href="../../tags/Japan-localization/" style="font-size: 10px;">Japan localization</a> <a href="../../tags/LCS/" style="font-size: 10px;">LCS</a> <a href="../../tags/Master-Planning/" style="font-size: 10px;">Master Planning</a> <a href="../../tags/OData/" style="font-size: 10px;">OData</a> <a href="../../tags/Power-Automate/" style="font-size: 12.5px;">Power Automate</a> <a href="../../tags/Procurement-and-sourcing-parameters/" style="font-size: 10px;">Procurement and sourcing parameters</a> <a href="../../tags/Purchase-order/" style="font-size: 10px;">Purchase order</a> <a href="../../tags/REST-API/" style="font-size: 10px;">REST API</a> <a href="../../tags/Sales-order/" style="font-size: 10px;">Sales order</a> <a href="../../tags/Standard/" style="font-size: 10px;">Standard</a> <a href="../../tags/Tips/" style="font-size: 12.5px;">Tips</a> <a href="../../tags/WinRM/" style="font-size: 10px;">WinRM</a> <a href="../../tags/recurring-integrations/" style="font-size: 10px;">recurring integrations</a> <a href="../../tags/repro-steps/" style="font-size: 12.5px;">repro steps</a> <a href="../../tags/the-Act-on-Book-and-Record-Keeping-through-Electronic-Method/" style="font-size: 10px;">the Act on Book and Record Keeping through Electronic Method</a>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2023 Dynamics ERP Support Japan<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="../../index.html" class="mobile-nav-link">Home</a>
+  
+    <a href="../../archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script src="../../js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
