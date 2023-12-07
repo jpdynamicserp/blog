@@ -65,14 +65,14 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-SCM/product-filter/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-SCM/regarding-sales-order-status-column-mapping/</loc>
     
     <lastmod>2023-12-07</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-SCM/regarding-sales-order-status-column-mapping/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-SCM/product-filter/</loc>
     
     <lastmod>2023-12-07</lastmod>
     
@@ -226,6 +226,13 @@
   </url>
   
   <url>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/how-to-update-winrm/</loc>
+    
+    <lastmod>2023-12-07</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/how-to-use-tablebrowser-d365fo/</loc>
     
     <lastmod>2023-12-07</lastmod>
@@ -234,13 +241,6 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/no-one-can-access-LCS-project/</loc>
-    
-    <lastmod>2023-12-07</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/how-to-update-winrm/</loc>
     
     <lastmod>2023-12-07</lastmod>
     
@@ -289,14 +289,14 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/how-to-executingalert/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/how-to-create-env-with-sample-data/</loc>
     
     <lastmod>2023-12-07</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/how-to-create-env-with-sample-data/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/how-to-executingalert/</loc>
     
     <lastmod>2023-12-07</lastmod>
     
@@ -338,14 +338,14 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/get-environment-id/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/fo-extend-trial/</loc>
     
     <lastmod>2023-12-07</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/fo-extend-trial/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/get-environment-id/</loc>
     
     <lastmod>2023-12-07</lastmod>
     
@@ -422,13 +422,6 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-Finance/how-to-register-temporary-credit-limit/</loc>
-    
-    <lastmod>2023-12-07</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpdynamicserp.github.io/blog/FinOps-Finance/how-to-correct-blank-journal-entry-in-financial-dimension/</loc>
     
     <lastmod>2023-12-07</lastmod>
@@ -436,7 +429,7 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-Finance/create-form26-report/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-Finance/how-to-register-temporary-credit-limit/</loc>
     
     <lastmod>2023-12-07</lastmod>
     
@@ -444,13 +437,6 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/FinOps-Finance/form26-report-fixed-asset-location-issue/</loc>
-    
-    <lastmod>2023-12-07</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-Finance/change-fixed-asset-service-life/</loc>
     
     <lastmod>2023-12-07</lastmod>
     
@@ -465,6 +451,13 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/FinOps-Finance/create-consolidated-invoice/</loc>
+    
+    <lastmod>2023-12-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-Finance/create-form26-report/</loc>
     
     <lastmod>2023-12-07</lastmod>
     
@@ -486,6 +479,13 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/FinOps-Finance/add-new-fiscal-year/</loc>
+    
+    <lastmod>2023-12-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-Finance/change-fixed-asset-service-life/</loc>
     
     <lastmod>2023-12-07</lastmod>
     
