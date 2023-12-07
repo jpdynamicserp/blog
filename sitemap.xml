@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jpdynamicserp.github.io/blog/information/about-history-how-to-create-data/</loc>
+    
+    <lastmod>2023-12-07</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jpdynamicserp.github.io/blog/information/how-to-post-ideas/</loc>
     
     <lastmod>2023-12-07</lastmod>
@@ -58,14 +65,14 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-SCM/regarding-sales-order-status-column-mapping/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-SCM/product-filter/</loc>
     
     <lastmod>2023-12-07</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-SCM/product-filter/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-SCM/regarding-sales-order-status-column-mapping/</loc>
     
     <lastmod>2023-12-07</lastmod>
     
@@ -219,13 +226,6 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/how-to-update-winrm/</loc>
-    
-    <lastmod>2023-12-07</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/how-to-use-tablebrowser-d365fo/</loc>
     
     <lastmod>2023-12-07</lastmod>
@@ -234,6 +234,13 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/no-one-can-access-LCS-project/</loc>
+    
+    <lastmod>2023-12-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/how-to-update-winrm/</loc>
     
     <lastmod>2023-12-07</lastmod>
     
@@ -331,14 +338,14 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/fo-extend-trial/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/get-environment-id/</loc>
     
     <lastmod>2023-12-07</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/get-environment-id/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/fo-extend-trial/</loc>
     
     <lastmod>2023-12-07</lastmod>
     
@@ -443,6 +450,13 @@
   </url>
   
   <url>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-Finance/change-fixed-asset-service-life/</loc>
+    
+    <lastmod>2023-12-07</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jpdynamicserp.github.io/blog/FinOps-Finance/create-appended-table16-report/</loc>
     
     <lastmod>2023-12-07</lastmod>
@@ -472,13 +486,6 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/FinOps-Finance/add-new-fiscal-year/</loc>
-    
-    <lastmod>2023-12-07</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-Finance/change-fixed-asset-service-life/</loc>
     
     <lastmod>2023-12-07</lastmod>
     
@@ -929,6 +936,13 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/tags/Accounts-receivable-parameters/</loc>
+    <lastmod>2023-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/tags/D365FO/</loc>
     <lastmod>2023-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
