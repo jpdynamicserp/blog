@@ -2,20 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/information/about-history-how-to-create-data/</loc>
-    
-    <lastmod>2023-12-19</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/information/how-to-post-ideas/</loc>
-    
-    <lastmod>2023-12-19</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpdynamicserp.github.io/blog/information/ideas-list/</loc>
     
     <lastmod>2023-12-19</lastmod>
@@ -51,14 +37,28 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-SCM/restrict-po-edit/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-SCM/restrict-so-edit/</loc>
     
     <lastmod>2023-12-19</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-SCM/restrict-so-edit/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/information/about-history-how-to-create-data/</loc>
+    
+    <lastmod>2023-12-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/information/how-to-post-ideas/</loc>
+    
+    <lastmod>2023-12-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-SCM/restrict-po-edit/</loc>
     
     <lastmod>2023-12-19</lastmod>
     
