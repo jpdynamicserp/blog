@@ -20,7 +20,12 @@ disableDisclaimer: false
 <a id='overview'></a>
 
 # はじめに
+<<<<<<< HEAD
 標準機能の変更や追加機能の実装に関するご要望は、「Ideas」という専用サイトを通じて受け付けております。その後、ユーザーの皆様からの賛成票（Vote）を一定量集めた要望については開発チームで検討し、実装の可否を判断させていただきます。 
+=======
+標準機能の変更や追加機能の実装に関するご要望は、「Ideas」という専用サイトを通じて受け付けております。  
+その後、ユーザーの皆様からの賛成票（Vote）を一定量集めた要望については開発チームで検討し、実装の可否を判断させていただきます。  
+>>>>>>> repoA/main
 Ideas の詳細につきましては、以下のブログをご参照ください。  
 [Dynamics 365 製品のフィードバックサイト Ideas について | Japan Dynamics ERP Support Blog (jpdynamicserp.github.io)](https://jpdynamicserp.github.io/blog/information/how-to-post-ideas/)  
 
@@ -30,7 +35,10 @@ Ideas の詳細につきましては、以下のブログをご参照くださ�
 是非本ブログの読者の皆様におかれましては、以下のリンクにてリストされている Ideas をご一読いただき、共感いただける要望があれば賛成票 (Vote) を投じていただけますと幸いです。  
 [Ideas のリスト | Japan Dynamics ERP Support Blog (jpdynamicserp.github.io)](https://jpdynamicserp.github.io/blog/information/ideas-list/)
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> repoA/main
 > [!NOTE]  
 > 本活動は日本のテクニカル サポート独自の活動となりますため、Ideas のトリアージ プロセス等が変わることもなく、引き続きテクニカル サポートからは Ideas を元に直接開発チームにエスカレーションすることが難しいこと、ご了承ください。  
 
@@ -49,4 +57,8 @@ Ideas の詳細につきましては、以下のブログをご参照くださ�
 
 # おわりに
 お客様が横断的に Ideas を相互にご確認いただき賛成票が増えることで、要望の実現の確度が増すものとなります。  
+<<<<<<< HEAD
 お手数ではございますが、ご協力いただけますと幸いです。  
+=======
+お手数ではございますが、ご協力いただけますと幸いです。  
+>>>>>>> repoA/main
