@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jpdynamicserp.github.io/blog/information/about-history-how-to-create-data/</loc>
+    
+    <lastmod>2023-12-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/information/how-to-post-ideas/</loc>
+    
+    <lastmod>2023-12-19</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jpdynamicserp.github.io/blog/information/ideas-list/</loc>
     
     <lastmod>2023-12-19</lastmod>
@@ -37,28 +51,14 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-SCM/restrict-so-edit/</loc>
-    
-    <lastmod>2023-12-19</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/information/about-history-how-to-create-data/</loc>
-    
-    <lastmod>2023-12-19</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/information/how-to-post-ideas/</loc>
-    
-    <lastmod>2023-12-19</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpdynamicserp.github.io/blog/FinOps-SCM/restrict-po-edit/</loc>
+    
+    <lastmod>2023-12-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-SCM/restrict-so-edit/</loc>
     
     <lastmod>2023-12-19</lastmod>
     
@@ -303,14 +303,14 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/how-to-executingalert/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/how-to-create-env-with-sample-data/</loc>
     
     <lastmod>2023-12-19</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/how-to-create-env-with-sample-data/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/how-to-executingalert/</loc>
     
     <lastmod>2023-12-19</lastmod>
     
@@ -325,6 +325,13 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/how-to-check-necessary-role-and-license/</loc>
+    
+    <lastmod>2023-12-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/browser-session-id/</loc>
     
     <lastmod>2023-12-19</lastmod>
     
@@ -366,6 +373,13 @@
   </url>
   
   <url>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/aad-conditional-access/</loc>
+    
+    <lastmod>2023-12-19</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/about-fno-support/</loc>
     
     <lastmod>2023-12-19</lastmod>
@@ -380,21 +394,7 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/browser-session-id/</loc>
-    
-    <lastmod>2023-12-19</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpdynamicserp.github.io/blog/FinOps-Finance/show-depreciationprofile/</loc>
-    
-    <lastmod>2023-12-19</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/aad-conditional-access/</loc>
     
     <lastmod>2023-12-19</lastmod>
     
@@ -450,13 +450,6 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-Finance/create-consolidated-invoice/</loc>
-    
-    <lastmod>2023-12-19</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpdynamicserp.github.io/blog/FinOps-Finance/create-form26-report/</loc>
     
     <lastmod>2023-12-19</lastmod>
@@ -465,6 +458,27 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/FinOps-Finance/form26-report-fixed-asset-location-issue/</loc>
+    
+    <lastmod>2023-12-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-Finance/create-appended-table16-report/</loc>
+    
+    <lastmod>2023-12-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-Finance/create-consolidated-invoice/</loc>
+    
+    <lastmod>2023-12-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/BusCen-Platform/how-to-enable-table-change-log-d365bc/</loc>
     
     <lastmod>2023-12-19</lastmod>
     
@@ -492,13 +506,6 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-Finance/create-appended-table16-report/</loc>
-    
-    <lastmod>2023-12-19</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpdynamicserp.github.io/blog/BusCen-Platform/how-to-check-servicehealth-d365bc/</loc>
     
     <lastmod>2023-12-19</lastmod>
@@ -507,13 +514,6 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/BusCen-Platform/how-to-check-table-data-d365bc/</loc>
-    
-    <lastmod>2023-12-19</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/BusCen-Platform/how-to-enable-table-change-log-d365bc/</loc>
     
     <lastmod>2023-12-19</lastmod>
     
