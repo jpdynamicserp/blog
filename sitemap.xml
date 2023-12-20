@@ -2,13 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/information/what-is-repro-steps/</loc>
-    
-    <lastmod>2023-12-20</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpdynamicserp.github.io/blog/information/about-history-how-to-create-data/</loc>
     
     <lastmod>2023-12-20</lastmod>
@@ -45,6 +38,13 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/information/what-is-business-impact/</loc>
+    
+    <lastmod>2023-12-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/information/what-is-repro-steps/</loc>
     
     <lastmod>2023-12-20</lastmod>
     
@@ -121,13 +121,6 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-SCM/how-to-change-purchase-order-status/</loc>
-    
-    <lastmod>2023-12-20</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpdynamicserp.github.io/blog/FinOps-SCM/how-to-correct-deliverycontroldata/</loc>
     
     <lastmod>2023-12-20</lastmod>
@@ -178,6 +171,13 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/FinOps-SCM/change-mrp-engine-from-32/</loc>
+    
+    <lastmod>2023-12-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-SCM/how-to-change-purchase-order-status/</loc>
     
     <lastmod>2023-12-20</lastmod>
     
@@ -268,13 +268,6 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/how-to-run-custom-script-d365fo/</loc>
-    
-    <lastmod>2023-12-20</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/how-to-powerautomateapi/</loc>
     
     <lastmod>2023-12-20</lastmod>
@@ -282,7 +275,7 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/how-to-makedataevent/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/how-to-run-custom-script-d365fo/</loc>
     
     <lastmod>2023-12-20</lastmod>
     
@@ -290,6 +283,13 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/how-to-pipeline/</loc>
+    
+    <lastmod>2023-12-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/how-to-makedataevent/</loc>
     
     <lastmod>2023-12-20</lastmod>
     
@@ -331,27 +331,6 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/export-to-data-lake-yammer-group/</loc>
-    
-    <lastmod>2023-12-20</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/fo-extend-trial/</loc>
-    
-    <lastmod>2023-12-20</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/get-environment-id/</loc>
-    
-    <lastmod>2023-12-20</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/browser-session-id/</loc>
     
     <lastmod>2023-12-20</lastmod>
@@ -367,6 +346,27 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/environments/</loc>
+    
+    <lastmod>2023-12-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/export-to-data-lake-yammer-group/</loc>
+    
+    <lastmod>2023-12-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/fo-extend-trial/</loc>
+    
+    <lastmod>2023-12-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-Platform/get-environment-id/</loc>
     
     <lastmod>2023-12-20</lastmod>
     
@@ -394,6 +394,20 @@
   </url>
   
   <url>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-Finance/show-depreciationprofile/</loc>
+    
+    <lastmod>2023-12-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-Finance/new-invoicing-system-requirements-transitional-measures/</loc>
+    
+    <lastmod>2023-12-20</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jpdynamicserp.github.io/blog/FinOps-Finance/new-invoicing-system-requirements/</loc>
     
     <lastmod>2023-12-20</lastmod>
@@ -408,7 +422,7 @@
   </url>
   
   <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-Finance/show-depreciationprofile/</loc>
+    <loc>https://jpdynamicserp.github.io/blog/FinOps-Finance/lumpsum-asset-depreciation-issue/</loc>
     
     <lastmod>2023-12-20</lastmod>
     
@@ -416,20 +430,6 @@
   
   <url>
     <loc>https://jpdynamicserp.github.io/blog/FinOps-Finance/new-invoicing-system-requirements-QIInumber-setting/</loc>
-    
-    <lastmod>2023-12-20</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-Finance/new-invoicing-system-requirements-transitional-measures/</loc>
-    
-    <lastmod>2023-12-20</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpdynamicserp.github.io/blog/FinOps-Finance/lumpsum-asset-depreciation-issue/</loc>
     
     <lastmod>2023-12-20</lastmod>
     
