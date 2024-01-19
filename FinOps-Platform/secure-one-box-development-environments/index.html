@@ -19,12 +19,13 @@
 <meta property="og:image" content="https://jpdynamicserp.github.io/blog/FinOps-Platform/secure-one-box-development-environments/secure-one-box-development-environments04.png">
 <meta property="og:image" content="https://jpdynamicserp.github.io/blog/FinOps-Platform/secure-one-box-development-environments/secure-one-box-development-environments05.png">
 <meta property="og:image" content="https://jpdynamicserp.github.io/blog/FinOps-Platform/secure-one-box-development-environments/secure-one-box-development-environments06.png">
+<meta property="og:image" content="https://jpdynamicserp.github.io/blog/FinOps-Platform/secure-one-box-development-environments/secure-one-box-development-environments11.png">
 <meta property="og:image" content="https://jpdynamicserp.github.io/blog/FinOps-Platform/secure-one-box-development-environments/secure-one-box-development-environments07.png">
 <meta property="og:image" content="https://jpdynamicserp.github.io/blog/FinOps-Platform/secure-one-box-development-environments/secure-one-box-development-environments08.png">
 <meta property="og:image" content="https://jpdynamicserp.github.io/blog/FinOps-Platform/secure-one-box-development-environments/secure-one-box-development-environments09.png">
 <meta property="og:image" content="https://jpdynamicserp.github.io/blog/FinOps-Platform/secure-one-box-development-environments/secure-one-box-development-environments10.png">
 <meta property="article:published_time" content="2023-12-10T15:00:00.000Z">
-<meta property="article:modified_time" content="2024-01-18T00:47:21.036Z">
+<meta property="article:modified_time" content="2024-01-19T01:01:31.270Z">
 <meta property="article:author" content="Dynamics ERP Support Japan">
 <meta property="article:tag" content="FinOps-Platform">
 <meta property="article:tag" content="Cloud-hosted">
@@ -115,7 +116,7 @@
         
         <a href="https://github.com/jpdynamicserp/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+ccadf312-c91a-5299-a1c6-4747f6fe42c7%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5B%E6%96%B0%E8%A6%8F%E3%81%A7%E9%85%8D%E7%BD%AE%E3%81%97%E3%81%9F%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E3%83%9B%E3%82%B9%E3%83%88%E7%92%B0%E5%A2%83%E3%81%A7%E8%A8%BC%E6%98%8E%E6%9B%B8%E3%81%AE%E3%82%A8%E3%83%A9%E3%83%BC%E3%81%8C%E7%99%BA%E7%94%9F%E3%81%97%E3%81%9F%E9%9A%9B%E3%81%AE%E5%AF%BE%E5%87%A6%E6%B3%95%5D%28https%3A%2F%2Fjpdynamicserp.github.io%2Fblog%2FFinOps-Platform%2Fsecure-one-box-development-environments%2F%29%0A*+Content+Source%3A+%5Barticles%2FFinOps-Platform%2Fsecure-one-box-development-environments.md%5D%28https%3A%2F%2Fgithub.com%2Fjpdynamicserp%2Fblob%2Fmain%2Farticles%2FFinOps-Platform%2Fsecure-one-box-development-environments.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
         
-        <a data-url="https://jpdynamicserp.github.io/blog/FinOps-Platform/secure-one-box-development-environments/" data-id="clrihskld00290oqqaoca5fsl" class="article-share-link">共有</a>
+        <a data-url="https://jpdynamicserp.github.io/blog/FinOps-Platform/secure-one-box-development-environments/" data-id="clrjxqnco00290nq4hs7nfrlk" class="article-share-link">共有</a>
       </div>
     
     <div class="article-entry" itemprop="articleBody">
@@ -146,15 +147,20 @@
 </li>
 <li><p>アプリケーションの API アクセス許可を割り当てます。  </p>
 <ol>
-<li><a target="_blank" rel="noopener" href="https://portal.azure.com/">Azure Portal</a> から手順1で作成したアプリケーションにて、[APIのアクセス許可] から下記の項目について設定します。  <ul>
+<li><p><a target="_blank" rel="noopener" href="https://portal.azure.com/">Azure Portal</a> から手順1で作成したアプリケーションにて、[APIのアクセス許可] から下記の項目について設定します。  </p>
+<ul>
 <li>Dynamics ERP – このアクセス許可は、Dynamics 365 Finance and Operations 環境にアクセスするために必要になります。  </li>
-<li>Microsoft Graph (User.Read.All および Group.Read.All のアクセス許可) - クラウドホスト環境で、新しくインストールした証明書のネットワーク サービスへの読み取りアクセス権を付与します。<br><img src="/blog/FinOps-Platform/secure-one-box-development-environments/secure-one-box-development-environments06.png">  </li>
+<li>Microsoft Graph (User.Read.All および Group.Read.All のアクセス許可) - クラウドホスト環境で、新しくインストールした証明書のネットワーク サービスへの読み取りアクセス権を付与します。<br><img src="/blog/FinOps-Platform/secure-one-box-development-environments/secure-one-box-development-environments06.png"><br><img src="/blog/FinOps-Platform/secure-one-box-development-environments/secure-one-box-development-environments11.png">  </li>
 </ul>
 </li>
-<li>リモート デスクトップ接続先のクラウドホスト環境にて、[Manage computer certificate] を開き、CHECert に対し、[Manage Private Key] を設定します。<br><img src="/blog/FinOps-Platform/secure-one-box-development-environments/secure-one-box-development-environments07.png">  </li>
-<li>[Permissions for CHECert private keys] の画面が開いたら、[Add] を選択します。<br><img src="/blog/FinOps-Platform/secure-one-box-development-environments/secure-one-box-development-environments08.png">  </li>
-<li>“NETWORK SERVICE” を入力し、Check Name を選択し、OK を選択します。<br><img src="/blog/FinOps-Platform/secure-one-box-development-environments/secure-one-box-development-environments09.png">  </li>
-<li>作成された“NETWORK SERVICE” に対し、Read を有効化し、Apply を選択します。<br><img src="/blog/FinOps-Platform/secure-one-box-development-environments/secure-one-box-development-environments10.png">  </li>
+<li><p>リモート デスクトップ接続先のクラウドホスト環境にて、[Manage computer certificate] を開き、CHECert に対し、[Manage Private Key] を設定します。<br><img src="/blog/FinOps-Platform/secure-one-box-development-environments/secure-one-box-development-environments07.png">  </p>
+</li>
+<li><p>[Permissions for CHECert private keys] の画面が開いたら、[Add] を選択します。<br><img src="/blog/FinOps-Platform/secure-one-box-development-environments/secure-one-box-development-environments08.png">  </p>
+</li>
+<li><p>“NETWORK SERVICE” を入力し、Check Name を選択し、OK を選択します。<br><img src="/blog/FinOps-Platform/secure-one-box-development-environments/secure-one-box-development-environments09.png">  </p>
+</li>
+<li><p>作成された“NETWORK SERVICE” に対し、Read を有効化し、Apply を選択します。<br><img src="/blog/FinOps-Platform/secure-one-box-development-environments/secure-one-box-development-environments10.png">  </p>
+</li>
 </ol>
 </li>
 </ol>
